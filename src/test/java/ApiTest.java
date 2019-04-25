@@ -1,9 +1,7 @@
-package download;
+
 
 import com.intuit.karate.junit4.Karate;
 import org.junit.runner.RunWith;
-
-import static org.junit.Assert.*;
 
 @RunWith(Karate.class)
 public class ApiTest {
