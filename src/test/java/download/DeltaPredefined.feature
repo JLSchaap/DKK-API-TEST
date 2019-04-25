@@ -5,8 +5,9 @@ Feature: DKK Api geeft predefined
     * url 'https://download.pdok.io/kadaster/dkk/api/v1/delta/predefined/'
 
   Scenario: DKK Api geeft predefined
-  #  Given path 'dkk-gml-nl.zip'
-  #  When method GET
-  #  Then status 200
+  # only url avalibilty checking
+  # Given path 'dkk-gml-nl.zip'
+  # When method GET
+  # Then status 200
 
 
