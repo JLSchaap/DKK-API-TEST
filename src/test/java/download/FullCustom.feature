@@ -25,6 +25,6 @@ Feature: DKK Api geeft Custom full
     Given url statusurl
     When method GET
 
-    And match response == { downloadRequestId: '#uuid' }
+    # And match response == { downloadRequestId: '#uuid' }
     And retry until responseStatus == 200
 #When method get
