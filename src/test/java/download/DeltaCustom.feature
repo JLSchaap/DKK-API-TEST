@@ -11,8 +11,18 @@ Feature: DKK Api geeft Custom delta initial request
     Then status 202
     And match response == { downloadRequestId: '#uuid' , _links:'#notnull'}
     And def downloadRequestId = response.downloadRequestId
-    And def statuspath = downloadRequestId
-  
-    Given path statuspath
+    And def links = response._links
+    * print "initial delta status links:" links
+    And def statusurl = 'https://download.pdok.io/' + links.status.href
+
+    * print 'statusurl', statusurl
+    * configure retry = { count: 20, interval: 5000 }
+    Given url statusurl
     When method GET
-    And retry until responseStatus == 200
+   And retry until responseStatus == 201
+
+    Given url statusurl
+    When method GET
+    And def downloadlink = response._links
+    And  match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }
+    * print "downloadlink:", downloadlink

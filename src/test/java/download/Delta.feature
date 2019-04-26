@@ -8,10 +8,10 @@ Feature: DKK API geeft info over beschikbare delta dataset leveringen
     Given path 'delta'
     When method GET
     Then status 200
-    And match response contains { deltaIds: '#present' }
+    And match response contains { deltas: '#present' }
 
   Scenario: DKK API geeft delta minimaal een UUID delta
     Given path 'delta'
     When method GET
     Then status 200
-    And match response.deltaIds[1] == "#uuid"
+    And match response.deltas[1].id == "#uuid"
