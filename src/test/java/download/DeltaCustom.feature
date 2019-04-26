@@ -11,8 +11,8 @@ Feature: DKK Api geeft Custom delta initial request
     Then status 202
     And match response == { downloadRequestId: '#uuid' , _links:'#notnull'}
     And def downloadRequestId = response.downloadRequestId
-    And def statusurl = url + '/' + downloadRequestId
-    * print 'statusurl:', statusurl
-    Given url statusurl
+    And def statuspath = downloadRequestId
+  
+    Given path statuspath
     When method GET
     And retry until responseStatus == 200
