@@ -14,4 +14,4 @@ Feature: DKK API geeft info over beschikbare delta dataset leveringen
     Given path 'delta'
     When method GET
     Then status 200
-    And match response.deltas[1].id == "#uuid"
+    And match response.deltas[0].id == "#uuid"
