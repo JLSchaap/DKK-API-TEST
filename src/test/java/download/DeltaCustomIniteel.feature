@@ -1,4 +1,3 @@
-@wip
 Feature: DKK Api geeft Custom delta initial request
   Dit feature test zowel de intiele als de mutatie download voor een specifiek intressegebied
 

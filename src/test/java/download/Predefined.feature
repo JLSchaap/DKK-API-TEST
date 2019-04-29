@@ -1,4 +1,3 @@
-@wip
 Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
 
   Background:
@@ -23,7 +22,7 @@ Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
     * print "size", zipsize
     Examples:
       | omschrijving                  | urlpath                                                      |
-      | 'Heel Nederland gml'          | 'kadaster/dkk/api/v1//full/predefined/dkk-gml-nl-nohist.zip' |
+      | Heel Nederland gml            | 'kadaster/dkk/api/v1//full/predefined/dkk-gml-nl-nohist.zip' |
       | Heel Nederland initiele delta | 'kadaster/dkk/api/v1/delta/predefined/dkk-gml-nl.zip'        |
 
 
