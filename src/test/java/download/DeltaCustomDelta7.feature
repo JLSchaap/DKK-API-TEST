@@ -1,4 +1,4 @@
-@wip
+
 Feature: DKK Api geeft Custom delta mutatierequest
   Dit feature test zowel de mutatie download voor een specifiek intressegebied
 
