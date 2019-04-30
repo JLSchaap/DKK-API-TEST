@@ -12,9 +12,9 @@ Feature: DKK Api geeft Custom delta mutatierequest
     Given url 'https://download.pdok.io/kadaster/dkk/api/v1/delta'
     When method GET
     Then status 200
-    And match response.deltas[1].id == "#uuid"
-    And match response.deltas[1].timeWindow.from == "#notnull"
-    And match response.deltas[1].timeWindow.to == "#notnull"
+    And match response.deltas[0].id == "#uuid"
+    And match response.deltas[0].timeWindow.from == "#notnull"
+    And match response.deltas[0].timeWindow.to == "#notnull"
     And def arraylenght = response.deltas.length
     And def deltauuid = response.deltas[1].id
     * print "lenght:" , arraylenght
