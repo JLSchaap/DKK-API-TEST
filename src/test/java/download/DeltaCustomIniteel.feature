@@ -1,5 +1,5 @@
 Feature: DKK Api geeft Custom delta initial request
-  Dit feature test zowel de intiele als de mutatie download voor een specifiek intressegebied
+  Dit feature test zowel de intiele download voor een specifiek interessegebied
 
   Background:
   * url 'https://download.pdok.io/kadaster/dkk/api/v1/delta/custom'
