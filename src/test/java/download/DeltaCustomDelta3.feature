@@ -3,7 +3,7 @@ Feature: DKK Api geeft Custom delta mutatierequest
   Dit feature test zowel de mutatie download voor een specifiek intressegebied
 
   Background:
-  * url 'https://download.pdok.io/kadaster/dkk/api/v1/delta/custom'
+    * url 'https://download.pdok.io/kadaster/dkk/api/v1/delta/custom'
 
 
   Scenario: download delta mutatie delta locatie buitenhof
@@ -12,14 +12,16 @@ Feature: DKK Api geeft Custom delta mutatierequest
     Given url 'https://download.pdok.io/kadaster/dkk/api/v1/delta'
     When method GET
     Then status 200
-    And match response.deltas[1].id == "#uuid"
-    And match response.deltas[1].timeWindow.from == "#notnull"
-    And match response.deltas[1].timeWindow.to == "#notnull"
+    And match response.deltas[3]id == "#uuid"
+    And match response.deltas[3].timeWindow.from == "#notnull"
+    And match response.deltas[3].timeWindow.to == "#notnull"
     And def arraylenght = response.deltas.length
-    And def deltauuid = response.deltas[8].id
+    And def deltauuid = response.deltas[3].id
     * print "lenght:" , arraylenght
-    * print "from:", response.deltas[8].timeWindow.from
-    * print "to", response.deltas[8].timeWindow.to
+    * print "from:", response.deltas[3].timeWindow.from
+    * print "to", response.deltas[3].timeWindow.to
+
+
 
     * print "haal data op voor delta:" , deltauuid
     * url 'https://download.pdok.io/kadaster/dkk/api/v1/delta/custom'
@@ -46,4 +48,4 @@ Feature: DKK Api geeft Custom delta mutatierequest
     When method GET
     And def downloadlink = response._links
     And  match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }
-* print "downloadlink:", downloadlink
+    * print "downloadlink:", downloadlink
