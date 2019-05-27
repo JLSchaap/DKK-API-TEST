@@ -4,12 +4,15 @@ import com.intuit.karate.Runner;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
+import cucumber.api.CucumberOptions;
+
 /* 
 @RunWith(Karate.class)
 //@CucumberOptions(tags = "~@bug")
 public class ApiTest {
 } */
 
+@CucumberOptions(tags = {"~@TEMPLATE","~@WIP"})
 public class ApiTest {
 
     @Test

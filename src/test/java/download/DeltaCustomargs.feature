@@ -1,3 +1,4 @@
+@TEMPLATE
 Feature: using __arg
   Dit feature test zowel de  download voor een specifiek interessegebied
 
