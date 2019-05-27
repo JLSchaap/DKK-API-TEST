@@ -46,3 +46,14 @@ Feature: DKK Api geeft Custom delta mutatierequest
     And def downloadlink = response._links
     And  match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }
 * print "downloadlink:", downloadlink
+
+Scenario: DKK Api geeft alle custom voor alle delta id's 
+
+    * print "bepaal een delta ids "
+    Given url 'https://download.pdok.io/kadaster/dkk/api/v1/delta'
+    When method GET
+    Then status 200
+    And def arraylenght = response.deltas.length
+    And def alldelta = response.deltas
+     * print "alldelta:", alldelta
+    * def dodelta = call read('DeltaCustomargs.featuretemplate') alldelta
