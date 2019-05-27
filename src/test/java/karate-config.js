@@ -1,18 +1,7 @@
-function fn() {    
-  var env = karate.env; // get system property 'karate.env'
-  karate.log('karate.env system property was:', env);
-  if (!env) {
-    env = 'dev';
-  }
-  var config = {
-    env: env,
-	myVarName: 'someValue'
-  }
-  if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
-    // customize
-  }
+function() {
+ // karate.configure('connectTimeout', 5000);
+ // karate.configure('readTimeout', 5000);
+  var config = { apiBaseUrl: 'https://download.pdok.io/kadaster/dkk/api/v1' };
+  karate.log('base url :', config);
   return config;
 }

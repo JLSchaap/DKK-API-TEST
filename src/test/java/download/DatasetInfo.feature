@@ -1,7 +1,7 @@
 Feature: Dataset info
 
   Background:
-  * url 'https://download.pdok.io/kadaster/dkk/api/v1/'
+  * url apiBaseUrl
 
   Scenario: DKK API geeft dataset info
     Given path 'dataset'
