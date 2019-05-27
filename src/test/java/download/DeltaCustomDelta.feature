@@ -1,3 +1,4 @@
+@WIP
 Feature: DKK Api geeft Custom delta mutatierequest
   Dit feature test zowel de mutatie download voor een specifiek intressegebied
 
@@ -56,4 +57,4 @@ Scenario: DKK Api geeft alle custom voor alle delta id's
     And def arraylenght = response.deltas.length
     And def alldelta = response.deltas
      * print "alldelta:", alldelta
-    * def dodelta = call read('DeltaCustomargs.featuretemplate') alldelta
+    * def dodelta = call read('DeltaCustomargs.feature') alldelta
