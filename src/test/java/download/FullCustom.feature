@@ -1,4 +1,4 @@
-@PDOKNL
+@BUG
 Feature: DKK Api geeft Custom full
 
   Background:

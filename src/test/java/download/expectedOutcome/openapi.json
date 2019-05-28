@@ -1,0 +1,720 @@
+{
+    "components": {
+        "schemas": {
+            "DeltaCustomDownloadRequest": {
+                "properties": {
+                    "deltaId": {
+                        "type": "string"
+                    },
+                    "featuretypes": {
+                        "items": {
+                            "enum": [
+                                "perceel",
+                                "kadastralegrens"
+                            ],
+                            "type": "string"
+                        },
+                        "minItems": 1,
+                        "type": "array",
+                        "uniqueItems": true
+                    },
+                    "format": {
+                        "enum": [
+                            "gml"
+                        ],
+                        "type": "string"
+                    },
+                    "geofilter": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "format",
+                    "featuretypes"
+                ],
+                "type": "object"
+            },
+            "FullCustomDownloadRequest": {
+                "properties": {
+                    "featuretypes": {
+                        "items": {
+                            "enum": [
+                                "perceel",
+                                "kadastralegrens",
+                                "pand",
+                                "openbareruimtelabel"
+                            ],
+                            "type": "string"
+                        },
+                        "minItems": 1,
+                        "type": "array",
+                        "uniqueItems": true
+                    },
+                    "format": {
+                        "enum": [
+                            "gml"
+                        ],
+                        "type": "string"
+                    },
+                    "geofilter": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "format",
+                    "featuretypes"
+                ],
+                "type": "object"
+            },
+            "HalLink": {
+                "properties": {
+                    "href": {
+                        "type": "string"
+                    },
+                    "rel": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "href"
+                ],
+                "type": "object"
+            },
+            "delta": {
+                "properties": {
+                    "id": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "timeWindow": {
+                        "properties": {
+                            "from": {
+                                "format": "date-time",
+                                "readOnly": true,
+                                "type": "string"
+                            },
+                            "to": {
+                                "format": "date-time",
+                                "readOnly": true,
+                                "type": "string"
+                            }
+                        },
+                        "readOnly": true,
+                        "required": [
+                            "to"
+                        ],
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    },
+    "info": {
+        "description": "Met deze API is het mogelijk om gegevens uit de DKK dataset te downloaden.\n\nDit document bevat alleen informatie m.b.t. het gebruik van deze API.\nDe DKK-modeldocumentatie met bijbehorend schema(xsd) kun je vinden op\n[https://zakelijk.kadaster.nl/schemas](https://zakelijk.kadaster.nl/schemas).\n\nHieronder worden eerst een aantal algemene begrippen en concepten uitgelegd.\nVervolgens wordt elk endpoint individueel beschreven.\n\n## Full\nMet de full endpoints Predefined en Custom kan de meest actuele stand gedownload worden.\nOp basis van deze endpoints kunnen geen mutaties opgehaald worden.\n\n### Predefined\nEen full predefined download is direct beschikbaar om te downloaden,\nis niet gefilterd op gebied en is niet gefilterd op featuretype.\n\n### Custom\nBij een custom download wordt een aanvraag gedaan waarin specifieke filters worden opgegeven m.b.t. de\ngewenste inhoud van de bestanden.\nDe aanvraag wordt asynchroon behandeld op de server en de status van de aanvraag kan opgevraagd worden.\nNadat de aanvraag voorbereid is op de server, kan het bestand gedownload worden.\n\n#### Filters\n##### Geofilter\nIn het request voor een Custom download kan (optioneel) een geofilter meegegeven worden.\nDe waarde van dit geofilter moet voldoen aan het\n[Well-known text (WKT)](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry) formaat.\nAlleen Polygon en MultiPolygon objecten zijn hierbij toegestaan, bovendien worden inner rings niet ondersteund.\nDe coördinaten worden geïnterpreteerd volgens EPSG:28992.\n\nDit geofilter limiteert het gebied waarvoor gegevens in de download wordt opgenomen,\nmaar het filter is niet exact. Dat betekent dat de download een overshoot aan objecten\nbuiten de selectie kan bevatten.\n\n##### Featuretypes\nIn het request voor een Custom download moet (verplicht) opgegeven worden welke featuretypes\nin de download opgenomen moeten worden.\n\n## Delta\nDelta endpoints zijn ervoor om eenmalig je eigen administratie op te bouwen (initiële levering) en\ndeze periodiek bij te werken met de beschikbare wijzigingen.\n\nDelta downloads bevatten alleen informatie over de featuretypes *perceel* en *kadastralegrens*,\nin tegenstelling tot de Full Downloads bevatten ze geen informatie m.b.t.\nde featuretypes *pand* en *openbareruimtelabel*.\n\n### Werkwijze\n1. Een beginstand wordt gedownload met het Delta Custom of Delta Predefined endpoint,\ndoor deze aan te roepen zonder parameter delta-id.\nDe download bevat informatie over welke delta-id het betreft.\n2. Periodiek (bij voorkeur dagelijks) wordt het Delta endpoint aangeroepen om de delta-id's op te halen\nwelke sinds de bij stap 1 bepaalde delta-id zijn ontstaan.\n3. Voor elke delta-id die in stap 2 gevonden wordt, wordt het Delta Custom of Delta Predefined endpoint\naangeroepen met parameter delta-id.\nDe inhoud van deze downloads bevat alleen de mutaties die hebben plaatsgevonden in die betreffende delta.\n\n### Predefined\nDe opzet is hier gelijk aan de full predefined downloads. Echter\nkan aan het delta endpoint in het request optioneel de parameter delta-id worden opgegeven,\nzie stap 1 en 3 onder werkwijze.\n\n### Custom\nDe opzet is hier gelijk aan de full custom downloads. Echter\nkan aan het delta endpoint in het request optioneel de parameter delta-id worden opgegeven,\nzie stap 1 en 3 onder werkwijze.\n",
+        "title": "DKK Download API",
+        "version": "v1"
+    },
+    "openapi": "3.0.0",
+    "paths": {
+        "/dataset": {
+            "get": {
+                "operationId": "GetDataset",
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "datetimeTo": {
+                                            "description": "ISO8601 datetime, welke aangeeft tot wanneer de data is bijgewerkt",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "OK"
+                    },
+                    "500": {
+                        "description": "Interne server fout"
+                    }
+                },
+                "summary": "Dit endpoint voorziet in metadata over de DKK dataset downloads",
+                "tags": [
+                    "Dataset"
+                ]
+            }
+        },
+        "/delta": {
+            "get": {
+                "operationId": "GetDeltas",
+                "parameters": [
+                    {
+                        "description": "Als deze parameter wordt meegegeven, dan bevat het resultaat alleen delta's die later in de tijd zijn ontstaan dan de opgegeven delta-id. Als deze parameter niet wordt meegegeven, dan bevat het resultaat alle bekende delta-id's.\n",
+                        "in": "query",
+                        "name": "after-delta-id",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "description": "Paginanummer voor paginering. Default: 1\n",
+                        "in": "query",
+                        "name": "page",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "description": "Aantal resultaten per pagina. Default: 10\n",
+                        "in": "query",
+                        "name": "count",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "_links": [
+                                        {
+                                            "href": "delta?page=1\u0026count=3",
+                                            "rel": "prev",
+                                            "type": "application/json"
+                                        },
+                                        {
+                                            "href": "delta?page=3\u0026count=3",
+                                            "rel": "next",
+                                            "type": "application/json"
+                                        }
+                                    ],
+                                    "deltas": [
+                                        {
+                                            "id": "7df9d862-1e6c-4859-a561-62f9b96826ec",
+                                            "timeWindow": {
+                                                "from": "2019-01-01T00:00:00Z",
+                                                "to": "2019-01-02T00:00:00Z"
+                                            }
+                                        },
+                                        {
+                                            "id": "76d1597d-dd9b-4ec0-9dad-116795794c4f",
+                                            "timeWindow": {
+                                                "from": "2019-01-02T00:00:00Z",
+                                                "to": "2019-01-03T00:00:00Z"
+                                            }
+                                        },
+                                        {
+                                            "id": "e198078f-40ca-4943-9b0e-f66854164a94",
+                                            "timeWindow": {
+                                                "from": "2019-01-03T00:00:00Z",
+                                                "to": "2019-01-04T00:00:00Z"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "schema": {
+                                    "properties": {
+                                        "_links": {
+                                            "description": "Relatieve links naar volgende / vorige pagina's (indien van toepassing)",
+                                            "items": {
+                                                "$ref": "#/components/schemas/HalLink"
+                                            },
+                                            "type": "array"
+                                        },
+                                        "deltas": {
+                                            "description": "Lijst met delta's. De lijst is gesorteerd in oplopende volgorde (oudste eerst)",
+                                            "items": {
+                                                "$ref": "#/components/schemas/delta"
+                                            },
+                                            "type": "array"
+                                        }
+                                    },
+                                    "required": [
+                                        "deltas",
+                                        "_links"
+                                    ],
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "OK"
+                    },
+                    "500": {
+                        "description": "Interne server fout"
+                    }
+                },
+                "summary": "Met dit endpoint kan een gesorteerde lijst van delta-id's opgehaald worden.",
+                "tags": [
+                    "Delta"
+                ]
+            }
+        },
+        "/delta/custom": {
+            "post": {
+                "operationId": "DeltaCustomDownload",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "example": {
+                                "featuretypes": [
+                                    "perceel",
+                                    "kadastralegrens"
+                                ],
+                                "format": "gml",
+                                "geofilter": "POLYGON((211417.92 475752.4800000001,212390.64000000004 475896.12,212916.48000000004 475818.84,212879.52000000005 475360.2,212950.08000000002 475203.12,212839.2 475065.36,212819.04 474981.36,212819.04 474877.2,212772 474857.04,212792.16 474769.68,212832.48 474705.84,212889.6 474695.76,213010.56000000003 474685.68,213044.16 474611.76,213030.72 474450.48,212637.6 474423.6,212708.16 473956.56,211122.24000000002 473849.04,210453.6 473896.08,210315.84000000003 473970,211417.92 475752.4800000001))"
+                            },
+                            "schema": {
+                                "$ref": "#/components/schemas/DeltaCustomDownloadRequest"
+                            }
+                        }
+                    },
+                    "description": "JSON object waarin staat gespecificeerd welke informatie de download moet bevatten.\nAls het verzoek geen deltaId bevat, dan zal de download de meest recente initiële levering bevatten.\nAls het verzoek wel een deltaId bevat, dan zal de download alleen de wijzigingen bevatten uit de opgegeven delta.\n",
+                    "required": true
+                },
+                "responses": {
+                    "202": {
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "_links": {
+                                        "status": {
+                                            "href": "/kadaster/dkk/api/v1/full/delta/09bf3690-e0a1-43cc-7550-f689936d374d/status"
+                                        }
+                                    },
+                                    "downloadRequestId": "09bf3690-e0a1-43cc-7550-f689936d374d"
+                                },
+                                "schema": {
+                                    "properties": {
+                                        "_links": {
+                                            "properties": {
+                                                "status": {
+                                                    "allOf": [
+                                                        {
+                                                            "$ref": "#/components/schemas/HalLink"
+                                                        }
+                                                    ],
+                                                    "description": "Absolute path naar het endpoint waarop de status van de aanvraag opgehaald kan worden"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "downloadRequestId": {
+                                            "description": "ID van het gemaakte download request",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "downloadRequestId",
+                                        "_links"
+                                    ],
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Verzoek geaccepteerd\n"
+                    },
+                    "500": {
+                        "description": "Interne server fout"
+                    }
+                },
+                "summary": "Met dit endpoint kan een delta custom download aangevraagd worden",
+                "tags": [
+                    "Delta Custom"
+                ]
+            }
+        },
+        "/delta/custom/{downloadRequestId}/status": {
+            "get": {
+                "operationId": "DeltaCustomDownloadStatus",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "downloadRequestId",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "_links": {
+                                        "self": {
+                                            "href": "/kadaster/dkk/api/v1/full/delta/09bf3690-e0a1-43cc-7550-f689936d374d/status"
+                                        }
+                                    },
+                                    "progress": 23,
+                                    "status": "RUNNING"
+                                },
+                                "schema": {
+                                    "properties": {
+                                        "_links": {
+                                            "properties": {
+                                                "self": {
+                                                    "allOf": [
+                                                        {
+                                                            "$ref": "#/components/schemas/HalLink"
+                                                        }
+                                                    ],
+                                                    "description": "Absolute path naar het endpoint waarop de status van de aanvraag opgehaald kan worden"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "progress": {
+                                            "type": "integer"
+                                        },
+                                        "status": {
+                                            "enum": [
+                                                "PENDING",
+                                                "RUNNING"
+                                            ],
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "status",
+                                        "progress",
+                                        "_links"
+                                    ],
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Delta custom download nog niet gereed"
+                    },
+                    "201": {
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "_links": {
+                                        "download": {
+                                            "href": "/lv/bgt/api/v1/extract/72f0d5d6-d34c-439b-a115-b53811aa8a72/extract.zip"
+                                        }
+                                    },
+                                    "progress": 100,
+                                    "status": "COMPLETED"
+                                },
+                                "schema": {
+                                    "properties": {
+                                        "_links": {
+                                            "properties": {
+                                                "download": {
+                                                    "allOf": [
+                                                        {
+                                                            "$ref": "#/components/schemas/HalLink"
+                                                        }
+                                                    ],
+                                                    "description": "Absolute path waarop het bestand gedownload kan worden"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "progress": {
+                                            "type": "integer"
+                                        },
+                                        "status": {
+                                            "enum": [
+                                                "COMPLETED"
+                                            ],
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "status",
+                                        "progress",
+                                        "_links"
+                                    ],
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Het bestand is gereed om te downloaden"
+                    },
+                    "404": {
+                        "description": "Delta custom download request met het gegeven ID is niet bij ons bekend"
+                    },
+                    "500": {
+                        "description": "Interne server fout"
+                    }
+                },
+                "summary": "Dit endpoint geeft de status terug van een aangevraagde delta custom download",
+                "tags": [
+                    "Delta Custom"
+                ]
+            }
+        },
+        "/delta/predefined/dkk-gml-nl.zip": {
+            "get": {
+                "operationId": "GetDeltaPredefinedGmlNl",
+                "parameters": [
+                    {
+                        "description": "Als het verzoek geen deltaId bevat, dan zal de download de meeste recente initiële levering bevatten. Als het verzoek wel een deltaId bevat, dan zal de download alleen de wijzigingen bevatten uit de opgegeven delta.\n",
+                        "in": "query",
+                        "name": "delta-id",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "307": {
+                        "description": "Redirect",
+                        "headers": {
+                            "Location": {
+                                "description": "Absolute path waarop het bestand gedownload kan worden"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                },
+                "summary": "Met dit endpoint kan een delta download gestart worden waarbij geen filters zijn toegepast op type feature of gebied\n",
+                "tags": [
+                    "Delta Predefined"
+                ]
+            }
+        },
+        "/full/custom": {
+            "post": {
+                "operationId": "FullCustomDownload",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "example": {
+                                "featuretypes": [
+                                    "perceel",
+                                    "kadastralegrens",
+                                    "pand",
+                                    "openbareruimtelabel"
+                                ],
+                                "format": "gml",
+                                "geofilter": "POLYGON((211417.92 475752.4800000001,212390.64000000004 475896.12,212916.48000000004 475818.84,212879.52000000005 475360.2,212950.08000000002 475203.12,212839.2 475065.36,212819.04 474981.36,212819.04 474877.2,212772 474857.04,212792.16 474769.68,212832.48 474705.84,212889.6 474695.76,213010.56000000003 474685.68,213044.16 474611.76,213030.72 474450.48,212637.6 474423.6,212708.16 473956.56,211122.24000000002 473849.04,210453.6 473896.08,210315.84000000003 473970,211417.92 475752.4800000001))"
+                            },
+                            "schema": {
+                                "$ref": "#/components/schemas/FullCustomDownloadRequest"
+                            }
+                        }
+                    },
+                    "description": "JSON object waarin staat gespecificeerd welke informatie de download moet bevatten",
+                    "required": true
+                },
+                "responses": {
+                    "202": {
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "_links": {
+                                        "status": {
+                                            "href": "/kadaster/dkk/api/v1/full/custom/09bf3690-e0a1-43cc-7550-f689936d374d/status"
+                                        }
+                                    },
+                                    "downloadRequestId": "09bf3690-e0a1-43cc-7550-f689936d374d"
+                                },
+                                "schema": {
+                                    "properties": {
+                                        "_links": {
+                                            "properties": {
+                                                "status": {
+                                                    "allOf": [
+                                                        {
+                                                            "$ref": "#/components/schemas/HalLink"
+                                                        }
+                                                    ],
+                                                    "description": "Absolute path naar het endpoint waarop de status van de aanvraag opgehaald kan worden"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "downloadRequestId": {
+                                            "description": "ID van het gemaakte download request",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "downloadRequestId",
+                                        "_links"
+                                    ],
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Verzoek geaccepteerd\n"
+                    },
+                    "500": {
+                        "description": "Interne server fout"
+                    }
+                },
+                "summary": "Met dit endpoint kan een full custom download aangevraagd worden",
+                "tags": [
+                    "Full Custom"
+                ]
+            }
+        },
+        "/full/custom/{downloadRequestId}/status": {
+            "get": {
+                "operationId": "FullCustomDownloadStatus",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "downloadRequestId",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "_links": {
+                                        "self": {
+                                            "href": "/kadaster/dkk/api/v1/full/custom/09bf3690-e0a1-43cc-7550-f689936d374d/status"
+                                        }
+                                    },
+                                    "progress": 23,
+                                    "status": "RUNNING"
+                                },
+                                "schema": {
+                                    "properties": {
+                                        "_links": {
+                                            "properties": {
+                                                "self": {
+                                                    "allOf": [
+                                                        {
+                                                            "$ref": "#/components/schemas/HalLink"
+                                                        }
+                                                    ],
+                                                    "description": "Absolute path naar het endpoint waarop de status van de aanvraag opgehaald kan worden"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "progress": {
+                                            "type": "integer"
+                                        },
+                                        "status": {
+                                            "enum": [
+                                                "PENDING",
+                                                "RUNNING"
+                                            ],
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "status",
+                                        "progress",
+                                        "_links"
+                                    ],
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Full custom download nog niet gereed"
+                    },
+                    "201": {
+                        "content": {
+                            "application/json": {
+                                "example": {
+                                    "_links": {
+                                        "download": {
+                                            "href": "/lv/bgt/api/v1/extract/72f0d5d6-d34c-439b-a115-b53811aa8a72/extract.zip"
+                                        }
+                                    },
+                                    "progress": 100,
+                                    "status": "COMPLETED"
+                                },
+                                "schema": {
+                                    "properties": {
+                                        "_links": {
+                                            "properties": {
+                                                "download": {
+                                                    "allOf": [
+                                                        {
+                                                            "$ref": "#/components/schemas/HalLink"
+                                                        }
+                                                    ],
+                                                    "description": "Absolute path waarop het bestand gedownload kan worden"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "progress": {
+                                            "type": "integer"
+                                        },
+                                        "status": {
+                                            "enum": [
+                                                "COMPLETED"
+                                            ],
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "status",
+                                        "progress",
+                                        "_links"
+                                    ],
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "description": "Het bestand is gereed om te downloaden"
+                    },
+                    "404": {
+                        "description": "Full custom download request met het gegeven ID is niet bij ons bekend"
+                    },
+                    "500": {
+                        "description": "Interne server fout"
+                    }
+                },
+                "summary": "Dit endpoint geeft de status terug van een aangevraagde full custom download",
+                "tags": [
+                    "Full Custom"
+                ]
+            }
+        },
+        "/full/predefined/dkk-gml-nl-nohist.zip": {
+            "get": {
+                "operationId": "GetFullPredefinedGmlNl",
+                "responses": {
+                    "307": {
+                        "description": "Redirect",
+                        "headers": {
+                            "Location": {
+                                "description": "Absolute path waarop het bestand gedownload kan worden"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                },
+                "summary": "Met dit endpoint kan een full download gestart worden waarbij geen filters zijn toegepast op type feature of gebied\n",
+                "tags": [
+                    "Full Predefined"
+                ]
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "https://downloads.pdok.nl/kadaster/dkk/api/v1"
+        }
+    ]
+}
