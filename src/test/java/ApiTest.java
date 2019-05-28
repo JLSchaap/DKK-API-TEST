@@ -12,7 +12,7 @@ import cucumber.api.CucumberOptions;
 public class ApiTest {
 } */
 
-@CucumberOptions(tags = {"~@TEMPLATE","@PDOKNL"})
+@CucumberOptions(tags = {"~@TEMPLATE","@PDOKIO"})
 public class ApiTest {
 
     @Test
