@@ -1,13 +1,13 @@
 @TEMPLATE
 Feature: using __arg
-  Dit feature test zowel de  download voor een specifiek interessegebied
+  Dit feature test de download voor een specifiek interessegebied voor een specifieke delta
 
   Background:
-  * url 'https://download.pdok.io/kadaster/dkk/api/v1/delta/custom'
+  * url apiBaseUrl +'kadaster/dkk/api/v1/delta/custom'
 
   Scenario: downoad delta initial locatie buitenhof
 
-    Given request {deltaId:__arg.id, format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }
+    Given request {deltaId:__arg.id, format: "gml",featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }
     When method post
 
     Then status 202
@@ -15,7 +15,7 @@ Feature: using __arg
     And def downloadRequestId = response.downloadRequestId
     And def links = response._links
     * print "initial delta status links:" links
-    And def statusurl = 'https://download.pdok.io/' + links.status.href
+    And def statusurl = apiBaseUrl + links.status.href
 
     * print 'statusurl', statusurl
     * configure retry = { count: 20, interval: 5000 }
