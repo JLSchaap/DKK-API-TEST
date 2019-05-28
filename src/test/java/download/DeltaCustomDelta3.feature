@@ -1,15 +1,15 @@
-
+@xPDOKNL
 Feature: DKK Api geeft Custom delta mutatierequest
   Dit feature test zowel de mutatie download voor een specifiek intressegebied
 
   Background:
-    * url 'https://download.pdok.io/kadaster/dkk/api/v1/delta/custom'
+    * url apiBaseUrl +'kadaster/dkk/api/v1/delta/custom'
 
 
   Scenario: download delta mutatie delta locatie buitenhof
 
     * print "bepaal een delta id "
-    Given url 'https://download.pdok.io/kadaster/dkk/api/v1/delta'
+    Given url apiBaseUrl +'kadaster/dkk/api/v1/delta'
     When method GET
     Then status 200
     And match response.deltas[3]id == "#uuid"
@@ -24,7 +24,7 @@ Feature: DKK Api geeft Custom delta mutatierequest
 
 
     * print "haal data op voor delta:" , deltauuid
-    * url 'https://download.pdok.io/kadaster/dkk/api/v1/delta/custom'
+    * url apiBaseUrl +'kadaster/dkk/api/v1/delta/custom'
     Given request {deltaId: '#(deltauuid)' , format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }
     When method post
 
@@ -33,7 +33,7 @@ Feature: DKK Api geeft Custom delta mutatierequest
     And def downloadRequestId = response.downloadRequestId
     And def links = response._links
     * print "update delta status links:" links
-    And def statusurl = 'https://download.pdok.io' + links.status.href
+    And def statusurl = apiBaseUrl  + links.status.href
 
     * print 'statusurl', statusurl
     * configure retry = { count: 20, interval: 5000 }
