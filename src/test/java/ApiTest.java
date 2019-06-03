@@ -12,12 +12,14 @@ import cucumber.api.CucumberOptions;
 public class ApiTest {
 } */
 
-@CucumberOptions(tags = {"~@TEMPLATE","@PDOKNL"})
+//@CucumberOptions(tags = {"~@TEMPLATE","~WIP", "~BUG"})
+@CucumberOptions(tags = {"@SMOKE"})
 public class ApiTest {
 
     @Test
     public void testParallel() {
         Results results = Runner.parallel(getClass(), 20, "target/surefire-reports");
+  
         assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }
 

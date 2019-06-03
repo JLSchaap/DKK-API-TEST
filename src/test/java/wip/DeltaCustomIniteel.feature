@@ -1,3 +1,4 @@
+@BUG
 Feature: DKK Api geeft Custom delta initial request
   Dit feature test zowel de intiele download voor een specifiek interessegebied
 

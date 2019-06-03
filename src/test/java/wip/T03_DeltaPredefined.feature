@@ -1,3 +1,4 @@
+@xxSMOKE
 Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
 
   Background:
@@ -26,7 +27,7 @@ Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
       | Heel Nederland initiele delta | 'kadaster/dkk/api/v1/delta/predefined/dkk-gml-nl.zip'        |
 
 
-  #blop i.p.v. redirect. PDOK-9006
+  
 
   Scenario: DKK Api geeft 1 delta full
 

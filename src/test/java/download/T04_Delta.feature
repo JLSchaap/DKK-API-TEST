@@ -1,4 +1,4 @@
-@PDOKNL
+@SMOKE
 Feature: DKK API geeft info over beschikbare delta dataset leveringen
   Door middel van "since" kun je opvragen of er nog nieuwe delta's zijn. Zet hiervoor het deltaID in link van de delta. Dit geeft uiteindelijk een lijst met nog te downloaden delta's. Deltaleveringen worden tot en met 31 dagen terug bewaard.
 

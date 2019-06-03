@@ -4,7 +4,7 @@ function() {
   karate.configure('ssl', true);
   baseurl = java.lang.System.getenv('apiBaseUrl');
   if (!baseurl) {
-    //   baseurl = 'https://download.pdok.io/kadaster/dkk/api/v1' ; 
+    //   old baseurl = 'https://download.pdok.io/kadaster/dkk/api/v1' ; 
     baseurl = 'https://downloads.pdok.nl/';
   }
   var config = { apiBaseUrl: baseurl };
