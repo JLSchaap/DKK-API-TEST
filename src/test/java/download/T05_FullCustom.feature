@@ -1,4 +1,4 @@
-@BUG
+@SMOKE
 Feature: DKK Api geeft Custom full
 
   Background:
