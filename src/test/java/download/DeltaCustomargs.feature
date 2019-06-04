@@ -40,4 +40,4 @@ Feature: using __arg
     * print "###"
     * print "location", apiBaseUrl + downloadlink.download.href
     * print "size", zipsize
-    * assert zipsize > 2000000
+    * assert zipsize > 600
