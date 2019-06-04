@@ -21,6 +21,7 @@ Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
     And def zipsize =  responseHeaders['Content-Length'][0]
     * print "location", location
     * print "size", zipsize
+    * assert zipsize > 3000000000
     Examples:
       | omschrijving                  | urlpath                                                      |
       | Heel Nederland gml            | 'kadaster/dkk/api/v1//full/predefined/dkk-gml-nl-nohist.zip' |
