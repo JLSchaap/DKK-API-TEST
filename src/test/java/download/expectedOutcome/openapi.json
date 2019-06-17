@@ -110,6 +110,25 @@
                     }
                 },
                 "type": "object"
+            },
+            "timeliness": {
+                "properties": {
+                    "datetimeTo": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "featuretype": {
+                        "enum": [
+                            "perceel",
+                            "kadastralegrens",
+                            "pand",
+                            "openbareruimtelabel"
+                        ],
+                        "readOnly": true,
+                        "type": "string"
+                    }
+                },
+                "type": "object"
             }
         }
     },
@@ -127,13 +146,39 @@
                     "200": {
                         "content": {
                             "application/json": {
+                                "example": {
+                                    "timeliness": [
+                                        {
+                                            "datetimeTo": "2019-01-26T00:00:00Z",
+                                            "featuretype": "perceel"
+                                        },
+                                        {
+                                            "datetimeTo": "2019-01-26T00:00:00Z",
+                                            "featuretype": "kadastralegrens"
+                                        },
+                                        {
+                                            "datetimeTo": "2019-01-01T00:00:00Z",
+                                            "featuretype": "pand"
+                                        },
+                                        {
+                                            "datetimeTo": "2019-01-01T00:00:00Z",
+                                            "featuretype": "openbareruimtelabel"
+                                        }
+                                    ]
+                                },
                                 "schema": {
                                     "properties": {
-                                        "datetimeTo": {
-                                            "description": "ISO8601 datetime, welke aangeeft tot wanneer de data is bijgewerkt",
-                                            "type": "string"
+                                        "timeliness": {
+                                            "description": "Lijst met actualiteit per featuretype. Het datum tijd formaat is ISO 8601 en altijd in UTC.\n",
+                                            "items": {
+                                                "$ref": "#/components/schemas/timeliness"
+                                            },
+                                            "type": "array"
                                         }
                                     },
+                                    "required": [
+                                        "timeliness"
+                                    ],
                                     "type": "object"
                                 }
                             }
@@ -634,7 +679,7 @@
                                 "example": {
                                     "_links": {
                                         "download": {
-                                            "href": "/lv/bgt/api/v1/extract/72f0d5d6-d34c-439b-a115-b53811aa8a72/extract.zip"
+                                            "href": "/kadaster/dkk/api/v1/extract/72f0d5d6-d34c-439b-a115-b53811aa8a72/extract.zip"
                                         }
                                     },
                                     "progress": 100,

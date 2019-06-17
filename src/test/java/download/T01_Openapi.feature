@@ -1,4 +1,4 @@
-@WIP
+@SMOKE
 Feature: DKK API heeft open api configuratie
   de API wordt beschikbaargesteld d.m.v. een openapi spec
   Background:
