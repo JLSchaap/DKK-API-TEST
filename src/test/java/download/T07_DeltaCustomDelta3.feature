@@ -1,12 +1,12 @@
-@BUG
-Feature: DKK Api geeft Custom delta mutatierequest
-  Dit feature test zowel de mutatie download voor een specifiek intressegebied
+@SMOKE
+Feature: DKK Api geeft Custom delta mutatierequest voor 3e delta
+  Dit feature test de mutatie download voor een specifiek intressegebied voor de 3e delta. 
 
   Background:
     * url apiBaseUrl +'kadaster/dkk/api/v1/delta/custom'
 
 
-  Scenario: download delta mutatie delta locatie buitenhof
+  Scenario: download delta mutatie delta locatie buitenhof voor 3e hardcoded delta
 
     * print "bepaal een delta id "
     Given url apiBaseUrl +'kadaster/dkk/api/v1/delta'
