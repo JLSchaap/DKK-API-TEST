@@ -1,19 +1,21 @@
 import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
+import com.intuit.karate.junit4.Karate;
+
 import static org.junit.Assert.*;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 
-/* 
-@RunWith(Karate.class)
-//@CucumberOptions(tags = "~@bug")
-public class ApiTest {
-} */
 
-//@CucumberOptions(tags = {"~@TEMPLATE","~WIP", "~BUG"})
-@CucumberOptions(tags = {"@SMOKE"})
+@RunWith(Karate.class)
+@CucumberOptions(tags = {"~@TEMPLATE","~SMOKE","~BUG","@WIPTEST"})
+public class ApiTest {
+} 
+/*
+
 public class ApiTest {
 
     @Test
@@ -24,3 +26,4 @@ public class ApiTest {
     }
 
 }
+*/ 
