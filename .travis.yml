@@ -1,1 +1,12 @@
 language: java
+# Blocklist
+branches:
+    except:
+      - gh-pages 
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN 
+    on:
+      branch: master 
+    local_dir: target/surefire-reports 
