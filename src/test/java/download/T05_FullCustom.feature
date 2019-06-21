@@ -50,7 +50,7 @@ Feature: DKK Api geeft Custom full
     * def mydownloads = Java.type('download.DataStorage')
     * def LocalDateTime = Java.type('java.time.LocalDateTime')
     * def db = new mydownloads
-    * eval db.mywriteln('- Test: T05_<testname>\n'+'    Url:'+downloadlink+'\n    Size:'+zipsize+'\n    Time:'+ LocalDateTime.now() +'\n' , 'target/surefire-reports/outputurl.yaml')
+    * eval db.mywriteln('- Test: T05_<testname>\n'+'    Url:'+downloadlink+'\n    Size:'+zipsize+'\n    Time:'+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml')
 
 
     Examples:
