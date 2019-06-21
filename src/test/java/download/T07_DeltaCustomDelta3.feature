@@ -1,4 +1,4 @@
-@SMOKE
+@ExtraSmoke
 Feature: DKK Api geeft Custom delta mutatierequest voor 3e delta
   Dit feature test de mutatie download voor een specifiek intressegebied voor de 3e delta. 
 
