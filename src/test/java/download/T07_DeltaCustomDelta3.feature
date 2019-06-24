@@ -36,7 +36,7 @@ Feature: DKK Api geeft Custom delta mutatierequest voor 3e delta
     And def statusurl = apiBaseUrl  + links.status.href
 
     * print 'statusurl', statusurl
-    * configure retry = { count: 20, interval: 5000 }
+ 
 
 
     Given url statusurl

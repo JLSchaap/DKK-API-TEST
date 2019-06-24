@@ -22,10 +22,7 @@ Feature: DKK Api geeft Custom full
     * print  'statusurl', statusurl
 
     * print 'extracId:', downloadRequestId
-
-    * configure retry = { count: 20, interval: 5000 }
-
-
+  
     Given url statusurl
     When method GET
     * print "waiting update delta link"
