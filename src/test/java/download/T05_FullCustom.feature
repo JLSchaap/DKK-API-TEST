@@ -5,9 +5,9 @@ Feature: DKK Api geeft Custom full
     * url apiBaseUrl +'kadaster/dkk/api/v1/full/custom'
 
 
-  Scenario Outline: download full custom op locatie buitenhof voor feature(s): <dkkfeaturetype>
+  Scenario Outline: download full custom op locatie <locatie> voor feature(s): <dkkfeaturetype>
 
-    Given request {format: 'gml',featuretypes: ["<dkkfeaturetype>"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }
+    Given request {format: 'gml',featuretypes: ["<dkkfeaturetype>"],  geofilter: '<poly>' }
     When method post
 
     Then status 202
@@ -22,7 +22,7 @@ Feature: DKK Api geeft Custom full
     * print  'statusurl', statusurl
 
     * print 'extracId:', downloadRequestId
-  
+
     Given url statusurl
     When method GET
     * print "waiting update delta link"
@@ -40,7 +40,7 @@ Feature: DKK Api geeft Custom full
     And match responseHeaders['Content-Length'][0] == '#notnull'
     And match responseHeaders['Content-Type'][0] == 'application/zip'
     And def zipsize =  responseHeaders['Content-Length'][0]
-   
+
     * print "size", zipsize
     * assert zipsize > 300
 
@@ -51,10 +51,10 @@ Feature: DKK Api geeft Custom full
 
 
     Examples:
-      | testname                       | dkkfeaturetype                                         |
-      | 1_perceel                      | perceel                                                |
-      | 2_kadastralegrens              | kadastralegrens                                        |
-      | 3_pand                         | pand                                                   |
-      | 4_openbareruimtelabel          | openbareruimtelabel                                    |
-      | 5_perceelenOpenbareruimtelabel | perceel","openbareruimtelabel                          |
-      | 6_AlleDkkFeatures              | perceel","kadastralegrens","openbareruimtelabel","pand |
+      | testname                       | dkkfeaturetype                | locatie         | poly                                                                                                                                                                                               |
+      | 1_perceel                      | perceel                       | hofvijver       | POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))                                   |
+      | 2_kadastralegrens              | kadastralegrens               | hofvijver       | POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))                                   |
+      | 3_pand                         | pand                          | hofvijver       | POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))                                   |
+      | 4_openbareruimtelabel          | openbareruimtelabel           | hofvijver       | POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))                                   |
+      | 5_perceelenOpenbareruimtelabel | perceel","openbareruimtelabel | swifterband     | POLYGON((171808.896 509246.97597949224,172768.51212304688 509276.54393847665,172760.44804101562 508392.1920000001,171773.95212304688 508381.43995898444,171808.896 509246.97597949224))            |
+      | 6_dkkbgt_brug                  | pand","openbareruimtelabel    | Apeldoorndebrug | POLYGON((194115.26404101565 465939.2639692384,194369.2799794922 465943.296010254,194351.80802050783 465775.29595898447,194093.76006152347 465724.2240205079,194115.26404101565 465939.2639692384)) |
