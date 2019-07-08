@@ -5,7 +5,7 @@ Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
     * url apiBaseUrl
     * configure followRedirects = false
 
-  Scenario Outline: DKK Api geeft <omschrijving> (url: <urlpath>)
+  Scenario Outline: DKK Api geeft <testnaam> (url: <urlpath>)
 
     Given path <urlpath>
     When method GET
@@ -22,10 +22,18 @@ Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
     * print "location", location
     * print "size", zipsize
     * assert zipsize > 3000000000
+
+    * def mydownloads = Java.type('download.DataStorage')
+    * def LocalDateTime = Java.type('java.time.LocalDateTime')
+    * def db = new mydownloads
+    * def downloadlink = apiBaseUrl + location
+    * eval db.mywriteln('- Test: T03_<testnaam>\n'+'  Url: '+ downloadlink +'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/<testnaam>.yaml')
+
+
+
     Examples:
-      | omschrijving                  | urlpath                                                      |
-      | Heel Nederland gml            | 'kadaster/dkk/api/v1//full/predefined/dkk-gml-nl-nohist.zip' |
-      | Heel Nederland initiele delta | 'kadaster/dkk/api/v1/delta/predefined/dkk-gml-nl.zip'        |
+      | testnaam                         | urlpath                                                      |
+      | T03HeelNederlandDkk              | 'kadaster/dkk/api/v1//full/predefined/dkk-gml-nl-nohist.zip' |
+      | T03HeelNederlandInitieleDeltaDkk | 'kadaster/dkk/api/v1/delta/predefined/dkk-gml-nl.zip'        |
 
 
-  

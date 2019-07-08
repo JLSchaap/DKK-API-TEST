@@ -1,7 +1,6 @@
-import com.intuit.karate.KarateOptions;
+
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
-import com.intuit.karate.junit4.Karate;
 
 import static org.junit.Assert.*;
 
@@ -11,12 +10,11 @@ import java.util.Collection;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.core.appender.rolling.FileSize;
+
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import net.masterthought.cucumber.Configuration;
-import ch.qos.logback.classic.gaffer.ConfigurationContributor;
+
 import cucumber.api.CucumberOptions;
 /*
 @RunWith(Karate.class)
@@ -39,7 +37,7 @@ public class ApiTest {
 
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] { "json" }, true);
-        List<String> jsonPaths = new ArrayList(jsonFiles.size());
+        List<String> jsonPaths = new ArrayList<String>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
         Configuration config = new Configuration(new File(karateOutputPath), "DKK API TEST");
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
