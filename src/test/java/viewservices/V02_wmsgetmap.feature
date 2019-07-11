@@ -9,7 +9,7 @@ Feature: DKK WMS geeft map V3
     And param request = 'GetMap'
     And param bbox = '81209.29166651209,455070.83633325604,81550.075000193,455210.9596667323'
     And param layers = 'perceel'
-    And param WIDTH = 600
+    And param WIDTH = 400
     And param HEIGHT = 400
     And param CRS = 'EPSG:28992'
     And param format = 'image/png'
