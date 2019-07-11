@@ -22,4 +22,4 @@ Feature: DKK WMS geeft getfeature info
     When method GET
     Then status 200
     And match response == read('./expectedOutcome/perceelbinnenhof.json')
-    * eval karate.embed(responseBytes,'image/png')
+ 
