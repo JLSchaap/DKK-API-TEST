@@ -1,7 +1,7 @@
 @SMOKE
 Feature: DKK WMS geeft map V3 en V4
 
-  Scenario Outline: WMS geef voor <toepassing> laag met <legenda tekst> <type> <bbox> <width> <height>
+  Scenario Outline: WMS geef voor <toepassing> laag met legenda <legenda tekst> <type> <bbox> <width> <height>
 
     * configure readTimeout = 40000
 
@@ -26,6 +26,24 @@ Feature: DKK WMS geeft map V3 en V4
     And match header Content-Type == 'image/png'
     * print "v3 image"
     * eval karate.embed(responseBytes,'image/png')
+
+  Given url 'https://geodata.nationaalgeoregister.nl/kadastralekaartv3/wms?'
+    And param VERSION = '1.3.0'
+    And param service = 'WMS'
+    And param request = 'GetLegendGraphic'
+    And param layer = '<v3layer>'
+    And param WIDTH = 40
+    And param HEIGHT = 40
+    And param CRS = 'EPSG:28992'
+    And param format = 'image/png'
+
+    When method GET
+    Then status 200
+    And match header Content-Disposition contains ' filename=geoserver-GetLegendGraphic.image'
+    And match header Content-Type == 'image/png'
+    * print "v3 legenda image"
+    * eval karate.embed(responseBytes,'image/png')
+
 
     Given url 'https://geodata.nationaalgeoregister.nl/kadastralekaartv3/wms?'
     And param VERSION = '1.3.0'
