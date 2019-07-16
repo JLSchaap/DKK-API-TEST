@@ -1,5 +1,4 @@
 @SMOKE
-
 Feature: DKK WFS
 
     Scenario: DKK WFSgeeft features voor binnenhof
@@ -17,3 +16,28 @@ Feature: DKK WFS
 
         And match response == expectedOutcome
         * eval karate.embed(responseBytes,'application/json')
+
+    Scenario Outline: Scenario Outline name: DKK WFSgeeft features hits voor alle layers
+        * def cap = read('./expectedOutcome/wfscapabilities.xml')
+        * def layer = karate.xmlPath(cap,'/WFS_Capabilities/FeatureTypeList/FeatureType[<no>]/Name')
+
+        Given url 'https://geodata.nationaalgeoregister.nl/kadastralekaartv3/wfs?service=WFS&'
+        And param SERVICE = 'WFS'
+        And param REQUEST = 'GetFeature'
+        And param VERSION = '2.0.0'
+        And param TYPENAMES = layer
+        And param RESULTTYPE = 'hits'
+
+        When method GET
+        Then status 200
+
+
+        * def featcount = karate.xmlPath(response, '/FeatureCollection/@numberMatched')
+        * print layer, ' count ', featcount
+        Examples:
+            | no |
+            | 1  |
+            | 2  |
+            | 3  |
+            | 4  |
+
