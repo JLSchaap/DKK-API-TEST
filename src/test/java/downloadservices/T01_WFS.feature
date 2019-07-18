@@ -2,6 +2,8 @@
 Feature: DKK WFS
 
     Scenario: DKK WFSgeeft features voor binnenhof
+
+        * configure readTimeout = 40000
         * def expectedOutcome = read('./expectedOutcome/hofvijverWGS84.json')
         Given url 'https://geodata.nationaalgeoregister.nl/kadastralekaartv3/wfs?service=WFS&'
 
@@ -17,7 +19,7 @@ Feature: DKK WFS
         And match response == expectedOutcome
         * eval karate.embed(responseBytes,'application/json')
 
-    Scenario Outline: Scenario Outline name: DKK WFSgeeft features hits voor alle layers
+    Scenario Outline: Scenario Outline name: DKK WFSgeeft features hits voor layer <no>
         * def cap = read('./expectedOutcome/wfscapabilities.xml')
         * def layer = karate.xmlPath(cap,'/WFS_Capabilities/FeatureTypeList/FeatureType[<no>]/Name')
 
