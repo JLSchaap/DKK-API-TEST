@@ -1,4 +1,4 @@
-@SMOKE
+@WIP
 Feature: DKK WFS
 
     Scenario: DKK WFSgeeft features voor binnenhof
