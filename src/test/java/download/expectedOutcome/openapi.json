@@ -333,7 +333,7 @@
                                 "example": {
                                     "_links": {
                                         "status": {
-                                            "href": "/kadaster/dkk/api/v1/full/delta/09bf3690-e0a1-43cc-7550-f689936d374d/status"
+                                            "href": "/kadastralekaart/api/v4_0/full/delta/09bf3690-e0a1-43cc-7550-f689936d374d/status"
                                         }
                                     },
                                     "downloadRequestId": "09bf3690-e0a1-43cc-7550-f689936d374d"
@@ -398,7 +398,7 @@
                                 "example": {
                                     "_links": {
                                         "self": {
-                                            "href": "/kadaster/dkk/api/v1/full/delta/09bf3690-e0a1-43cc-7550-f689936d374d/status"
+                                            "href": "/kadastralekaart/api/v4_0/full/delta/09bf3690-e0a1-43cc-7550-f689936d374d/status"
                                         }
                                     },
                                     "progress": 23,
@@ -565,7 +565,7 @@
                                 "example": {
                                     "_links": {
                                         "status": {
-                                            "href": "/kadaster/dkk/api/v1/full/custom/09bf3690-e0a1-43cc-7550-f689936d374d/status"
+                                            "href": "/kadastralekaart/api/v4_0/full/custom/09bf3690-e0a1-43cc-7550-f689936d374d/status"
                                         }
                                     },
                                     "downloadRequestId": "09bf3690-e0a1-43cc-7550-f689936d374d"
@@ -630,7 +630,7 @@
                                 "example": {
                                     "_links": {
                                         "self": {
-                                            "href": "/kadaster/dkk/api/v1/full/custom/09bf3690-e0a1-43cc-7550-f689936d374d/status"
+                                            "href": "/kadastralekaart/api/v4_0/full/custom/09bf3690-e0a1-43cc-7550-f689936d374d/status"
                                         }
                                     },
                                     "progress": 23,
@@ -679,7 +679,7 @@
                                 "example": {
                                     "_links": {
                                         "download": {
-                                            "href": "/kadaster/dkk/api/v1/extract/72f0d5d6-d34c-439b-a115-b53811aa8a72/extract.zip"
+                                            "href": "/kadastralekaart/api/v4_0/extract/72f0d5d6-d34c-439b-a115-b53811aa8a72/extract.zip"
                                         }
                                     },
                                     "progress": 100,

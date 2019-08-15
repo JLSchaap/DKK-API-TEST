@@ -2,7 +2,7 @@
 Feature: DKK Api geeft Custom full
 
   Background:
-    * url apiBaseUrl +'kadaster/dkk/api/v1/full/custom'
+    * url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom'
 
 
   Scenario Outline: download full custom op locatie <locatie> voor feature(s): <dkkfeaturetype>

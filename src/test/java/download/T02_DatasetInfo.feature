@@ -2,7 +2,7 @@
 Feature: Dataset info
 
   Background:
-    * url apiBaseUrl + 'kadaster/dkk/api/v1/'
+    * url apiBaseUrl + 'kadastralekaart/api/v4_0/'
     * def datasetstruct =
     """
     {

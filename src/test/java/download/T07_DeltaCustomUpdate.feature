@@ -5,7 +5,7 @@ Feature: DKK Api geeft Custom delta request voor alle leveringen
     Scenario Outline: downoad deltas op locatie buitenhof <dkkfeaturetype>
 
         * print "bepaal een delta ids "
-        Given url apiBaseUrl + 'kadaster/dkk/api/v1/delta'
+        Given url apiBaseUrl + 'kadastralekaart/api/v4_0/delta'
         When method GET
         Then status 200
         And def alldelta = response.deltas

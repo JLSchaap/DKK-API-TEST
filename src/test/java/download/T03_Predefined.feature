@@ -33,7 +33,7 @@ Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
 
     Examples:
       | testnaam                         | urlpath                                                      |
-      | T03HeelNederlandDkk              | 'kadaster/dkk/api/v1//full/predefined/dkk-gml-nl-nohist.zip' |
-      | T03HeelNederlandInitieleDeltaDkk | 'kadaster/dkk/api/v1/delta/predefined/dkk-gml-nl.zip'        |
+      | T03HeelNederlandDkk              | 'kadastralekaart/api/v4_0//full/predefined/dkk-gml-nl-nohist.zip' |
+      | T03HeelNederlandInitieleDeltaDkk | 'kadastralekaart/api/v4_0/delta/predefined/dkk-gml-nl.zip'        |
 
 

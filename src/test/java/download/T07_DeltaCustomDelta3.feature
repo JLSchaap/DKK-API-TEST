@@ -3,13 +3,13 @@ Feature: DKK Api geeft Custom delta mutatierequest voor 3e delta
   Dit feature test de mutatie download voor een specifiek intressegebied voor de 3e delta. 
 
   Background:
-    * url apiBaseUrl +'kadaster/dkk/api/v1/delta/custom'
+    * url apiBaseUrl +'kadastralekaart/api/v4_0/delta/custom'
 
 
   Scenario: download delta mutatie delta locatie buitenhof voor 3e hardcoded delta
 
     * print "bepaal een delta id "
-    Given url apiBaseUrl +'kadaster/dkk/api/v1/delta'
+    Given url apiBaseUrl +'kadastralekaart/api/v4_0/delta'
     When method GET
     Then status 200
     And match response.deltas[3]id == "#uuid"
@@ -24,7 +24,7 @@ Feature: DKK Api geeft Custom delta mutatierequest voor 3e delta
 
 
     * print "haal data op voor delta:" , deltauuid
-    * url apiBaseUrl +'kadaster/dkk/api/v1/delta/custom'
+    * url apiBaseUrl +'kadastralekaart/api/v4_0/delta/custom'
     Given request {deltaId: '#(deltauuid)' , format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }
     When method post
 
