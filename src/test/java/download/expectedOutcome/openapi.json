@@ -759,7 +759,7 @@
     },
     "servers": [
         {
-            "url": "https://downloads.pdok.nl/kadaster/dkk/api/v1"
+            "url": "https://downloads.pdok.nl/kadastralekaart/api/v4_0"
         }
     ]
 }

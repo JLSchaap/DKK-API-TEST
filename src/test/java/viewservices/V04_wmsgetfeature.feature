@@ -1,5 +1,5 @@
 
-@SMOKE
+@WIP
 
 Feature: DKK WMS geeft getfeature info
 
