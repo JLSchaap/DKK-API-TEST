@@ -27,7 +27,7 @@ Feature: DKK WMS geeft map  V4
     # And match header Content-Disposition contains 'inline'
     # And match header Content-Disposition contains ' filename=kadastralekaartv4-<v4layer>.png'
     And match header Content-Type == 'image/png'
-    * print "v4 image"
+    * print "v4 image type: <type>"
     * eval karate.embed(responseBytes,'image/png')
 
     Given path ""
@@ -39,12 +39,13 @@ Feature: DKK WMS geeft map  V4
     And param HEIGHT = 40
     And param CRS = 'EPSG:28992'
     And param format = 'image/png'
+    And param SLD_VERSION = '1.1.0'
 
     When method GET
     Then status 200
     #And match header Content-Disposition contains ' filename=geoserver-GetLegendGraphic.image'
     #And match header Content-Type == 'image/png'
-    * print "v3 legenda image"
+    * print "v4 legenda image type: <type>"
     * eval karate.embed(responseBytes,'image/png')
 
 
