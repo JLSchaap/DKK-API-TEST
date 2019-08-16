@@ -11,8 +11,8 @@ git clone https://github.com/JLSchaap/DKK-API-TEST
 mvn test
 ```
 
-[a cucumber test report](https://jlschaap.github.io/DKK-API-TEST/cucumber-html-reports/overview-features.html) shows the status of the last succesfull [Travis test](https://travis-ci.org/JLSchaap/DKK-API-TEST) run on the API. 
-Download urls created by this testrun can be found in the files generated during the tests:  
+[A cucumber test report](https://jlschaap.github.io/DKK-API-TEST/cucumber-html-reports/overview-features.html) shows the status of the last succesfull [Travis test](https://travis-ci.org/JLSchaap/DKK-API-TEST) run on the API. 
+Download urls (zips) created by the API during this testrun can be found in the log files generated during the tests:  
 
 * [Fullcustomtest](https://jlschaap.github.io/DKK-API-TEST/fullcustomurl.yaml)
 * [HeelNederlandDkk](https://jlschaap.github.io/DKK-API-TEST/T03HeelNederlandDkk.yaml)
