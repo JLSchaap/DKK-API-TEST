@@ -6,8 +6,6 @@ Feature: DKK WMS geeft map  V4
 
   Scenario Outline: WMS geef voor <toepassing> laag met legenda <legenda tekst> <type> <bbox> <width> <height>
 
-
-
     * def box1_NL = "-25000,250000,280000,860000"
     * def box2_BH = "81000,455900,81600,456500"
 
@@ -27,8 +25,17 @@ Feature: DKK WMS geeft map  V4
     # And match header Content-Disposition contains 'inline'
     # And match header Content-Disposition contains ' filename=kadastralekaartv4-<v4layer>.png'
     And match header Content-Type == 'image/png'
+    And def filesize =  responseHeaders['Content-Length'][0]
+    # And def pars = params
+
     * print "v4 image type: <type>"
     * eval karate.embed(responseBytes,'image/png')
+
+    * def mydownloads = Java.type('download.DataStorage')
+    * def LocalDateTime = Java.type('java.time.LocalDateTime')
+    * def db = new mydownloads
+    * eval db.mywriteln('- Test: V02_WMS test: <test> <width> <height> type <type> ' + '\n'+'  responseTime: ' + responseTime + '\n  Size: ' + filesize + '\n  Time: '+ LocalDateTime.now() + '\n' , 'target/surefire-reports/wmsv40.yaml')
+
 
     Given path ""
     And param VERSION = '1.3.0'
@@ -45,29 +52,13 @@ Feature: DKK WMS geeft map  V4
     Then status 200
     #And match header Content-Disposition contains ' filename=geoserver-GetLegendGraphic.image'
     #And match header Content-Type == 'image/png'
-    * print "v4 legenda image type: <type>"
+    * print "v4 legenda image type <type>"
     * eval karate.embed(responseBytes,'image/png')
 
-
-    Given path ""
-    And param VERSION = '1.3.0'
-    And param service = 'WMS'
-    And param request = 'GetMap'
-    And param bbox = <bbox>
-    And param layers = '<v4layer>'
-    And param WIDTH = <width>
-    And param HEIGHT = <height>
-    And param CRS = 'EPSG:28992'
-    And param format = 'image/png'
-
-    When method GET
-    Then status 200
-    #And match header Content-Disposition contains 'inline'
-    #And match header Content-Disposition contains ' filename=kadastralekaartv4-<v4layer>.png'
-    And match header Content-Type == 'image/png'
-
-    * eval karate.embed(responseBytes,'image/png')
-
+  * def mydownloads = Java.type('download.DataStorage')
+    * def LocalDateTime = Java.type('java.time.LocalDateTime')
+    * def db = new mydownloads
+    * eval db.mywriteln('- Test: V02_WMS legenda test <test> type <type> ' + '\n'+'  responseTime: ' + responseTime + '\n  Size: ' + filesize + '\n  Time: '+ LocalDateTime.now() + '\n' , 'target/surefire-reports/wmsv40.yaml')
 
 
 
