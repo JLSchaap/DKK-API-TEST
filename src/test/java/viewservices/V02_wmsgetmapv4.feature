@@ -4,7 +4,7 @@ Feature: DKK WMS geeft map  V4
     * url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wms/v4_0'
     * configure readTimeout = 120000
 
-  Scenario Outline: WMS geef voor <toepassing> laag met legenda <legenda tekst> <type> <bbox> <width> <height>
+  Scenario Outline: WMS test <test> geef voor <toepassing> laag met legenda <legenda tekst> <type> <bbox> <width> <height>
 
     * def box1_NL = "-25000,250000,280000,860000"
     * def box2_BH = "81000,455900,81600,456500"
