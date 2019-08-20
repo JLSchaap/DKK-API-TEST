@@ -26,11 +26,15 @@ import net.masterthought.cucumber.ReportBuilder;
 
 @CucumberOptions(tags = { "SMOKE", "~@TEMPLATE", "~WIP", "~BUG", "~@WIPTEST" })
 
+/*
+@CucumberOptions(tags = {  "WIP"})
+*/ 
+
 public class ApiTest {
 
     @Test
     public void testParallel() {
-        Results results = Runner.parallel(getClass(), 20, "target/surefire-reports");
+        Results results = Runner.parallel(getClass(), 4, "target/surefire-reports");
         generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }
