@@ -34,7 +34,7 @@ public class ApiTest {
 
     @Test
     public void testParallel() {
-        Results results = Runner.parallel(getClass(), 20, "target/surefire-reports");
+        Results results = Runner.parallel(getClass(), 5, "target/surefire-reports");
         generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }
