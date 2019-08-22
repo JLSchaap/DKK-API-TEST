@@ -35,10 +35,10 @@ Feature: DKK WFS
         When method GET
         Then status 200
 
-      #  And match response == expectedOutcome
+        #  And match response == expectedOutcome
         * eval karate.embed(responseBytes,'application/json')
 
-    Scenario Outline: Scenario Outline name: DKK WFSgeeft features hits voor layer <no>
+    Scenario Outline: Scenario Outline name: DKK WFSgeeft features hits (count) en a feature for layer <no>
         * def cap = read('./expectedOutcome/wfscapabilitiesv4new.xml')
         * def layer = karate.xmlPath(cap,'/WFS_Capabilities/FeatureTypeList/FeatureType[<no>]/Name')
 
@@ -51,10 +51,30 @@ Feature: DKK WFS
 
         When method GET
         Then status 200
+            And match karate.xmlPath(response, '/FeatureCollection/@numberReturned') == 0
 
 
         * def featcount = karate.xmlPath(response, '/FeatureCollection/@numberMatched')
         * print layer, ' count ', featcount
+
+
+        Given  path ''
+        And param SERVICE = 'WFS'
+        And param REQUEST = 'GetFeature'
+        And param VERSION = '2.0.0'
+        And param TYPENAMES = layer
+        And param COUNT = 1
+        And param STARTINDEX = 0
+
+        When method GET
+        Then status 200
+        And match karate.xmlPath(response, '/FeatureCollection/@numberReturned') == 1
+
+
+        * def featcount = karate.xmlPath(response, '/FeatureCollection/@numberMatched')
+        * print layer, ' count ', featcount
+
+        * eval karate.embed(responseBytes,'application/json')
         Examples:
             | no |
             | 1  |
