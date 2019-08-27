@@ -45,4 +45,4 @@ Feature: using __arg
     * def mydownloads = Java.type('download.DataStorage')
     * def LocalDateTime = Java.type('java.time.LocalDateTime')
     * def db = new mydownloads
-    * eval db.mywriteln('- Test: DeltaUpdate_'+ __loop +' '+ '\n    leveringsId:'+ downloadRequestId +'\n'+'    Url:'+apiBaseUrl + downloadlink.download.href+'\n    Size:'+zipsize+'\n    Time:'+ LocalDateTime.now() +'\n' , 'target/surefire-reports/delta_url.yaml')
+    * eval db.mywriteln('- Test: DeltaUpdate_' + __loop + ' '+ '\n    leveringsId:'+ downloadRequestId +'\n'+'    Url:'+apiBaseUrl + downloadlink.download.href+'\n    Size:'+zipsize+'\n    Time:'+ LocalDateTime.now() +'\n' , 'target/surefire-reports/delta_url.yaml')
