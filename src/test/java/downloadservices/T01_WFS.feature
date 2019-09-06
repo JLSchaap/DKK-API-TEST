@@ -29,7 +29,7 @@ Feature: DKK WFS
         And param VERSION = '2.0.0'
         And param request = 'GetFeature'
         And param bbox = box1
-        And param typeName = 'perceel'
+        And param typeName = 'kadastralekaartv4:perceel'
         And param outputFormat = 'application/json'
         And param srsName = 'EPSG:4326'
         When method GET
@@ -82,6 +82,5 @@ Feature: DKK WFS
             | 3  |
             | 4  |
             | 5  |
-            | 6  |
-            | 7  |
+    
 

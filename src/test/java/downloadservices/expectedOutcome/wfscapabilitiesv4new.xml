@@ -214,8 +214,8 @@
   </ows:OperationsMetadata>
   <FeatureTypeList>
     <FeatureType>
-      <Name>kadastralekaartv4:kadastraleGrens</Name>
-      <Title>kadastraleGrens</Title>
+      <Name>kadastralekaartv4:kadastralegrens</Name>
+      <Title>kadastralegrens</Title>
       <Abstract>Het op geografische wijze verschaffen van inzicht in de indeling, vorm en ligging van de kadastrale percelen, fungeert als schakel tussen terrein en registratie, vervult voor externe gebruiker vaak een referentiefunctie, een ondergrond ten opzichte waarvan de gebruiker eigen informatie kan vastleggen en presenteren.</Abstract>
       <ows:Keywords>
         <ows:Keyword>Kadastrale percelen</ows:Keyword>
@@ -276,68 +276,6 @@
       <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cd839edf-7b81-4c0b-8a99-f774d328603f"/>
     </FeatureType>
     <FeatureType>
-      <Name>kadastralekaartv4:perceelLabel</Name>
-      <Title>perceelLabel</Title>
-      <Abstract>Het op geografische wijze verschaffen van inzicht in de indeling, vorm en ligging van de kadastrale percelen, fungeert als schakel tussen terrein en registratie, vervult voor externe gebruiker vaak een referentiefunctie, een ondergrond ten opzichte waarvan de gebruiker eigen informatie kan vastleggen en presenteren.</Abstract>
-      <ows:Keywords>
-        <ows:Keyword>Kadastrale percelen</ows:Keyword>
-        <ows:Keyword>infoMapAccessService</ows:Keyword>
-      </ows:Keywords>
-      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::25831</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::25832</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::3034</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::5709</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::3035</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::3857</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::4258</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::4326</OtherCRS>
-      <OutputFormats>
-        <Format>application/gml+xml; version=3.2</Format>
-        <Format>text/xml; subtype=gml/3.2.1</Format>
-        <Format>text/xml; subtype=gml/3.1.1</Format>
-        <Format>text/xml; subtype=gml/2.1.2</Format>
-        <Format>application/json; subtype=geojson</Format>
-        <Format>application/json</Format>
-      </OutputFormats>
-      <ows:WGS84BoundingBox dimensions="2">
-        <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
-        <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
-      </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cd839edf-7b81-4c0b-8a99-f774d328603f"/>
-    </FeatureType>
-    <FeatureType>
-      <Name>kadastralekaartv4:perceelBijpijling</Name>
-      <Title>perceelBijpijling</Title>
-      <Abstract>Het op geografische wijze verschaffen van inzicht in de indeling, vorm en ligging van de kadastrale percelen, fungeert als schakel tussen terrein en registratie, vervult voor externe gebruiker vaak een referentiefunctie, een ondergrond ten opzichte waarvan de gebruiker eigen informatie kan vastleggen en presenteren.</Abstract>
-      <ows:Keywords>
-        <ows:Keyword>Kadastrale percelen</ows:Keyword>
-        <ows:Keyword>infoMapAccessService</ows:Keyword>
-      </ows:Keywords>
-      <DefaultCRS>urn:ogc:def:crs:EPSG::28992</DefaultCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::25831</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::25832</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::3034</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::5709</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::3035</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::3857</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::4258</OtherCRS>
-      <OtherCRS>urn:ogc:def:crs:EPSG::4326</OtherCRS>
-      <OutputFormats>
-        <Format>application/gml+xml; version=3.2</Format>
-        <Format>text/xml; subtype=gml/3.2.1</Format>
-        <Format>text/xml; subtype=gml/3.1.1</Format>
-        <Format>text/xml; subtype=gml/2.1.2</Format>
-        <Format>application/json; subtype=geojson</Format>
-        <Format>application/json</Format>
-      </OutputFormats>
-      <ows:WGS84BoundingBox dimensions="2">
-        <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
-        <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
-      </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cd839edf-7b81-4c0b-8a99-f774d328603f"/>
-    </FeatureType>
-    <FeatureType>
       <Name>kadastralekaartv4:bebouwing</Name>
       <Title>bebouwing</Title>
       <Abstract>Het op geografische wijze verschaffen van inzicht in de indeling, vorm en ligging van de kadastrale percelen, fungeert als schakel tussen terrein en registratie, vervult voor externe gebruiker vaak een referentiefunctie, een ondergrond ten opzichte waarvan de gebruiker eigen informatie kan vastleggen en presenteren.</Abstract>
@@ -369,8 +307,8 @@
       <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cd839edf-7b81-4c0b-8a99-f774d328603f"/>
     </FeatureType>
     <FeatureType>
-      <Name>kadastralekaartv4:bebouwingNummeraanduidingreeks</Name>
-      <Title>bebouwingNummeraanduidingreeks</Title>
+      <Name>kadastralekaartv4:nummeraanduidingreeks</Name>
+      <Title>nummeraanduidingreeks</Title>
       <Abstract>Het op geografische wijze verschaffen van inzicht in de indeling, vorm en ligging van de kadastrale percelen, fungeert als schakel tussen terrein en registratie, vervult voor externe gebruiker vaak een referentiefunctie, een ondergrond ten opzichte waarvan de gebruiker eigen informatie kan vastleggen en presenteren.</Abstract>
       <ows:Keywords>
         <ows:Keyword>Kadastrale percelen</ows:Keyword>
