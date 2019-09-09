@@ -1,4 +1,4 @@
-@SMOKE
+@WIP
 Feature: DKK WFS FES Filter test
 
   Background:
