@@ -3,7 +3,7 @@ Feature: DKK WFS
 
     Background:
         * url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0'
-        * configure readTimeout = 120000
+        * configure readTimeout = 240000
 
     Scenario: DKK WFS geeft capabilities
 
@@ -29,7 +29,7 @@ Feature: DKK WFS
         And param VERSION = '2.0.0'
         And param request = 'GetFeature'
         And param bbox = box1
-        And param typeName = 'kadastralekaartv4:perceel'
+        And param typeName = 'perceel'
         And param outputFormat = 'application/json'
         And param srsName = 'EPSG:4326'
         When method GET
@@ -38,9 +38,21 @@ Feature: DKK WFS
         #  And match response == expectedOutcome
         * eval karate.embed(responseBytes,'application/json')
 
-    Scenario Outline: Scenario Outline name: DKK WFSgeeft features hits (count) en a feature for layer <no>
+    Scenario Outline: Scenario Outline name: DKK WFS geeft describe, features hits (count) en a feature for layer <no>
         * def cap = read('./expectedOutcome/wfscapabilitiesv4new.xml')
         * def layer = karate.xmlPath(cap,'/WFS_Capabilities/FeatureTypeList/FeatureType[<no>]/Name')
+
+        Given  path ''
+        And param SERVICE = 'WFS'
+        And param REQUEST = 'DescribeFeatureType'
+        And param VERSION = '2.0.0'
+        And param TYPENAMES = layer
+
+
+        When method GET
+        Then status 200
+        * json jsonVar = karate.xmlPath(response,'/schema/complexType/complexContent/extension/sequence')
+        * print 'fields:' , jsonVar
 
         Given  path ''
         And param SERVICE = 'WFS'
@@ -51,7 +63,7 @@ Feature: DKK WFS
 
         When method GET
         Then status 200
-            And match karate.xmlPath(response, '/FeatureCollection/@numberReturned') == 0
+        And match karate.xmlPath(response, '/FeatureCollection/@numberReturned') == 0
 
 
         * def featcount = karate.xmlPath(response, '/FeatureCollection/@numberMatched')
@@ -82,5 +94,5 @@ Feature: DKK WFS
             | 3  |
             | 4  |
             | 5  |
-    
+
 

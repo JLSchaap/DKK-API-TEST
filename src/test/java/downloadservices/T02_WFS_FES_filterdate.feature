@@ -3,7 +3,7 @@ Feature: DKK WFS FES Filter test
 
   Background:
     * url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0'
-    * configure readTimeout = 120000
+    * configure readTimeout = 240000
 
 
   Scenario Outline:  aan WFS filter propertie <feature> <prop> between <van> <tot>  gives <resulttype>
