@@ -45,7 +45,7 @@ Feature: DKK WFS FES Filter
       | kadastralekaartv4:openbareruimtenaam | tekst               | Binnenhof               | results    |
       | kadastralekaartv4:openbareruimtenaam | tekst               | Dorpstraat              | hits       |
       | kadastralekaartv4:openbareruimtenaam | tekst               | Kerkstraat              | hits       |
-      | kadastralekaartv4:openbareruimtenaam | lvPublicatiedatum   | 2018-05-17T14:32:33     | hits       |
+      | kadastralekaartv4:openbareruimtenaam | LV-publicatiedatum  | 2018-05-17T14:32:33     | hits       |
       | kadastralekaartv4:perceel            | tijdstipregistratie | 2007-09-27T10:03:38.000 | results    |
       | kadastralekaartv4:openbareruimtenaam | identificatieBAGOPR | 0678300000000183        | results    | 0678300000000180 | 0678300000000185 |
       | kadastralekaartv4:openbareruimtenaam | hoek                | 406.3                   | hits       | 406.2 | 406.4 |
@@ -83,7 +83,7 @@ Feature: DKK WFS FES Filter
       | kadastralekaartv4:openbareruimtenaam | tekst               | results    | X                       | Y                       |
       | kadastralekaartv4:openbareruimtenaam | tekst               | hits       | A                       | Z                       |
       | kadastralekaartv4:openbareruimtenaam | tekst               | hits       | U                       | V                       |
-      | kadastralekaartv4:openbareruimtenaam | lvPublicatiedatum   | hits       | 2018-05-17T00:00:00     | 2018-05-18T00:00:00     |
+      | kadastralekaartv4:openbareruimtenaam | LV-publicatiedatum  | hits       | 2018-05-17T00:00:00     | 2018-05-18T00:00:00     |
       | kadastralekaartv4:perceel            | tijdstipregistratie | hits       | 2007-09-27T10:03:00.000 | 2007-09-27T10:04:00.000 |
       | kadastralekaartv4:openbareruimtenaam | identificatieBAGOPR | results    | 0678300000000180        | 0678300000000185        |
       | kadastralekaartv4:openbareruimtenaam | hoek                | hits       | 406.2                   | 406.4                   |
