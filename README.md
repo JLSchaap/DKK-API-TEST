@@ -18,7 +18,7 @@ Download urls (zips) created by the API during this testrun can be found in the 
 * [HeelNederlandDkk](https://jlschaap.github.io/DKK-API-TEST/T03HeelNederlandDkk.yaml)
 * [Initialdelta](https://jlschaap.github.io/DKK-API-TEST/T03HeelNederlandInitieleDeltaDkk.yaml)
 
-WFS feature count results in are found in the [wfs count file](https://jlschaap.github.io/DKK-API-TEST/wfs_count.yaml)
+WFS feature count results in are found in the [wfs count file](https://jlschaap.github.io/DKK-API-TEST/wfscount.yaml)
 
 All test are run in parallel as shown in the [timeline](https://jlschaap.github.io/DKK-API-TEST/timeline.html) for the latest run.
 

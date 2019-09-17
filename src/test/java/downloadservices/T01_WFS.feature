@@ -74,7 +74,7 @@ Feature: DKK WFS
         * def mydownloads = Java.type('download.DataStorage')
         * def LocalDateTime = Java.type('java.time.LocalDateTime')
         * def db = new mydownloads
-        * eval db.mywriteln('- Test: WFS count '+ '\n    Layer:'+ layer +'\n'+'    Count:' + featcount + '\n    Time:'+ LocalDateTime.now() + '\n' , 'target/surefire-reports/wfs_count.yaml')
+        * eval db.mywriteln('- Test: WFS count '+ '\n    Layer:'+ layer +'\n'+'    Count:' + featcount + '\n    Time:'+ LocalDateTime.now() + '\n' , 'target/surefire-reports/wfscount.yaml')
        
 
         Given  path ''
