@@ -4,6 +4,8 @@ Feature: DKK WFS
     Background:
         * url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0'
         * configure readTimeout = 240000
+    
+  
 
     Scenario: DKK WFS geeft capabilities
 
@@ -69,6 +71,11 @@ Feature: DKK WFS
         * def featcount = karate.xmlPath(response, '/FeatureCollection/@numberMatched')
         * print layer, ' count ', featcount
 
+        * def mydownloads = Java.type('download.DataStorage')
+        * def LocalDateTime = Java.type('java.time.LocalDateTime')
+        * def db = new mydownloads
+        * eval db.mywriteln('- Test: WFS count '+ '\n    Layer:'+ layer +'\n'+'    Count:' + featcount + '\n    Time:'+ LocalDateTime.now() + '\n' , 'target/surefire-reports/wfs_count.yaml')
+       
 
         Given  path ''
         And param SERVICE = 'WFS'
