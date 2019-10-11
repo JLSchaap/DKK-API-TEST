@@ -242,7 +242,7 @@
         <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
         <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cd839edf-7b81-4c0b-8a99-f774d328603f"/>
+      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904"/>
     </FeatureType>
     <FeatureType>
       <Name>kadastralekaartv4:perceel</Name>
@@ -273,7 +273,7 @@
         <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
         <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cd839edf-7b81-4c0b-8a99-f774d328603f"/>
+      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904"/>
     </FeatureType>
     <FeatureType>
       <Name>kadastralekaartv4:bebouwing</Name>
@@ -304,7 +304,7 @@
         <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
         <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cd839edf-7b81-4c0b-8a99-f774d328603f"/>
+      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904"/>
     </FeatureType>
     <FeatureType>
       <Name>kadastralekaartv4:nummeraanduidingreeks</Name>
@@ -335,7 +335,7 @@
         <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
         <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cd839edf-7b81-4c0b-8a99-f774d328603f"/>
+      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904"/>
     </FeatureType>
     <FeatureType>
       <Name>kadastralekaartv4:openbareruimtenaam</Name>
@@ -366,7 +366,7 @@
         <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
         <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
       </ows:WGS84BoundingBox>
-      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=cd839edf-7b81-4c0b-8a99-f774d328603f"/>
+      <MetadataURL xlink:href="https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904"/>
     </FeatureType>
   </FeatureTypeList>
   <fes:Filter_Capabilities>
