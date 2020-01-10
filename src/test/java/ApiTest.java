@@ -27,7 +27,7 @@ import net.masterthought.cucumber.ReportBuilder;
 @CucumberOptions(tags = { "SMOKE", "~@TEMPLATE", "~WIP", "~BUG", "~@WIPTEST" })
 
 /*
-@CucumberOptions(tags = {  "WIP"})
+@CucumberOptions(tags = {  "WIPx"})
 */ 
 
 public class ApiTest {
@@ -38,6 +38,7 @@ public class ApiTest {
         generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }
+
 
     public static void generateReport(String karateOutputPath) {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] { "json" }, true);
