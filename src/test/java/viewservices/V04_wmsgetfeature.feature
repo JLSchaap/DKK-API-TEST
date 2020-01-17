@@ -1,4 +1,3 @@
-
 @SMOKE
 
 Feature: DKK WMS geeft getfeature info
@@ -21,6 +20,7 @@ Feature: DKK WMS geeft getfeature info
 
     When method GET
     Then status 200
+       # geen id bij feature PDOK-9899
    # And match response == read('./expectedOutcome/perceelbinnenhof.json')
      * eval karate.embed(responseBytes,'application/json')
 
@@ -42,6 +42,7 @@ Feature: DKK WMS geeft getfeature info
 
     When method GET
     Then status 200
+    # geen id bij feature PDOK-9899
 
       * eval karate.embed(responseBytes,'application/json')
 
