@@ -27,9 +27,7 @@ import net.masterthought.cucumber.ReportBuilder;
 @CucumberOptions(tags = { "SMOKE", "~@TEMPLATE", "~WIP", "~BUG", "~@WIPTEST" })
 
 /*
-
 @CucumberOptions(tags = {  "WIPx"})
-
 */ 
 
 public class ApiTest {
