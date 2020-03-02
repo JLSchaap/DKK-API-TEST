@@ -5,14 +5,14 @@ Feature: DKK WFS FES Filter
     * url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0'
     * configure readTimeout = 120000
 
-  Scenario Outline: DKK WFS heeft <capabilities> capabilities
+ # Scenario Outline: DKK WFS heeft <capabilities> capabilities
 
-    * def cap = read('./expectedOutcome/wfscapabilitiesv4new.xml')
-    * match "TRUE" ==  karate.xmlPath(cap,'/WFS_Capabilities/<capabilities>/Conformance/Constraint[1]/DefaultValue')
+ #   * def cap = read('./expectedOutcome/wfscapabilitiesv4new.xml')
+ #   * match "TRUE" ==  karate.xmlPath(cap,'/WFS_Capabilities/<capabilities>/Conformance/Constraint[1]/DefaultValue')
 
-    Examples:
-      | capabilities        |
-      | Filter_Capabilities |
+  #  Examples:
+  #    | capabilities        |
+  #    | Filter_Capabilities |
 
   Scenario Outline:  WFS filter propertie <feature> <prop> =  <value> gives <resulttype>
     * def xmlfilter =

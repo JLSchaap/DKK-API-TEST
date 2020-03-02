@@ -1,4 +1,5 @@
 
+import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 
@@ -15,7 +16,7 @@ import org.junit.Test;
 
 import net.masterthought.cucumber.Configuration;
 
-import cucumber.api.CucumberOptions;
+
 /*
 @RunWith(Karate.class)
 @CucumberOptions(tags = {"~@TEMPLATE","~SMOKE","~BUG","@WIPTEST"})
@@ -24,7 +25,7 @@ public class ApiTest {
 */
 import net.masterthought.cucumber.ReportBuilder;
 
-@CucumberOptions(tags = { "SMOKE", "~@TEMPLATE", "~WIP", "~BUG", "~@WIPTEST" })
+@KarateOptions(tags = { "SMOKE", "~@TEMPLATE", "~WIP", "~BUG", "~@WIPTEST" })
 
 /*
 @CucumberOptions(tags = {  "WIPx"})
