@@ -1,5 +1,5 @@
 
-@SMOKE
+@WIP
 Feature: pdok dkk download viewer
 
 Background:
