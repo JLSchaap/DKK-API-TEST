@@ -24,12 +24,12 @@ public class ApiTest {
 } 
 */
 import net.masterthought.cucumber.ReportBuilder;
-/*
+
 @KarateOptions(tags = { "SMOKE", "~@TEMPLATE", "~WIP", "~BUG", "~@WIPTEST" })
-*/
 
+/*
 @KarateOptions(tags = {  "WIP"})
-
+*/ 
 
 
 public class ApiTest {
