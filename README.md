@@ -1,7 +1,7 @@
 # DKK-API-TEST [![Build Status](https://travis-ci.org/JLSchaap/DKK-API-TEST.svg?branch=master)](https://travis-ci.org/JLSchaap/DKK-API-TEST) 
 
 This project is a test project for the [PDOK DKK download API](https://downloads.pdok.nl/kadastralekaart/api/v4_0/ui/).
-The [DKK download viewer](https://downloads.pdok.nl/kadastralekaart/viewer/) is the standard web interface for the "Full" and "Custom" calls of this API.
+The [DKK download viewer](https://downloads.pdok.nl/kadastralekaart/viewer/) is the standard web interface for the "Full" and "Custom" calls of this API.  
 With Java, Maven and [Karate](https://github.com/intuit/karate) the API is tested inclusive the "Delta" calls.
  
 Test are run with the following commands:
