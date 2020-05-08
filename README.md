@@ -4,7 +4,7 @@ This project is a test project for the [PDOK DKK download API](https://downloads
 The [DKK download viewer](https://downloads.pdok.nl/kadastralekaart/viewer/) is the standard web interface for the "Full" and "Custom" calls of this API.  
 With Java, Maven and [Karate](https://github.com/intuit/karate) the API is tested inclusive the "Delta" calls.
  
-Test are run with the following commands:      
+Test are run with the following commands:        
 
 ``` bash
 git clone https://github.com/JLSchaap/DKK-API-TEST
