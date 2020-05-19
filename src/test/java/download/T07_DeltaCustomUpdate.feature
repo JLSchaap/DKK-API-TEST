@@ -1,11 +1,13 @@
 @SMOKE
-Feature: DKK Api geeft Custom delta request voor alle leveringen
+Feature: DKK Api geeft Custom delta request voor alle leveringen na TODO b2219778-e94c-40b0-92bd-95e3491af2bb
     Dit feature test alle deltas voor alle leveringen voor een specifiek interessegebied
 
     Scenario Outline: downoad deltas op locatie buitenhof <dkkfeaturetype>
 
         * print "bepaal een delta ids "
         Given url apiBaseUrl + 'kadastralekaart/api/v4_0/delta'
+        And param count = 1000
+        And param after-delta-id = "b2219778-e94c-40b0-92bd-95e3491af2bb"
         When method GET
         Then status 200
         And def alldelta = response.deltas
