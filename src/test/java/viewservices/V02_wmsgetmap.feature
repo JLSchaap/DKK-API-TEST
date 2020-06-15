@@ -1,4 +1,4 @@
-@SMOKE
+@V3gone
 Feature: DKK WMS geeft map V3 en V4
 
   Scenario Outline: WMS geef voor <toepassing> laag met legenda <legenda tekst> <type> <bbox> <width> <height>
