@@ -18,9 +18,9 @@ Feature: DKK WFS
 
         Examples:
             | version |
-            | 2.2.0   |
-            | 1.1.0   |
             | 1.0.0   |
+            | 1.1.0   |
+            | 2.2.0   |
 
 
     # And match response == read('./expectedOutcome/wfscapabilitiesv4new.xml')
@@ -57,7 +57,7 @@ Feature: DKK WFS
         #  And match response == expectedOutcome
         * eval karate.embed(responseBytes,'application/json')
 
- 
+
     Scenario Outline:  DKK WFS geeft features voor binnenhof  <SRSCODE> <SRSNAME> <OUTPUTFORMAT>
 
         * configure readTimeout = 40000
@@ -79,7 +79,7 @@ Feature: DKK WFS
         * eval karate.embed(responseBytes,'<OUTPUTFORMAT>')
 
         Examples:
-            | BOX                                                                      | SRSCODE    | SRSNAME                                         | OUTPUTFORMAT                |
+            | BOX                                                                                                          | SRSCODE                    | SRSNAME                                         | OUTPUTFORMAT                |
             #| | EPSG:28992 | Amersfoort / RD New -- Netherlands - Holland - Dutch                                           |
             #| | EPSG:25831 | ETRS89 / UTM zone 31N                                                                          |
             #| | EPSG:25832 | ETRS89 / UTM zone 32N                                                                          |
@@ -89,11 +89,14 @@ Feature: DKK WFS
             #|  | EPSG:5709  | NAP height                                                                                     |
             #|  | EPSG:3857  | WGS 84 / Pseudo-Mercator -- Spherical Mercator, Google Maps, OpenStreetMap, Bing, ArcGIS, ESRI |  |
             #|  | EPSG:4258  | ETRS89                                                                                         |
-            | 52.08040, 4.31267   , 52.08008, 4.31212                                  | EPSG:4326  | WGS84 - World Geodetic System 1984, used in GPS | application/json            |
-            | 52.08040, 4.31267  ,    52.08008, 4.31212                                | EPSG:4326  | WGS84 - World Geodetic System 1984, used in GPS | text/xml; subtype=gml/3.2.1 |
-            | 81305.27206213083,455190.78582254506,81343.90228717012,455225.4270569553 | EPSG:28992 | Amersfoort / RD New                             | application/json            |
-            | 81305.27206213083,455190.78582254506,81343.90228717012,455225.4270569553 | EPSG:28992 | Amersfoort / RD New                             | text/xml; subtype=gml/3.2.1 |
+            | 52.080079749356123 ,4.312114298851405, 52.080396201387941, 4.312670278923054, urn:ogc:def:crs:EPSG::4326     | EPSG:4326                  | WGS84 - World Geodetic System 1984, used in GPS | application/json            |
+            | 52.080396201387941, 4.312670278923054, 52.080079749356123 ,4.312114298851405, urn:ogc:def:crs:EPSG::4326     | urn:ogc:def:crs:EPSG::4326 | WGS84 - World Geodetic System 1984, used in GPS | text/xml; subtype=gml/3.2.1 |
+            | 52.08006679609725609,4.31209264810535586,52.08041980604598109,4.31267915942641444,urn:ogc:def:crs:EPSG::4326 | urn:ogc:def:crs:EPSG::4326 | WGS84                                           | application/json            |
+            | 81305.27206213083,455190.78582254506,81343.90228717012,455225.4270569553                                     | EPSG:28992                 | Amersfoort / RD New                             | application/json            |
+            | 81305.27206213083,455190.78582254506,81343.90228717012,455225.4270569553                                     | EPSG:28992                 | Amersfoort / RD New                             | text/xml; subtype=gml/3.2.1 |
 
+    #VERSION=2.0.0&TYPENAMES=kadastralekaartv4:perceel&TYPENAME=kadastralekaartv4:perceel&STARTINDEX=0&COUNT=1000&SRSNAME=urn:ogc:def:crs:EPSG::4326&
+    #BBOX=52.08006679609725609,4.31209264810535586,52.08041980604598109,4.31267915942641444,urn:ogc:def:crs:EPSG::4326' -H 'User-Agent: Mozilla/5.0 QGIS/3.10.1-A Coruña'  --compressed
 
     Scenario: DKK WFSgeeft specifiek feature (featureid)
         * configure readTimeout = 40000
