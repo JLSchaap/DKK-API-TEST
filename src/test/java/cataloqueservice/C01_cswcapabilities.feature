@@ -12,4 +12,4 @@ Feature: geeft capabilities
    When method GET
    Then status 200
     And match karate.xmlPath(response, '/Capabilities/ServiceIdentification/ServiceTypeVersion') == '2.0.2' 
-    And match karate.xmlPath(response, '/Capabilities/ServiceIdentification/Title') == "CSW endpoint Nationaal Georegister"
+    And match karate.xmlPath(response, '/Capabilities/ServiceIdentification/Title') == "CSW Nationaal Georegister (NGR)"
