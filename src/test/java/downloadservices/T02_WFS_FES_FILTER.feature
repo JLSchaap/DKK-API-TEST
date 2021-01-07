@@ -1,4 +1,4 @@
-@SMOKE
+@DISABLEtetraag
 Feature: DKK WFS FES Filter
 
   Background:
