@@ -7,7 +7,6 @@ Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
     * print "bepaal een delta ids "
     Given url apiBaseUrl + 'kadastralekaart/api/v4_0/delta'
     And param count = 1000
-    And param after-delta-id = "b2219778-e94c-40b0-92bd-95e3491af2bb"
     When method GET
     Then status 200
     And def alldelta = response.deltas
@@ -57,12 +56,9 @@ Feature: DKK Api geeft predefined Fulls voor geheel Nederland (delta en gml)
     When method GET
   #  Then status 200
     And match responseHeaders['Content-Length'][0] == '#notnull'
-    And match responseHeaders['Content-Type'][0] == 'application/zip'
     And def zipsize =  responseHeaders['Content-Length'][0]
     * print "size", zipsize
-
-
-     * def location = responseHeaders['Location'][0]
+    * def location = responseHeaders['Location'][0]
 
     Given url  apiBaseUrl + location
     When method HEAD
