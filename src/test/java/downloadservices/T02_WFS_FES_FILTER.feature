@@ -1,14 +1,14 @@
-@DISABLEtetraag
+@SMOKE
 Feature: DKK WFS FES Filter
 
   Background:
     * url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0'
     * configure readTimeout = 120000
 
- # Scenario Outline: DKK WFS heeft <capabilities> capabilities
+  # Scenario Outline: DKK WFS heeft <capabilities> capabilities
 
- #   * def cap = read('./expectedOutcome/wfscapabilitiesv4new.xml')
- #   * match "TRUE" ==  karate.xmlPath(cap,'/WFS_Capabilities/<capabilities>/Conformance/Constraint[1]/DefaultValue')
+  #   * def cap = read('./expectedOutcome/wfscapabilitiesv4new.xml')
+  #   * match "TRUE" ==  karate.xmlPath(cap,'/WFS_Capabilities/<capabilities>/Conformance/Constraint[1]/DefaultValue')
 
   #  Examples:
   #    | capabilities        |
@@ -32,7 +32,7 @@ Feature: DKK WFS FES Filter
     And param VERSION = '2.0.0'
     And param TYPENAMES = '<feature>'
     And param STARTINDEX = '0'
-    And param COUNT = '1000'
+    And param COUNT = '10'
     And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992'
     And param filter = xmlfilter
 
@@ -71,7 +71,7 @@ Feature: DKK WFS FES Filter
     And param VERSION = '2.0.0'
     And param TYPENAMES = '<feature>'
     And param STARTINDEX = '0'
-    And param COUNT = '10000000000000'
+    And param COUNT = '10'
     And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992'
     And param filter = betweenfilter
 
@@ -79,16 +79,17 @@ Feature: DKK WFS FES Filter
     Then status 200
 
     Examples:
-      | feature                              | prop                | resulttype | van                     | tot                     |
-      | kadastralekaartv4:openbareruimtenaam | tekst               | results    | X                       | Y                       |
-      | kadastralekaartv4:openbareruimtenaam | tekst               | hits       | A                       | Z                       |
-      | kadastralekaartv4:openbareruimtenaam | tekst               | hits       | U                       | V                       |
-      | kadastralekaartv4:openbareruimtenaam | LV-publicatiedatum  | hits       | 2018-05-17T00:00:00     | 2018-05-18T00:00:00     |
-      | kadastralekaartv4:perceel            | tijdstipregistratie | hits       | 2007-09-27T10:03:00.000 | 2007-09-27T10:04:00.000 |
-      | kadastralekaartv4:openbareruimtenaam | identificatieBAGOPR | results    | 0678300000000180        | 0678300000000185        |
-      | kadastralekaartv4:openbareruimtenaam | hoek                | hits       | 406.2                   | 406.4                   |
-      | kadastralekaartv4:perceel            | tijdstipregistratie | hits       | 2019-09-05T00:00:00.000 | 2019-12-25T00:00:00.000 |
-
+      | feature                              | prop                    | resulttype | van                     | tot                     |
+      | kadastralekaartv4:openbareruimtenaam | tekst                   | results    | X                       | Y                       |
+      | kadastralekaartv4:openbareruimtenaam | tekst                   | hits       | A                       | Z                       |
+      | kadastralekaartv4:openbareruimtenaam | tekst                   | hits       | U                       | V                       |
+      | kadastralekaartv4:openbareruimtenaam | LV-publicatiedatum      | hits       | 2018-05-17T00:00:00     | 2018-05-18T00:00:00     |
+      | kadastralekaartv4:perceel            | tijdstipregistratie     | hits       | 2007-09-27T10:03:00.000 | 2007-09-27T10:04:00.000 |
+      | kadastralekaartv4:openbareruimtenaam | identificatieBAGOPR     | results    | 0678300000000180        | 0678300000000185        |
+      | kadastralekaartv4:openbareruimtenaam | hoek                    | hits       | 406.2                   | 406.4                   |
+      | kadastralekaartv4:perceel            | tijdstipregistratie     | hits       | 2019-09-05T00:00:00.000 | 2019-12-25T00:00:00.000 |
+      | kadastralekaartv4:perceel            | kadastraleGrootteWaarde | hits       | 700                     | 900                     |
+      | kadastralekaartv4:perceel            | kadastraleGrootteWaarde | results    | 700                     | 900                     |
 
 
 
