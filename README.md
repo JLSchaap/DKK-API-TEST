@@ -6,8 +6,6 @@ The [DKK download viewer](https://downloads.pdok.nl/kadastralekaart/viewer/) is 
 With Java, Maven and [Karate](https://github.com/intuit/karate) the API is tested inclusive the "Delta" calls.
 
 
-
-
  
 Test are run with the following commands:        
 
