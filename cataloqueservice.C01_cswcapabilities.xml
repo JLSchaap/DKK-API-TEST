@@ -1,0 +1,11 @@
+<testsuite failures="0" name="cataloqueservice/C01_cswcapabilities.feature" skipped="0" tests="1" time="1.60797">
+  <testcase classname="cataloqueservice.C01_cswcapabilities" name="CSW geeft capabilities" time="1.60797">
+    <system-out>Given url  'http://nationaalgeoregister.nl/geonetwork/srv/dut/csw' ........ passed
+And param request = 'GetCapabilities' ..................................... passed
+And param service = 'CSW' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match karate.xmlPath(response, '/Capabilities/ServiceIdentification/ServiceTypeVersion') == '2.0.2' . passed
+And match karate.xmlPath(response, '/Capabilities/ServiceIdentification/Title') == "CSW Nationaal Georegister (NGR)" . passed</system-out>
+  </testcase>
+</testsuite>

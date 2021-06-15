@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<wfs:FeatureCollection
+   xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:wfs="http://www.opengis.net/wfs/2.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://kadastralekaartv4.geonovum.nl https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=kadastralekaartv4:perceel&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B%20version%3D3.2 http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+   timeStamp="2021-06-15T02:30:32" numberMatched="unknown" numberReturned="1"
+   next="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=2.0.0&amp;TYPENAMES=kadastralekaartv4%3Aperceel&amp;COUNT=1&amp;STARTINDEX=1">
+      <wfs:boundedBy>
+      	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+      		<gml:lowerCorner>18041.429000 363537.820000</gml:lowerCorner>
+      		<gml:upperCorner>18174.228000 364243.188000</gml:upperCorner>
+      	</gml:Envelope>
+      </wfs:boundedBy>
+    <wfs:member>
+      <kadastralekaartv4:perceel gml:id="perceel.9f5dbe18-ab7a-4074-b7db-a5fe3e3bd7b8">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+        		<gml:lowerCorner>18041.429000 363537.820000</gml:lowerCorner>
+        		<gml:upperCorner>18174.228000 364243.188000</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <kadastralekaartv4:begrenzingPerceel>
+          <gml:Polygon gml:id="perceel.9f5dbe18-ab7a-4074-b7db-a5fe3e3bd7b8.1" srsName="urn:ogc:def:crs:EPSG::28992">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList srsDimension="2">18041.429000 364242.496000 18043.520000 364230.830000 18045.010000 364216.910000 18045.500000 364203.900000 18047.080000 364162.850000 18041.930000 364140.410000 18046.830000 364080.290000 18056.240000 364033.060000 18061.300000 363999.740000 18080.860000 363892.460000 18091.500000 363841.790000 18114.290000 363796.390000 18124.060000 363762.070000 18124.670000 363739.410000 18127.140000 363718.160000 18135.560000 363702.470000 18145.110000 363685.550000 18145.890000 363681.200000 18146.820000 363665.650000 18149.780000 363654.110000 18152.000000 363639.350000 18152.820000 363630.530000 18152.510000 363620.560000 18150.120000 363608.060000 18149.780000 363599.480000 18150.330000 363590.690000 18151.520000 363583.640000 18153.960000 363575.710000 18155.840000 363569.900000 18159.000000 363561.440000 18165.780000 363548.930000 18169.350000 363542.670000 18171.330000 363538.650000 18171.730000 363537.820000 18174.228000 363538.525000 18173.226000 363540.425000 18167.446000 363551.382000 18164.012000 363557.295000 18161.665000 363562.059000 18159.418000 363566.737000 18157.753000 363571.495000 18156.659000 363574.623000 18152.432000 363595.353000 18152.305000 363597.228000 18152.053000 363602.134000 18152.771000 363608.794000 18153.451000 363614.800000 18155.073000 363624.055000 18155.429000 363633.238000 18154.825000 363640.686000 18152.668000 363655.032000 18149.512000 363668.029000 18147.926000 363686.589000 18141.709000 363697.398000 18138.628000 363702.783000 18130.312000 363718.144000 18129.928000 363722.113000 18127.783000 363740.259000 18126.920000 363763.254000 18117.056000 363796.645000 18093.794000 363842.780000 18083.221000 363893.067000 18068.199000 363975.347000 18068.001000 363976.525000 18065.949000 363987.449000 18063.617000 364001.385000 18061.871000 364013.852000 18060.393000 364025.319000 18058.841000 364035.819000 18056.790000 364048.230000 18054.614000 364056.540000 18053.774000 364060.610000 18052.646000 364066.076000 18048.665000 364086.817000 18047.224000 364104.577000 18045.932000 364123.899000 18045.165000 364141.426000 18045.763000 364147.439000 18049.117000 364160.350000 18049.867000 364188.695000 18048.111000 364219.696000 18044.816000 364236.557000 18043.745000 364243.188000 18041.429000 364242.496000 </gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </kadastralekaartv4:begrenzingPerceel>
+        <kadastralekaartv4:id>9f5dbe18-ab7a-4074-b7db-a5fe3e3bd7b8</kadastralekaartv4:id>
+        <kadastralekaartv4:identificatieNamespace>NL.IMKAD.KadastraalObject</kadastralekaartv4:identificatieNamespace>
+        <kadastralekaartv4:identificatieLokaalID>70001870000</kadastralekaartv4:identificatieLokaalID>
+        <kadastralekaartv4:beginGeldigheid>2002-01-03T14:21:20.000</kadastralekaartv4:beginGeldigheid>
+        <kadastralekaartv4:tijdstipRegistratie>2002-01-03T14:21:20.000</kadastralekaartv4:tijdstipRegistratie>
+        <kadastralekaartv4:volgnummer>0</kadastralekaartv4:volgnummer>
+        <kadastralekaartv4:statusHistorieCode>G</kadastralekaartv4:statusHistorieCode>
+        <kadastralekaartv4:statusHistorieWaarde>Geldig</kadastralekaartv4:statusHistorieWaarde>
+        <kadastralekaartv4:kadastraleGemeenteCode>6</kadastralekaartv4:kadastraleGemeenteCode>
+        <kadastralekaartv4:kadastraleGemeenteWaarde>Aardenburg</kadastralekaartv4:kadastraleGemeenteWaarde>
+        <kadastralekaartv4:sectie>G</kadastralekaartv4:sectie>
+        <kadastralekaartv4:AKRKadastraleGemeenteCodeCode>6</kadastralekaartv4:AKRKadastraleGemeenteCodeCode>
+        <kadastralekaartv4:AKRKadastraleGemeenteCodeWaarde>ADB00</kadastralekaartv4:AKRKadastraleGemeenteCodeWaarde>
+        <kadastralekaartv4:kadastraleGrootteWaarde>1870</kadastralekaartv4:kadastraleGrootteWaarde>
+        <kadastralekaartv4:soortGrootteCode>1</kadastralekaartv4:soortGrootteCode>
+        <kadastralekaartv4:soortGrootteWaarde>Vastgesteld</kadastralekaartv4:soortGrootteWaarde>
+        <kadastralekaartv4:perceelnummer>18</kadastralekaartv4:perceelnummer>
+        <kadastralekaartv4:perceelnummerRotatie>0</kadastralekaartv4:perceelnummerRotatie>
+        <kadastralekaartv4:perceelnummerVerschuivingDeltaX>6.419</kadastralekaartv4:perceelnummerVerschuivingDeltaX>
+        <kadastralekaartv4:perceelnummerVerschuivingDeltaY>-0.711</kadastralekaartv4:perceelnummerVerschuivingDeltaY>
+        <kadastralekaartv4:perceelnummerPlaatscoordinaatX>18078.235</kadastralekaartv4:perceelnummerPlaatscoordinaatX>
+        <kadastralekaartv4:perceelnummerPlaatscoordinaatY>363916.685</kadastralekaartv4:perceelnummerPlaatscoordinaatY>
+      </kadastralekaartv4:perceel>
+    </wfs:member>
+</wfs:FeatureCollection>
+

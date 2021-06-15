@@ -1,0 +1,14 @@
+<testsuite failures="0" name="cataloqueservice/C02_dkkV4WFSmetadata.feature" skipped="0" tests="1" time="1.434874">
+  <testcase classname="cataloqueservice.C02_dkkV4WFSmetadata" name="CSW geeft DKK records" time="1.434874">
+    <system-out>Given url  'http://nationaalgeoregister.nl/geonetwork/srv/dut/csw' ........ passed
+And param request = 'GetRecordById' ....................................... passed
+And param version = '2.0.2' ............................................... passed
+And param elementSetName = 'full' ......................................... passed
+And param service = 'CSW' ................................................. passed
+And param OutputSchema = 'http://www.opengis.net/cat/csw/2.0.2' ........... passed
+And param id = 'ff9315c8-f25a-4d01-9245-5cf058314ebf' ..................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match karate.xmlPath(response, '/GetRecordByIdResponse/Record/title') == 'Kadastrale Kaart v4 WFS' . passed</system-out>
+  </testcase>
+</testsuite>

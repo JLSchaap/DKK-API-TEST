@@ -1,0 +1,25 @@
+- Test: WFS count 
+    Layer:kadastralekaartv4:kadastralegrens
+    Count:28964471
+    Time:2021-06-15T02:30:29.790
+
+- Test: WFS count 
+    Layer:kadastralekaartv4:perceel
+    Count:8117007
+    Time:2021-06-15T02:30:32.482
+
+- Test: WFS count 
+    Layer:kadastralekaartv4:bebouwing
+    Count:6269104
+    Time:2021-06-15T02:30:38.575
+
+- Test: WFS count 
+    Layer:kadastralekaartv4:nummeraanduidingreeks
+    Count:6337164
+    Time:2021-06-15T02:30:40.169
+
+- Test: WFS count 
+    Layer:kadastralekaartv4:openbareruimtenaam
+    Count:698296
+    Time:2021-06-15T02:30:43.469
+

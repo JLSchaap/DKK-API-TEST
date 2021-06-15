@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: download/T01_Openapi.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>DKK API TEST</td>
+            <td>15 Jun 2021, 02:31</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">download/T01_Openapi.feature</td>
+                    <td      class="passed"    >5</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">5</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1359034887">1.359</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_SMOKE.html">@SMOKE</a>
+      </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">download/T01_Openapi.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">DKK API heeft open api configuratie
+de API wordt beschikbaargesteld d.m.v. een openapi spec</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>02:29:07.121 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.358</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">DKK API geeft open api spec</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'openapi.json'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1.315</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>02:29:07.125 request:
+1 &gt; GET https://downloads.pdok.nl/kadastralekaart/api/v4_0/openapi.json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:08.438 response time in milliseconds: 1298.60
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:08 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cnection: close
+{&quot;components&quot;:{&quot;schemas&quot;:{&quot;DeltaCustomDownloadRequest&quot;:{&quot;properties&quot;:{&quot;deltaId&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;featuretypes&quot;:{&quot;items&quot;:{&quot;enum&quot;:[&quot;perceel&quot;,&quot;kadastralegrens&quot;],&quot;type&quot;:&quot;string&quot;},&quot;minItems&quot;:1,&quot;type&quot;:&quot;array&quot;,&quot;uniqueItems&quot;:true},&quot;format&quot;:{&quot;enum&quot;:[&quot;gml&quot;],&quot;type&quot;:&quot;string&quot;},&quot;geofilter&quot;:{&quot;type&quot;:&quot;string&quot;}},&quot;required&quot;:[&quot;format&quot;,&quot;featuretypes&quot;],&quot;type&quot;:&quot;object&quot;},&quot;FullCustomDownloadRequest&quot;:{&quot;properties&quot;:{&quot;featuretypes&quot;:{&quot;items&quot;:{&quot;enum&quot;:[&quot;perceel&quot;,&quot;kadastralegrens&quot;,&quot;pand&quot;,&quot;openbareruimtelabel&quot;],&quot;type&quot;:&quot;string&quot;},&quot;minItems&quot;:1,&quot;type&quot;:&quot;array&quot;,&quot;uniqueItems&quot;:true},&quot;format&quot;:{&quot;enum&quot;:[&quot;gml&quot;],&quot;type&quot;:&quot;string&quot;},&quot;geofilter&quot;:{&quot;type&quot;:&quot;string&quot;}},&quot;required&quot;:[&quot;format&quot;,&quot;featuretypes&quot;],&quot;type&quot;:&quot;object&quot;},&quot;HalLink&quot;:{&quot;properties&quot;:{&quot;href&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;rel&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;type&quot;:{&quot;type&quot;:&quot;string&quot;}},&quot;required&quot;:[&quot;href&quot;],&quot;type&quot;:&quot;object&quot;},&quot;delta&quot;:{&quot;properties&quot;:{&quot;id&quot;:{&quot;readOnly&quot;:true,&quot;type&quot;:&quot;string&quot;},&quot;timeWindow&quot;:{&quot;properties&quot;:{&quot;from&quot;:{&quot;format&quot;:&quot;date-time&quot;,&quot;readOnly&quot;:true,&quot;type&quot;:&quot;string&quot;},&quot;to&quot;:{&quot;format&quot;:&quot;date-time&quot;,&quot;readOnly&quot;:true,&quot;type&quot;:&quot;string&quot;}},&quot;readOnly&quot;:true,&quot;required&quot;:[&quot;to&quot;],&quot;type&quot;:&quot;object&quot;}},&quot;type&quot;:&quot;object&quot;},&quot;timeliness&quot;:{&quot;properties&quot;:{&quot;datetimeTo&quot;:{&quot;readOnly&quot;:true,&quot;type&quot;:&quot;string&quot;},&quot;featuretype&quot;:{&quot;enum&quot;:[&quot;perceel&quot;,&quot;kadastralegrens&quot;,&quot;pand&quot;,&quot;openbareruimtelabel&quot;],&quot;readOnly&quot;:true,&quot;type&quot;:&quot;string&quot;}},&quot;type&quot;:&quot;object&quot;}}},&quot;info&quot;:{&quot;description&quot;:&quot;Met deze API is het mogelijk om gegevens uit de DKK dataset te downloaden.\n\nDit document bevat alleen informatie m.b.t. het gebruik van deze API.\nDe DKK-modeldocumentatie met bijbehorend schema(xsd) kun je vinden op\n[https://zakelijk.kadaster.nl/schemas](https://zakelijk.kadaster.nl/schemas).\n\nHieronder worden eerst een aantal algemene begrippen en concepten uitgelegd.\nVervolgens wordt elk endpoint individueel beschreven.\n\n## Full\nMet de full endpoints Predefined en Custom kan de meest actuele stand gedownload worden.\nOp basis van deze endpoints kunnen geen mutaties opgehaald worden.\n\n### Predefined\nEen full predefined download is direct beschikbaar om te downloaden,\nis niet gefilterd op gebied en is niet gefilterd op featuretype.\n\n### Custom\nBij een custom download wordt een aanvraag gedaan waarin specifieke filters worden opgegeven m.b.t. de\ngewenste inhoud van de bestanden.\nDe aanvraag wordt asynchroon behandeld op de server en de status van de aanvraag kan opgevraagd worden.\nNadat de aanvraag voorbereid is op de server, kan het bestand gedownload worden.\n\n#### Filters\n##### Geofilter\nIn het request voor een Custom download kan (optioneel) een geofilter meegegeven worden.\nDe waarde van dit geofilter moet voldoen aan het\n[Well-known text (WKT)](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry) formaat.\nAlleen Polygon en MultiPolygon objecten zijn hierbij toegestaan, bovendien worden inner rings niet ondersteund.\nDe co&ouml;rdinaten worden ge&iuml;nterpreteerd volgens EPSG:28992.\n\nDit geofilter limiteert het gebied waarvoor gegevens in de download wordt opgenomen,\nmaar het filter is niet exact. Dat betekent dat de download een overshoot aan objecten\nbuiten de selectie kan bevatten.\n\n##### Featuretypes\nIn het request voor een Custom download moet (verplicht) opgegeven worden welke featuretypes\nin de download opgenomen moeten worden.\n\n## Delta\nDelta endpoints zijn ervoor om eenmalig je eigen administratie op te bouwen (initi&euml;le levering) en\ndeze periodiek bij te werken met de beschikbare wijzigingen.\n\nDelta downloads bevatten alleen informatie over de featuretypes *perceel* en *kadastralegrens*,\nin tegenstelling tot de Full Downloads bevatten ze geen informatie m.b.t.\nde featuretypes *pand* en *openbareruimtelabel*.\n\n### Werkwijze\n1. Een beginstand wordt gedownload met het Delta Custom of Delta Predefined endpoint,\ndoor deze aan te roepen zonder parameter delta-id.\nDe download bevat informatie over welke delta-id het betreft.\n2. Periodiek (bij voorkeur dagelijks) wordt het Delta endpoint aangeroepen om de delta-id's op te halen\nwelke sinds de bij stap 1 bepaalde delta-id zijn ontstaan.\n3. Voor elke delta-id die in stap 2 gevonden wordt, wordt het Delta Custom of Delta Predefined endpoint\naangeroepen met parameter delta-id.\nDe inhoud van deze downloads bevat alleen de mutaties die hebben plaatsgevonden in die betreffende delta.\n\n### Predefined\nDe opzet is hier gelijk aan de full predefined downloads. Echter\nkan aan het delta endpoint in het request optioneel de parameter delta-id worden opgegeven,\nzie stap 1 en 3 onder werkwijze.\n\n### Custom\nDe opzet is hier gelijk aan de full custom downloads. Echter\nkan aan het delta endpoint in het request optioneel de parameter delta-id worden opgegeven,\nzie stap 1 en 3 onder werkwijze.\n&quot;,&quot;title&quot;:&quot;DKK Download API&quot;,&quot;version&quot;:&quot;v1&quot;},&quot;openapi&quot;:&quot;3.0.0&quot;,&quot;paths&quot;:{&quot;/dataset&quot;:{&quot;get&quot;:{&quot;operationId&quot;:&quot;GetDataset&quot;,&quot;responses&quot;:{&quot;200&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;timeliness&quot;:[{&quot;datetimeTo&quot;:&quot;2019-01-26T00:00:00Z&quot;,&quot;featuretype&quot;:&quot;perceel&quot;},{&quot;datetimeTo&quot;:&quot;2019-01-26T00:00:00Z&quot;,&quot;featuretype&quot;:&quot;kadastralegrens&quot;},{&quot;datetimeTo&quot;:&quot;2019-01-01T00:00:00Z&quot;,&quot;featuretype&quot;:&quot;pand&quot;},{&quot;datetimeTo&quot;:&quot;2019-01-01T00:00:00Z&quot;,&quot;featuretype&quot;:&quot;openbareruimtelabel&quot;}]},&quot;schema&quot;:{&quot;properties&quot;:{&quot;timeliness&quot;:{&quot;description&quot;:&quot;Lijst met actualiteit per featuretype. Het datum tijd formaat is ISO 8601 en altijd in UTC.\n&quot;,&quot;items&quot;:{&quot;$ref&quot;:&quot;#/components/schemas/timeliness&quot;},&quot;type&quot;:&quot;array&quot;}},&quot;required&quot;:[&quot;timeliness&quot;],&quot;type&quot;:&quot;object&quot;}}},&quot;description&quot;:&quot;OK&quot;},&quot;500&quot;:{&quot;description&quot;:&quot;Interne server fout&quot;}},&quot;summary&quot;:&quot;Dit endpoint voorziet in metadata over de DKK dataset downloads&quot;,&quot;tags&quot;:[&quot;Dataset&quot;]}},&quot;/delta&quot;:{&quot;get&quot;:{&quot;operationId&quot;:&quot;GetDeltas&quot;,&quot;parameters&quot;:[{&quot;description&quot;:&quot;Als deze parameter wordt meegegeven, dan bevat het resultaat alleen delta's die later in de tijd zijn ontstaan dan de opgegeven delta-id. Als deze parameter niet wordt meegegeven, dan bevat het resultaat alle bekende delta-id's.\n&quot;,&quot;in&quot;:&quot;query&quot;,&quot;name&quot;:&quot;after-delta-id&quot;,&quot;schema&quot;:{&quot;type&quot;:&quot;string&quot;}},{&quot;description&quot;:&quot;Paginanummer voor paginering. Default: 1\n&quot;,&quot;in&quot;:&quot;query&quot;,&quot;name&quot;:&quot;page&quot;,&quot;required&quot;:false,&quot;schema&quot;:{&quot;type&quot;:&quot;integer&quot;}},{&quot;description&quot;:&quot;Aantal resultaten per pagina. Default: 10\n&quot;,&quot;in&quot;:&quot;query&quot;,&quot;name&quot;:&quot;count&quot;,&quot;required&quot;:false,&quot;schema&quot;:{&quot;type&quot;:&quot;integer&quot;}}],&quot;responses&quot;:{&quot;200&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;_links&quot;:[{&quot;href&quot;:&quot;delta?page=1\u0026count=3&quot;,&quot;rel&quot;:&quot;prev&quot;,&quot;type&quot;:&quot;application/json&quot;},{&quot;href&quot;:&quot;delta?page=3\u0026count=3&quot;,&quot;rel&quot;:&quot;next&quot;,&quot;type&quot;:&quot;application/json&quot;}],&quot;deltas&quot;:[{&quot;id&quot;:&quot;7df9d862-1e6c-4859-a561-62f9b96826ec&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2019-01-01T00:00:00Z&quot;,&quot;to&quot;:&quot;2019-01-02T00:00:00Z&quot;}},{&quot;id&quot;:&quot;76d1597d-dd9b-4ec0-9dad-116795794c4f&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2019-01-02T00:00:00Z&quot;,&quot;to&quot;:&quot;2019-01-03T00:00:00Z&quot;}},{&quot;id&quot;:&quot;e198078f-40ca-4943-9b0e-f66854164a94&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2019-01-03T00:00:00Z&quot;,&quot;to&quot;:&quot;2019-01-04T00:00:00Z&quot;}}]},&quot;schema&quot;:{&quot;properties&quot;:{&quot;_links&quot;:{&quot;description&quot;:&quot;Relatieve links naar volgende / vorige pagina's (indien van toepassing)&quot;,&quot;items&quot;:{&quot;$ref&quot;:&quot;#/components/schemas/HalLink&quot;},&quot;type&quot;:&quot;array&quot;},&quot;deltas&quot;:{&quot;description&quot;:&quot;Lijst met delta's. De lijst is gesorteerd in oplopende volgorde (oudste eerst)&quot;,&quot;items&quot;:{&quot;$ref&quot;:&quot;#/components/schemas/delta&quot;},&quot;type&quot;:&quot;array&quot;}},&quot;required&quot;:[&quot;deltas&quot;,&quot;_links&quot;],&quot;type&quot;:&quot;object&quot;}}},&quot;description&quot;:&quot;OK&quot;},&quot;500&quot;:{&quot;description&quot;:&quot;Interne server fout&quot;}},&quot;summary&quot;:&quot;Met dit endpoint kan een gesorteerde lijst van delta-id's opgehaald worden.&quot;,&quot;tags&quot;:[&quot;Delta&quot;]}},&quot;/delta/custom&quot;:{&quot;post&quot;:{&quot;operationId&quot;:&quot;DeltaCustomDownload&quot;,&quot;requestBody&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;featuretypes&quot;:[&quot;perceel&quot;,&quot;kadastralegrens&quot;],&quot;format&quot;:&quot;gml&quot;,&quot;geofilter&quot;:&quot;POLYGON((211417.92 475752.4800000001,212390.64000000004 475896.12,212916.48000000004 475818.84,212879.52000000005 475360.2,212950.08000000002 475203.12,212839.2 475065.36,212819.04 474981.36,212819.04 474877.2,212772 474857.04,212792.16 474769.68,212832.48 474705.84,212889.6 474695.76,213010.56000000003 474685.68,213044.16 474611.76,213030.72 474450.48,212637.6 474423.6,212708.16 473956.56,211122.24000000002 473849.04,210453.6 473896.08,210315.84000000003 473970,211417.92 475752.4800000001))&quot;},&quot;schema&quot;:{&quot;$ref&quot;:&quot;#/components/schemas/DeltaCustomDownloadRequest&quot;}}},&quot;description&quot;:&quot;JSON object waarin staat gespecificeerd welke informatie de download moet bevatten.\nAls het verzoek geen deltaId bevat, dan zal de download de meest recente initi&euml;le levering bevatten.\nAls het verzoek wel een deltaId bevat, dan zal de download alleen de wijzigingen bevatten uit de opgegeven delta.\n&quot;,&quot;required&quot;:true},&quot;responses&quot;:{&quot;202&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadastralekaart/api/v4_0/full/delta/09bf3690-e0a1-43cc-7550-f689936d374d/status&quot;}},&quot;downloadRequestId&quot;:&quot;09bf3690-e0a1-43cc-7550-f689936d374d&quot;},&quot;schema&quot;:{&quot;properties&quot;:{&quot;_links&quot;:{&quot;properties&quot;:{&quot;status&quot;:{&quot;allOf&quot;:[{&quot;$ref&quot;:&quot;#/components/schemas/HalLink&quot;}],&quot;description&quot;:&quot;Absolute path naar het endpoint waarop de status van de aanvraag opgehaald kan worden&quot;}},&quot;type&quot;:&quot;object&quot;},&quot;downloadRequestId&quot;:{&quot;description&quot;:&quot;ID van het gemaakte download request&quot;,&quot;type&quot;:&quot;string&quot;}},&quot;required&quot;:[&quot;downloadRequestId&quot;,&quot;_links&quot;],&quot;type&quot;:&quot;object&quot;}}},&quot;description&quot;:&quot;Verzoek geaccepteerd\n&quot;},&quot;500&quot;:{&quot;description&quot;:&quot;Interne server fout&quot;}},&quot;summary&quot;:&quot;Met dit endpoint kan een delta custom download aangevraagd worden&quot;,&quot;tags&quot;:[&quot;Delta Custom&quot;]}},&quot;/delta/custom/{downloadRequestId}/status&quot;:{&quot;get&quot;:{&quot;operationId&quot;:&quot;DeltaCustomDownloadStatus&quot;,&quot;parameters&quot;:[{&quot;in&quot;:&quot;path&quot;,&quot;name&quot;:&quot;downloadRequestId&quot;,&quot;required&quot;:true,&quot;schema&quot;:{&quot;type&quot;:&quot;string&quot;}}],&quot;responses&quot;:{&quot;200&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;/kadastralekaart/api/v4_0/full/delta/09bf3690-e0a1-43cc-7550-f689936d374d/status&quot;}},&quot;progress&quot;:23,&quot;status&quot;:&quot;RUNNING&quot;},&quot;schema&quot;:{&quot;properties&quot;:{&quot;_links&quot;:{&quot;properties&quot;:{&quot;self&quot;:{&quot;allOf&quot;:[{&quot;$ref&quot;:&quot;#/components/schemas/HalLink&quot;}],&quot;description&quot;:&quot;Absolute path naar het endpoint waarop de status van de aanvraag opgehaald kan worden&quot;}},&quot;type&quot;:&quot;object&quot;},&quot;progress&quot;:{&quot;type&quot;:&quot;integer&quot;},&quot;status&quot;:{&quot;enum&quot;:[&quot;PENDING&quot;,&quot;RUNNING&quot;],&quot;type&quot;:&quot;string&quot;}},&quot;required&quot;:[&quot;status&quot;,&quot;progress&quot;,&quot;_links&quot;],&quot;type&quot;:&quot;object&quot;}}},&quot;description&quot;:&quot;Delta custom download nog niet gereed&quot;},&quot;201&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/lv/bgt/api/v1/extract/72f0d5d6-d34c-439b-a115-b53811aa8a72/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;},&quot;schema&quot;:{&quot;properties&quot;:{&quot;_links&quot;:{&quot;properties&quot;:{&quot;download&quot;:{&quot;allOf&quot;:[{&quot;$ref&quot;:&quot;#/components/schemas/HalLink&quot;}],&quot;description&quot;:&quot;Absolute path waarop het bestand gedownload kan worden&quot;}},&quot;type&quot;:&quot;object&quot;},&quot;progress&quot;:{&quot;type&quot;:&quot;integer&quot;},&quot;status&quot;:{&quot;enum&quot;:[&quot;COMPLETED&quot;],&quot;type&quot;:&quot;string&quot;}},&quot;required&quot;:[&quot;status&quot;,&quot;progress&quot;,&quot;_links&quot;],&quot;type&quot;:&quot;object&quot;}}},&quot;description&quot;:&quot;Het bestand is gereed om te downloaden&quot;},&quot;404&quot;:{&quot;description&quot;:&quot;Delta custom download request met het gegeven ID is niet bij ons bekend&quot;},&quot;500&quot;:{&quot;description&quot;:&quot;Interne server fout&quot;}},&quot;summary&quot;:&quot;Dit endpoint geeft de status terug van een aangevraagde delta custom download&quot;,&quot;tags&quot;:[&quot;Delta Custom&quot;]}},&quot;/delta/predefined/dkk-gml-nl.zip&quot;:{&quot;get&quot;:{&quot;operationId&quot;:&quot;GetDeltaPredefinedGmlNl&quot;,&quot;parameters&quot;:[{&quot;description&quot;:&quot;Als het verzoek geen deltaId bevat, dan zal de download de meeste recente initi&euml;le levering bevatten. Als het verzoek wel een deltaId bevat, dan zal de download alleen de wijzigingen bevatten uit de opgegeven delta.\n&quot;,&quot;in&quot;:&quot;query&quot;,&quot;name&quot;:&quot;delta-id&quot;,&quot;schema&quot;:{&quot;type&quot;:&quot;string&quot;}}],&quot;responses&quot;:{&quot;307&quot;:{&quot;description&quot;:&quot;Redirect&quot;,&quot;headers&quot;:{&quot;Location&quot;:{&quot;description&quot;:&quot;Absolute path waarop het bestand gedownload kan worden&quot;}}},&quot;404&quot;:{&quot;description&quot;:&quot;Not found&quot;}},&quot;summary&quot;:&quot;Met dit endpoint kan een delta download gestart worden waarbij geen filters zijn toegepast op type feature of gebied\n&quot;,&quot;tags&quot;:[&quot;Delta Predefined&quot;]}},&quot;/full/custom&quot;:{&quot;options&quot;:{&quot;operationId&quot;:&quot;FullCustomDownloadCORS&quot;,&quot;responses&quot;:{&quot;204&quot;:{&quot;description&quot;:&quot;Standaard response&quot;}},&quot;summary&quot;:&quot;De OPTIONS methode is beschikbaar voor de CORS preflight check&quot;,&quot;tags&quot;:[&quot;Full Custom&quot;]},&quot;post&quot;:{&quot;operationId&quot;:&quot;FullCustomDownload&quot;,&quot;requestBody&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;featuretypes&quot;:[&quot;perceel&quot;,&quot;kadastralegrens&quot;,&quot;pand&quot;,&quot;openbareruimtelabel&quot;],&quot;format&quot;:&quot;gml&quot;,&quot;geofilter&quot;:&quot;POLYGON((211417.92 475752.4800000001,212390.64000000004 475896.12,212916.48000000004 475818.84,212879.52000000005 475360.2,212950.08000000002 475203.12,212839.2 475065.36,212819.04 474981.36,212819.04 474877.2,212772 474857.04,212792.16 474769.68,212832.48 474705.84,212889.6 474695.76,213010.56000000003 474685.68,213044.16 474611.76,213030.72 474450.48,212637.6 474423.6,212708.16 473956.56,211122.24000000002 473849.04,210453.6 473896.08,210315.84000000003 473970,211417.92 475752.4800000001))&quot;},&quot;schema&quot;:{&quot;$ref&quot;:&quot;#/components/schemas/FullCustomDownloadRequest&quot;}}},&quot;description&quot;:&quot;JSON object waarin staat gespecificeerd welke informatie de download moet bevatten&quot;,&quot;required&quot;:true},&quot;responses&quot;:{&quot;202&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadastralekaart/api/v4_0/full/custom/09bf3690-e0a1-43cc-7550-f689936d374d/status&quot;}},&quot;downloadRequestId&quot;:&quot;09bf3690-e0a1-43cc-7550-f689936d374d&quot;},&quot;schema&quot;:{&quot;properties&quot;:{&quot;_links&quot;:{&quot;properties&quot;:{&quot;status&quot;:{&quot;allOf&quot;:[{&quot;$ref&quot;:&quot;#/components/schemas/HalLink&quot;}],&quot;description&quot;:&quot;Absolute path naar het endpoint waarop de status van de aanvraag opgehaald kan worden&quot;}},&quot;type&quot;:&quot;object&quot;},&quot;downloadRequestId&quot;:{&quot;description&quot;:&quot;ID van het gemaakte download request&quot;,&quot;type&quot;:&quot;string&quot;}},&quot;required&quot;:[&quot;downloadRequestId&quot;,&quot;_links&quot;],&quot;type&quot;:&quot;object&quot;}}},&quot;description&quot;:&quot;Verzoek geaccepteerd\n&quot;},&quot;500&quot;:{&quot;description&quot;:&quot;Interne server fout&quot;}},&quot;summary&quot;:&quot;Met dit endpoint kan een full custom download aangevraagd worden&quot;,&quot;tags&quot;:[&quot;Full Custom&quot;]}},&quot;/full/custom/{downloadRequestId}/status&quot;:{&quot;get&quot;:{&quot;operationId&quot;:&quot;FullCustomDownloadStatus&quot;,&quot;parameters&quot;:[{&quot;in&quot;:&quot;path&quot;,&quot;name&quot;:&quot;downloadRequestId&quot;,&quot;required&quot;:true,&quot;schema&quot;:{&quot;type&quot;:&quot;string&quot;}}],&quot;responses&quot;:{&quot;200&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;/kadastralekaart/api/v4_0/full/custom/09bf3690-e0a1-43cc-7550-f689936d374d/status&quot;}},&quot;progress&quot;:23,&quot;status&quot;:&quot;RUNNING&quot;},&quot;schema&quot;:{&quot;properties&quot;:{&quot;_links&quot;:{&quot;properties&quot;:{&quot;self&quot;:{&quot;allOf&quot;:[{&quot;$ref&quot;:&quot;#/components/schemas/HalLink&quot;}],&quot;description&quot;:&quot;Absolute path naar het endpoint waarop de status van de aanvraag opgehaald kan worden&quot;}},&quot;type&quot;:&quot;object&quot;},&quot;progress&quot;:{&quot;type&quot;:&quot;integer&quot;},&quot;status&quot;:{&quot;enum&quot;:[&quot;PENDING&quot;,&quot;RUNNING&quot;],&quot;type&quot;:&quot;string&quot;}},&quot;required&quot;:[&quot;status&quot;,&quot;progress&quot;,&quot;_links&quot;],&quot;type&quot;:&quot;object&quot;}}},&quot;description&quot;:&quot;Full custom download nog niet gereed&quot;},&quot;201&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadastralekaart/api/v4_0/extract/72f0d5d6-d34c-439b-a115-b53811aa8a72/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;},&quot;schema&quot;:{&quot;properties&quot;:{&quot;_links&quot;:{&quot;properties&quot;:{&quot;download&quot;:{&quot;allOf&quot;:[{&quot;$ref&quot;:&quot;#/components/schemas/HalLink&quot;}],&quot;description&quot;:&quot;Absolute path waarop het bestand gedownload kan worden&quot;}},&quot;type&quot;:&quot;object&quot;},&quot;progress&quot;:{&quot;type&quot;:&quot;integer&quot;},&quot;status&quot;:{&quot;enum&quot;:[&quot;COMPLETED&quot;],&quot;type&quot;:&quot;string&quot;}},&quot;required&quot;:[&quot;status&quot;,&quot;progress&quot;,&quot;_links&quot;],&quot;type&quot;:&quot;object&quot;}}},&quot;description&quot;:&quot;Het bestand is gereed om te downloaden&quot;},&quot;404&quot;:{&quot;description&quot;:&quot;Full custom download request met het gegeven ID is niet bij ons bekend&quot;},&quot;500&quot;:{&quot;content&quot;:{&quot;application/json&quot;:{&quot;example&quot;:{&quot;progress&quot;:100,&quot;reason&quot;:&quot;Failed to generate download&quot;,&quot;status&quot;:&quot;FAILED&quot;},&quot;schema&quot;:{&quot;properties&quot;:{&quot;progress&quot;:{&quot;type&quot;:&quot;integer&quot;},&quot;reason&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;status&quot;:{&quot;type&quot;:&quot;string&quot;}},&quot;type&quot;:&quot;object&quot;}}},&quot;description&quot;:&quot;Interne server fout&quot;}},&quot;summary&quot;:&quot;Dit endpoint geeft de status terug van een aangevraagde full custom download&quot;,&quot;tags&quot;:[&quot;Full Custom&quot;]}},&quot;/full/predefined/dkk-gml-nl-nohist.zip&quot;:{&quot;get&quot;:{&quot;operationId&quot;:&quot;GetFullPredefinedGmlNl&quot;,&quot;responses&quot;:{&quot;307&quot;:{&quot;description&quot;:&quot;Redirect&quot;,&quot;headers&quot;:{&quot;Location&quot;:{&quot;description&quot;:&quot;Absolute path waarop het bestand gedownload kan worden&quot;}}},&quot;404&quot;:{&quot;description&quot;:&quot;Not found&quot;}},&quot;summary&quot;:&quot;Met dit endpoint kan een full download gestart worden waarbij geen filters zijn toegepast op type feature of gebied\n&quot;,&quot;tags&quot;:[&quot;Full Predefined&quot;]}}},&quot;servers&quot;:[{&quot;url&quot;:&quot;https://api.pdok.nl/kadaster/kadastralekaart/download/v4_0&quot;}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains  read('./expectedOutcome/openapi.json')</span>
+  
+  <span class="lead-duration duration">0.041</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

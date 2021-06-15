@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:ListStoredQueriesResponse xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs/2.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd">
+  <StoredQuery id="urn:ogc:def:query:OGC-WFS::GetFeatureById">
+    <Title>Get feature by identifier</Title>
+    <ReturnFeatureType xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl">kadastralekaartv4:kadastralegrens</ReturnFeatureType>
+    <ReturnFeatureType xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl">kadastralekaartv4:perceel</ReturnFeatureType>
+    <ReturnFeatureType xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl">kadastralekaartv4:bebouwing</ReturnFeatureType>
+    <ReturnFeatureType xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl">kadastralekaartv4:nummeraanduidingreeks</ReturnFeatureType>
+    <ReturnFeatureType xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl">kadastralekaartv4:openbareruimtenaam</ReturnFeatureType>
+  </StoredQuery>
+  <StoredQuery id="urn:x-inspire:storedQuery:kadastralekaartv4:FullDataset">
+    <wfs:Title xml:lang="en">kadastralekaartv4 WFS</wfs:Title>
+    <ReturnFeatureType>kadastralekaartv4:kadastralegrens</ReturnFeatureType>
+    <ReturnFeatureType>kadastralekaartv4:perceel</ReturnFeatureType>
+    <ReturnFeatureType>kadastralekaartv4:bebouwing</ReturnFeatureType>
+    <ReturnFeatureType>kadastralekaartv4:nummeraanduidingreeks</ReturnFeatureType>
+    <ReturnFeatureType>kadastralekaartv4:openbareruimtenaam</ReturnFeatureType>
+  </StoredQuery>
+</wfs:ListStoredQueriesResponse>

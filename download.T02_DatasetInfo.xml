@@ -1,0 +1,11 @@
+<testsuite failures="0" name="download/T02_DatasetInfo.feature" skipped="0" tests="1" time="0.546257">
+  <testcase classname="download.T02_DatasetInfo" name="DKK API geeft dataset info" time="0.546257">
+    <system-out>* url apiBaseUrl + 'kadastralekaart/api/v4_0/' ............................ passed
+* def datasetstruct = ..................................................... passed
+Given path 'dataset' ...................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains { timeliness: '#present' } .................... passed
+And match response == datasetstruct ....................................... passed</system-out>
+  </testcase>
+</testsuite>

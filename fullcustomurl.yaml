@@ -1,0 +1,40 @@
+- Test: T05_1_perceel
+  Url: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/91711e57-5926-42b9-8de1-5d25baf23508/extract.zip
+  Size: 1805266
+  Time: 2021-06-15T02:29:22.747
+
+- Test: T05_2_kadastralegrens
+  Url: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/13625067-128a-4d8f-8cc3-d532f5b97b93/extract.zip
+  Size: 2207806
+  Time: 2021-06-15T02:29:33.725
+
+- Test: T05_3_pand
+  Url: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/0af8b23e-6382-4984-b646-f84988ff1fae/extract.zip
+  Size: 1633902
+  Time: 2021-06-15T02:29:39.136
+
+- Test: T05_4_openbareruimtelabel
+  Url: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/4da425e2-9e33-4369-88e5-04d018615a9f/extract.zip
+  Size: 29974
+  Time: 2021-06-15T02:29:44.246
+
+- Test: T05_5_4features_hof
+  Url: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/827e7b8d-9908-400f-838b-288baeb65b43/extract.zip
+  Size: 5676882
+  Time: 2021-06-15T02:29:56.452
+
+- Test: T05_6_perceelenOpenbareruimtelabel_swift
+  Url: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/7a108de6-a3bc-4f65-82c0-8520494f2b09/extract.zip
+  Size: 561032
+  Time: 2021-06-15T02:29:57.329
+
+- Test: T05_7_dkkbgt_brug
+  Url: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/ba85c8bd-9cbc-41e9-9458-2d55adc5f6fd/extract.zip
+  Size: 138140
+  Time: 2021-06-15T02:30:00.413
+
+- Test: T05_8_prodent_fabriek
+  Url: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/07823603-f8d2-4809-a2d5-f15f31768e91/extract.zip
+  Size: 6083971
+  Time: 2021-06-15T02:30:11.614
+

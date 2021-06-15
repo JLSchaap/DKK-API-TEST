@@ -1,0 +1,9 @@
+<testsuite failures="0" name="download/T01_Openapi.feature" skipped="0" tests="1" time="1.359035">
+  <testcase classname="download.T01_Openapi" name="DKK API geeft open api spec" time="1.359035">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/' ............................. passed
+Given path 'openapi.json' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains  read('./expectedOutcome/openapi.json') ....... passed</system-out>
+  </testcase>
+</testsuite>

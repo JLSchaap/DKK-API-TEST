@@ -1,0 +1,8344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: download/T05_FullCustom.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>DKK API TEST</td>
+            <td>15 Jun 2021, 02:31</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">download/T05_FullCustom.feature</td>
+                    <td      class="passed"    >264</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">264</td>
+
+          <td  class="passed"    >8</td>
+          <td >0</td>
+          <td class="total">8</td>
+
+          <td class="duration" data-value="34444290035">34.444</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_SMOKE.html">@SMOKE</a>
+      </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">download/T05_FullCustom.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">DKK Api geeft Custom full</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.001</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>02:29:19.525 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">3.211</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">download full custom op locatie hofvijver voor feature(s): perceel</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request {format: 'gml',featuretypes: [&quot;perceel&quot;],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">1.586</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>02:29:19.527 request:
+1 &gt; POST https://downloads.pdok.nl/kadastralekaart/api/v4_0/full/custom
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 218
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+{&quot;format&quot;:&quot;gml&quot;,&quot;featuretypes&quot;:[&quot;perceel&quot;],&quot;geofilter&quot;:&quot;POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))&quot;}
+
+02:29:21.113 response time in milliseconds: 1585.48
+1 &lt; 202
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 187
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:20 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/ee7478ad-b7af-4902-45c7-4be3205ad4dd/status&quot;}},&quot;downloadRequestId&quot;:&quot;ee7478ad-b7af-4902-45c7-4be3205ad4dd&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 202</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { downloadRequestId: '#uuid' , _links:'#notnull' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def links = response._links</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadRequestId = response.downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def status = response.status</span>
+  
+  <span class="lead-duration duration">0.042</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def statusurl = apiBaseUrl  + links.status.href</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'links:' , links</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>02:29:21.163 [print] links: {
+  &quot;status&quot;: {
+    &quot;href&quot;: &quot;/kadaster/kadastralekaart/download/v4_0/full/custom/ee7478ad-b7af-4902-45c7-4be3205ad4dd/status&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print  'statusurl', statusurl</span>
+  
+  <span class="lead-duration duration">0.011</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>02:29:21.175 [print] statusurl https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/ee7478ad-b7af-4902-45c7-4be3205ad4dd/status</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'extracId:', downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.014</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>02:29:21.190 [print] extracId: ee7478ad-b7af-4902-45c7-4be3205ad4dd</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.491</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>02:29:21.190 request:
+2 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/ee7478ad-b7af-4902-45c7-4be3205ad4dd/status
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: downloads.pdok.nl
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:21.682 response time in milliseconds: 490.82
+2 &lt; 200
+2 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+2 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+2 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Max-Age: 1000
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 160
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 15 Jun 2021 02:29:21 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Server: Apache
+2 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+2 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/ee7478ad-b7af-4902-45c7-4be3205ad4dd/status&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;RUNNING&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;waiting update delta link&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>02:29:21.684 [print] waiting update delta link</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 201</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.490</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>02:29:21.688 request:
+3 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/ee7478ad-b7af-4902-45c7-4be3205ad4dd/status
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: downloads.pdok.nl
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:22.176 response time in milliseconds: 487.48
+3 &lt; 201
+3 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+3 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+3 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Max-Age: 1000
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Length: 167
+3 &lt; Content-Type: application/json
+3 &lt; Date: Tue, 15 Jun 2021 02:29:22 GMT
+3 &lt; Expires: 0
+3 &lt; Pragma: no-cache
+3 &lt; Server: Apache
+3 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+3 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/91711e57-5926-42b9-8de1-5d25baf23508/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadlink = apiBaseUrl  +  response._links.download.href</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;downloadlink:&quot;, downloadlink</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>02:29:22.181 [print] downloadlink: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/91711e57-5926-42b9-8de1-5d25baf23508/extract.zip</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method HEAD</span>
+  
+  <span class="lead-duration duration">0.535</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>02:29:22.182 request:
+4 &gt; HEAD https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/91711e57-5926-42b9-8de1-5d25baf23508/extract.zip
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: downloads.pdok.nl
+4 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:22.717 response time in milliseconds: 534.13
+4 &lt; 200
+4 &lt; Accept-Ranges: bytes
+4 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+4 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Max-Age: 1000
+4 &lt; Content-Disposition: attachment; filename=extract.zip
+4 &lt; Content-Length: 1805266
+4 &lt; Content-Security-Policy: block-all-mixed-content
+4 &lt; Content-Type: application/zip
+4 &lt; Date: Tue, 15 Jun 2021 02:29:22 GMT
+4 &lt; Etag: &quot;9621e3316ec021d13d5b375066c5f41e-1&quot;
+4 &lt; Last-Modified: Tue, 15 Jun 2021 02:29:22 GMT
+4 &lt; Server: MinIO
+4 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+4 &lt; Vary: Origin
+4 &lt; X-Amz-Request-Id: 1688A085E72063B3
+4 &lt; X-Cnection: close
+4 &lt; X-Xss-Protection: 1; mode=block</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Length'][0] == '#notnull'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Type'][0] == 'application/zip'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def zipsize =  responseHeaders['Content-Length'][0]</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;size&quot;, zipsize</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>02:29:22.725 [print] size 1805266</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert zipsize &gt; 300</span>
+  
+  <span class="lead-duration duration">0.007</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mydownloads = Java.type('download.DataStorage')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LocalDateTime = Java.type('java.time.LocalDateTime')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new mydownloads</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.mywriteln('- Test: T05_1_perceel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml')</span>
+  
+  <span class="lead-duration duration">0.013</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.001</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>02:29:29.662 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">4.051</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">download full custom op locatie hofvijver voor feature(s): kadastralegrens</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request {format: 'gml',featuretypes: [&quot;kadastralegrens&quot;],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">2.487</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>02:29:29.677 request:
+1 &gt; POST https://downloads.pdok.nl/kadastralekaart/api/v4_0/full/custom
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 226
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+{&quot;format&quot;:&quot;gml&quot;,&quot;featuretypes&quot;:[&quot;kadastralegrens&quot;],&quot;geofilter&quot;:&quot;POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))&quot;}
+
+02:29:32.151 response time in milliseconds: 2473.55
+1 &lt; 202
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 187
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:32 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/3f8bc35d-2207-49df-6091-6409d093bf8e/status&quot;}},&quot;downloadRequestId&quot;:&quot;3f8bc35d-2207-49df-6091-6409d093bf8e&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 202</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { downloadRequestId: '#uuid' , _links:'#notnull' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def links = response._links</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadRequestId = response.downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def status = response.status</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def statusurl = apiBaseUrl  + links.status.href</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'links:' , links</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>02:29:32.162 [print] links: {
+  &quot;status&quot;: {
+    &quot;href&quot;: &quot;/kadaster/kadastralekaart/download/v4_0/full/custom/3f8bc35d-2207-49df-6091-6409d093bf8e/status&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print  'statusurl', statusurl</span>
+  
+  <span class="lead-duration duration">0.009</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>02:29:32.171 [print] statusurl https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/3f8bc35d-2207-49df-6091-6409d093bf8e/status</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'extracId:', downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>02:29:32.174 [print] extracId: 3f8bc35d-2207-49df-6091-6409d093bf8e</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.509</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>02:29:32.176 request:
+2 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/3f8bc35d-2207-49df-6091-6409d093bf8e/status
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: downloads.pdok.nl
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:32.684 response time in milliseconds: 507.81
+2 &lt; 200
+2 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+2 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+2 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Max-Age: 1000
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 160
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 15 Jun 2021 02:29:32 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Server: Apache
+2 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+2 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/3f8bc35d-2207-49df-6091-6409d093bf8e/status&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;RUNNING&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;waiting update delta link&quot;</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>02:29:32.688 [print] waiting update delta link</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 201</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.485</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>02:29:32.689 request:
+3 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/3f8bc35d-2207-49df-6091-6409d093bf8e/status
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: downloads.pdok.nl
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:33.173 response time in milliseconds: 484.12
+3 &lt; 201
+3 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+3 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+3 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Max-Age: 1000
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Length: 167
+3 &lt; Content-Type: application/json
+3 &lt; Date: Tue, 15 Jun 2021 02:29:33 GMT
+3 &lt; Expires: 0
+3 &lt; Pragma: no-cache
+3 &lt; Server: Apache
+3 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+3 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/13625067-128a-4d8f-8cc3-d532f5b97b93/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadlink = apiBaseUrl  +  response._links.download.href</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;downloadlink:&quot;, downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>02:29:33.177 [print] downloadlink: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/13625067-128a-4d8f-8cc3-d532f5b97b93/extract.zip</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method HEAD</span>
+  
+  <span class="lead-duration duration">0.518</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>02:29:33.178 request:
+4 &gt; HEAD https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/13625067-128a-4d8f-8cc3-d532f5b97b93/extract.zip
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: downloads.pdok.nl
+4 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:33.696 response time in milliseconds: 517.24
+4 &lt; 200
+4 &lt; Accept-Ranges: bytes
+4 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+4 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Max-Age: 1000
+4 &lt; Content-Disposition: attachment; filename=extract.zip
+4 &lt; Content-Length: 2207806
+4 &lt; Content-Security-Policy: block-all-mixed-content
+4 &lt; Content-Type: application/zip
+4 &lt; Date: Tue, 15 Jun 2021 02:29:33 GMT
+4 &lt; Etag: &quot;a14569a99d5c9f929ccab40ec5481035-1&quot;
+4 &lt; Last-Modified: Tue, 15 Jun 2021 02:29:32 GMT
+4 &lt; Server: MinIO
+4 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+4 &lt; Vary: Origin
+4 &lt; X-Amz-Request-Id: 1688A0887689F6EB
+4 &lt; X-Cnection: close
+4 &lt; X-Xss-Protection: 1; mode=block</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Length'][0] == '#notnull'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Type'][0] == 'application/zip'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def zipsize =  responseHeaders['Content-Length'][0]</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;size&quot;, zipsize</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>02:29:33.706 [print] size 2207806</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert zipsize &gt; 300</span>
+  
+  <span class="lead-duration duration">0.017</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mydownloads = Java.type('download.DataStorage')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LocalDateTime = Java.type('java.time.LocalDateTime')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new mydownloads</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.mywriteln('- Test: T05_2_kadastralegrens\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml')</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.001</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>02:29:37.075 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2.055</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">download full custom op locatie hofvijver voor feature(s): pand</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-34" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request {format: 'gml',featuretypes: [&quot;pand&quot;],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">0.486</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>02:29:37.078 request:
+1 &gt; POST https://downloads.pdok.nl/kadastralekaart/api/v4_0/full/custom
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 215
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+{&quot;format&quot;:&quot;gml&quot;,&quot;featuretypes&quot;:[&quot;pand&quot;],&quot;geofilter&quot;:&quot;POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))&quot;}
+
+02:29:37.563 response time in milliseconds: 485.68
+1 &lt; 202
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 187
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:37 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/57163183-7468-4603-5ba9-e0f40471ad13/status&quot;}},&quot;downloadRequestId&quot;:&quot;57163183-7468-4603-5ba9-e0f40471ad13&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 202</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { downloadRequestId: '#uuid' , _links:'#notnull' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def links = response._links</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadRequestId = response.downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def status = response.status</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def statusurl = apiBaseUrl  + links.status.href</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'links:' , links</span>
+  
+  <span class="lead-duration duration">0.039</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>02:29:37.617 [print] links: {
+  &quot;status&quot;: {
+    &quot;href&quot;: &quot;/kadaster/kadastralekaart/download/v4_0/full/custom/57163183-7468-4603-5ba9-e0f40471ad13/status&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print  'statusurl', statusurl</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>02:29:37.619 [print] statusurl https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/57163183-7468-4603-5ba9-e0f40471ad13/status</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'extracId:', downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>02:29:37.622 [print] extracId: 57163183-7468-4603-5ba9-e0f40471ad13</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.504</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>02:29:37.630 request:
+2 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/57163183-7468-4603-5ba9-e0f40471ad13/status
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: downloads.pdok.nl
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:38.127 response time in milliseconds: 496.72
+2 &lt; 200
+2 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+2 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+2 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Max-Age: 1000
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 160
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 15 Jun 2021 02:29:38 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Server: Apache
+2 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+2 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/57163183-7468-4603-5ba9-e0f40471ad13/status&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;RUNNING&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;waiting update delta link&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>02:29:38.132 [print] waiting update delta link</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 201</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.480</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>02:29:38.133 request:
+3 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/57163183-7468-4603-5ba9-e0f40471ad13/status
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: downloads.pdok.nl
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:38.613 response time in milliseconds: 479.57
+3 &lt; 201
+3 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+3 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+3 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Max-Age: 1000
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Length: 167
+3 &lt; Content-Type: application/json
+3 &lt; Date: Tue, 15 Jun 2021 02:29:38 GMT
+3 &lt; Expires: 0
+3 &lt; Pragma: no-cache
+3 &lt; Server: Apache
+3 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+3 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/0af8b23e-6382-4984-b646-f84988ff1fae/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadlink = apiBaseUrl  +  response._links.download.href</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;downloadlink:&quot;, downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>02:29:38.616 [print] downloadlink: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/0af8b23e-6382-4984-b646-f84988ff1fae/extract.zip</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method HEAD</span>
+  
+  <span class="lead-duration duration">0.506</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>02:29:38.617 request:
+4 &gt; HEAD https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/0af8b23e-6382-4984-b646-f84988ff1fae/extract.zip
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: downloads.pdok.nl
+4 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:39.122 response time in milliseconds: 504.93
+4 &lt; 200
+4 &lt; Accept-Ranges: bytes
+4 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+4 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Max-Age: 1000
+4 &lt; Content-Disposition: attachment; filename=extract.zip
+4 &lt; Content-Length: 1633902
+4 &lt; Content-Security-Policy: block-all-mixed-content
+4 &lt; Content-Type: application/zip
+4 &lt; Date: Tue, 15 Jun 2021 02:29:39 GMT
+4 &lt; Etag: &quot;5cc6b306c5b2ffba047bfcd004af849f-1&quot;
+4 &lt; Last-Modified: Tue, 15 Jun 2021 02:29:38 GMT
+4 &lt; Server: MinIO
+4 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+4 &lt; Vary: Origin
+4 &lt; X-Amz-Request-Id: 1688A089B99DA68D
+4 &lt; X-Cnection: close
+4 &lt; X-Xss-Protection: 1; mode=block</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Length'][0] == '#notnull'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Type'][0] == 'application/zip'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def zipsize =  responseHeaders['Content-Length'][0]</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;size&quot;, zipsize</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>02:29:39.123 [print] size 1633902</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert zipsize &gt; 300</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mydownloads = Java.type('download.DataStorage')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LocalDateTime = Java.type('java.time.LocalDateTime')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new mydownloads</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.mywriteln('- Test: T05_3_pand\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml')</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.001</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-47">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>02:29:40.272 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">3.963</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-49">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">download full custom op locatie hofvijver voor feature(s): openbareruimtelabel</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-49" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-50">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-50" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request {format: 'gml',featuretypes: [&quot;openbareruimtelabel&quot;],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">2.448</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>02:29:40.275 request:
+1 &gt; POST https://downloads.pdok.nl/kadastralekaart/api/v4_0/full/custom
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 230
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+{&quot;format&quot;:&quot;gml&quot;,&quot;featuretypes&quot;:[&quot;openbareruimtelabel&quot;],&quot;geofilter&quot;:&quot;POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))&quot;}
+
+02:29:42.723 response time in milliseconds: 2447.69
+1 &lt; 202
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 187
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:42 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/fba3dfc9-b1fd-4671-66ca-14db8c1f0889/status&quot;}},&quot;downloadRequestId&quot;:&quot;fba3dfc9-b1fd-4671-66ca-14db8c1f0889&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 202</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { downloadRequestId: '#uuid' , _links:'#notnull' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def links = response._links</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadRequestId = response.downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def status = response.status</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def statusurl = apiBaseUrl  + links.status.href</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'links:' , links</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>02:29:42.740 [print] links: {
+  &quot;status&quot;: {
+    &quot;href&quot;: &quot;/kadaster/kadastralekaart/download/v4_0/full/custom/fba3dfc9-b1fd-4671-66ca-14db8c1f0889/status&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print  'statusurl', statusurl</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>02:29:42.744 [print] statusurl https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/fba3dfc9-b1fd-4671-66ca-14db8c1f0889/status</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'extracId:', downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details">
+        <pre>02:29:42.746 [print] extracId: fba3dfc9-b1fd-4671-66ca-14db8c1f0889</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.486</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>02:29:42.750 request:
+2 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/fba3dfc9-b1fd-4671-66ca-14db8c1f0889/status
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: downloads.pdok.nl
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:43.233 response time in milliseconds: 482.91
+2 &lt; 201
+2 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+2 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+2 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Max-Age: 1000
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 167
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 15 Jun 2021 02:29:43 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Server: Apache
+2 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+2 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/4da425e2-9e33-4369-88e5-04d018615a9f/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;waiting update delta link&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-56">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details">
+        <pre>02:29:43.235 [print] waiting update delta link</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 201</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.493</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>02:29:43.237 request:
+3 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/fba3dfc9-b1fd-4671-66ca-14db8c1f0889/status
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: downloads.pdok.nl
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:43.728 response time in milliseconds: 490.68
+3 &lt; 201
+3 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+3 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+3 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Max-Age: 1000
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Length: 167
+3 &lt; Content-Type: application/json
+3 &lt; Date: Tue, 15 Jun 2021 02:29:43 GMT
+3 &lt; Expires: 0
+3 &lt; Pragma: no-cache
+3 &lt; Server: Apache
+3 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+3 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/4da425e2-9e33-4369-88e5-04d018615a9f/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadlink = apiBaseUrl  +  response._links.download.href</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;downloadlink:&quot;, downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-58">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details">
+        <pre>02:29:43.734 [print] downloadlink: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/4da425e2-9e33-4369-88e5-04d018615a9f/extract.zip</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method HEAD</span>
+  
+  <span class="lead-duration duration">0.500</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-59">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-59" class="collapse collapsable-details">
+        <pre>02:29:43.739 request:
+4 &gt; HEAD https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/4da425e2-9e33-4369-88e5-04d018615a9f/extract.zip
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: downloads.pdok.nl
+4 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:44.234 response time in milliseconds: 494.74
+4 &lt; 200
+4 &lt; Accept-Ranges: bytes
+4 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+4 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Max-Age: 1000
+4 &lt; Content-Disposition: attachment; filename=extract.zip
+4 &lt; Content-Length: 29974
+4 &lt; Content-Security-Policy: block-all-mixed-content
+4 &lt; Content-Type: application/zip
+4 &lt; Date: Tue, 15 Jun 2021 02:29:44 GMT
+4 &lt; Etag: &quot;c592387aec83091f5cbe9d9309162462-1&quot;
+4 &lt; Last-Modified: Tue, 15 Jun 2021 02:29:42 GMT
+4 &lt; Server: MinIO
+4 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+4 &lt; Vary: Origin
+4 &lt; X-Amz-Request-Id: 1688A08AEABA1D6A
+4 &lt; X-Cnection: close
+4 &lt; X-Xss-Protection: 1; mode=block</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Length'][0] == '#notnull'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Type'][0] == 'application/zip'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def zipsize =  responseHeaders['Content-Length'][0]</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;size&quot;, zipsize</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-60">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-60" class="collapse collapsable-details">
+        <pre>02:29:44.241 [print] size 29974</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert zipsize &gt; 300</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mydownloads = Java.type('download.DataStorage')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LocalDateTime = Java.type('java.time.LocalDateTime')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new mydownloads</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.mywriteln('- Test: T05_4_openbareruimtelabel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml')</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.001</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-61">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-61" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-62">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-62" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-63">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-63" class="collapse collapsable-details">
+        <pre>02:29:47.336 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">9.113</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-64">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">download full custom op locatie hofvijver voor feature(s): perceel&quot;,  &quot;kadastralegrens&quot;, &quot;pand&quot;, &quot;openbareruimtelabel</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-64" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-65">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-65" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request {format: 'gml',featuretypes: [&quot;perceel&quot;,  &quot;kadastralegrens&quot;, &quot;pand&quot;, &quot;openbareruimtelabel&quot;],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">1.865</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-66">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-66" class="collapse collapsable-details">
+        <pre>02:29:47.338 request:
+1 &gt; POST https://downloads.pdok.nl/kadastralekaart/api/v4_0/full/custom
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 265
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+{&quot;format&quot;:&quot;gml&quot;,&quot;featuretypes&quot;:[&quot;perceel&quot;,&quot;kadastralegrens&quot;,&quot;pand&quot;,&quot;openbareruimtelabel&quot;],&quot;geofilter&quot;:&quot;POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))&quot;}
+
+02:29:49.203 response time in milliseconds: 1864.29
+1 &lt; 202
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 187
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:49 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/7c821444-e2d3-4cae-481e-6241f811a1c3/status&quot;}},&quot;downloadRequestId&quot;:&quot;7c821444-e2d3-4cae-481e-6241f811a1c3&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 202</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { downloadRequestId: '#uuid' , _links:'#notnull' }</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def links = response._links</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadRequestId = response.downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def status = response.status</span>
+  
+  <span class="lead-duration duration">0.007</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def statusurl = apiBaseUrl  + links.status.href</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'links:' , links</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-67">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-67" class="collapse collapsable-details">
+        <pre>02:29:49.219 [print] links: {
+  &quot;status&quot;: {
+    &quot;href&quot;: &quot;/kadaster/kadastralekaart/download/v4_0/full/custom/7c821444-e2d3-4cae-481e-6241f811a1c3/status&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print  'statusurl', statusurl</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-68">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-68" class="collapse collapsable-details">
+        <pre>02:29:49.222 [print] statusurl https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/7c821444-e2d3-4cae-481e-6241f811a1c3/status</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'extracId:', downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-69">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-69" class="collapse collapsable-details">
+        <pre>02:29:49.225 [print] extracId: 7c821444-e2d3-4cae-481e-6241f811a1c3</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.673</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-70">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-70" class="collapse collapsable-details">
+        <pre>02:29:49.226 request:
+2 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/7c821444-e2d3-4cae-481e-6241f811a1c3/status
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: downloads.pdok.nl
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:49.898 response time in milliseconds: 672.32
+2 &lt; 200
+2 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+2 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+2 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Max-Age: 1000
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 158
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 15 Jun 2021 02:29:49 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Server: Apache
+2 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+2 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/7c821444-e2d3-4cae-481e-6241f811a1c3/status&quot;}},&quot;progress&quot;:0,&quot;status&quot;:&quot;PENDING&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;waiting update delta link&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-71">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-71" class="collapse collapsable-details">
+        <pre>02:29:49.900 [print] waiting update delta link</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 201</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">6.038</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-72">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-72" class="collapse collapsable-details">
+        <pre>02:29:49.901 request:
+3 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/7c821444-e2d3-4cae-481e-6241f811a1c3/status
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: downloads.pdok.nl
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:50.449 response time in milliseconds: 547.85
+3 &lt; 200
+3 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+3 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+3 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Max-Age: 1000
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Length: 159
+3 &lt; Content-Type: application/json
+3 &lt; Date: Tue, 15 Jun 2021 02:29:50 GMT
+3 &lt; Expires: 0
+3 &lt; Pragma: no-cache
+3 &lt; Server: Apache
+3 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+3 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/7c821444-e2d3-4cae-481e-6241f811a1c3/status&quot;}},&quot;progress&quot;:25,&quot;status&quot;:&quot;RUNNING&quot;}
+
+02:29:50.450 retry condition not satisfied: responseStatus == 201
+02:29:50.450 sleeping before retry #1
+02:29:55.451 request:
+4 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/7c821444-e2d3-4cae-481e-6241f811a1c3/status
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: downloads.pdok.nl
+4 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:55.932 response time in milliseconds: 481.32
+4 &lt; 201
+4 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+4 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+4 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Max-Age: 1000
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Content-Length: 167
+4 &lt; Content-Type: application/json
+4 &lt; Date: Tue, 15 Jun 2021 02:29:55 GMT
+4 &lt; Expires: 0
+4 &lt; Pragma: no-cache
+4 &lt; Server: Apache
+4 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+4 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/827e7b8d-9908-400f-838b-288baeb65b43/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}
+
+02:29:55.939 retry condition satisfied</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadlink = apiBaseUrl  +  response._links.download.href</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;downloadlink:&quot;, downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-73">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-73" class="collapse collapsable-details">
+        <pre>02:29:55.943 [print] downloadlink: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/827e7b8d-9908-400f-838b-288baeb65b43/extract.zip</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method HEAD</span>
+  
+  <span class="lead-duration duration">0.494</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-74">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-74" class="collapse collapsable-details">
+        <pre>02:29:55.945 request:
+5 &gt; HEAD https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/827e7b8d-9908-400f-838b-288baeb65b43/extract.zip
+5 &gt; Accept-Encoding: gzip,deflate
+5 &gt; Connection: Keep-Alive
+5 &gt; Host: downloads.pdok.nl
+5 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:56.438 response time in milliseconds: 493.03
+5 &lt; 200
+5 &lt; Accept-Ranges: bytes
+5 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+5 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+5 &lt; Access-Control-Allow-Origin: *
+5 &lt; Access-Control-Max-Age: 1000
+5 &lt; Content-Disposition: attachment; filename=extract.zip
+5 &lt; Content-Length: 5676882
+5 &lt; Content-Security-Policy: block-all-mixed-content
+5 &lt; Content-Type: application/zip
+5 &lt; Date: Tue, 15 Jun 2021 02:29:56 GMT
+5 &lt; Etag: &quot;4a00513059e6a7ede1887842a530d1ce-2&quot;
+5 &lt; Last-Modified: Tue, 15 Jun 2021 02:29:52 GMT
+5 &lt; Server: MinIO
+5 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+5 &lt; Vary: Origin
+5 &lt; X-Amz-Request-Id: 1688A08DC1FB4365
+5 &lt; X-Cnection: close
+5 &lt; X-Xss-Protection: 1; mode=block</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Length'][0] == '#notnull'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Type'][0] == 'application/zip'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def zipsize =  responseHeaders['Content-Length'][0]</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;size&quot;, zipsize</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-75">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-75" class="collapse collapsable-details">
+        <pre>02:29:56.439 [print] size 5676882</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert zipsize &gt; 300</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mydownloads = Java.type('download.DataStorage')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LocalDateTime = Java.type('java.time.LocalDateTime')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new mydownloads</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.mywriteln('- Test: T05_5_4features_hof\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml')</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-76">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-76" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-77">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-77" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-78">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-78" class="collapse collapsable-details">
+        <pre>02:29:55.009 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2.317</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-79">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">download full custom op locatie swifterband voor feature(s): perceel&quot;,&quot;openbareruimtelabel</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-79" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-80">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-80" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request {format: 'gml',featuretypes: [&quot;perceel&quot;,&quot;openbareruimtelabel&quot;],  geofilter: 'POLYGON((171808.896 509246.97597949224,172768.51212304688 509276.54393847665,172760.44804101562 508392.1920000001,171773.95212304688 508381.43995898444,171808.896 509246.97597949224))' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">0.503</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-81">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-81" class="collapse collapsable-details">
+        <pre>02:29:55.011 request:
+1 &gt; POST https://downloads.pdok.nl/kadastralekaart/api/v4_0/full/custom
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 263
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+{&quot;format&quot;:&quot;gml&quot;,&quot;featuretypes&quot;:[&quot;perceel&quot;,&quot;openbareruimtelabel&quot;],&quot;geofilter&quot;:&quot;POLYGON((171808.896 509246.97597949224,172768.51212304688 509276.54393847665,172760.44804101562 508392.1920000001,171773.95212304688 508381.43995898444,171808.896 509246.97597949224))&quot;}
+
+02:29:55.514 response time in milliseconds: 502.33
+1 &lt; 202
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 187
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:55 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/a13d9b9c-e7b4-4c70-4f1f-5754616e53ea/status&quot;}},&quot;downloadRequestId&quot;:&quot;a13d9b9c-e7b4-4c70-4f1f-5754616e53ea&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 202</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { downloadRequestId: '#uuid' , _links:'#notnull' }</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def links = response._links</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadRequestId = response.downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def status = response.status</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def statusurl = apiBaseUrl  + links.status.href</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'links:' , links</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-82">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-82" class="collapse collapsable-details">
+        <pre>02:29:55.527 [print] links: {
+  &quot;status&quot;: {
+    &quot;href&quot;: &quot;/kadaster/kadastralekaart/download/v4_0/full/custom/a13d9b9c-e7b4-4c70-4f1f-5754616e53ea/status&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print  'statusurl', statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-83">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-83" class="collapse collapsable-details">
+        <pre>02:29:55.528 [print] statusurl https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/a13d9b9c-e7b4-4c70-4f1f-5754616e53ea/status</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'extracId:', downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-84">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-84" class="collapse collapsable-details">
+        <pre>02:29:55.533 [print] extracId: a13d9b9c-e7b4-4c70-4f1f-5754616e53ea</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.511</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-85">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-85" class="collapse collapsable-details">
+        <pre>02:29:55.536 request:
+2 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/a13d9b9c-e7b4-4c70-4f1f-5754616e53ea/status
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: downloads.pdok.nl
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:56.044 response time in milliseconds: 507.93
+2 &lt; 201
+2 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+2 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+2 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Max-Age: 1000
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 167
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 15 Jun 2021 02:29:55 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Server: Apache
+2 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+2 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/7a108de6-a3bc-4f65-82c0-8520494f2b09/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;waiting update delta link&quot;</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-86">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-86" class="collapse collapsable-details">
+        <pre>02:29:56.046 [print] waiting update delta link</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 201</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.496</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-87">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-87" class="collapse collapsable-details">
+        <pre>02:29:56.047 request:
+3 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/a13d9b9c-e7b4-4c70-4f1f-5754616e53ea/status
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: downloads.pdok.nl
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:56.537 response time in milliseconds: 489.68
+3 &lt; 201
+3 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+3 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+3 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Max-Age: 1000
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Length: 167
+3 &lt; Content-Type: application/json
+3 &lt; Date: Tue, 15 Jun 2021 02:29:56 GMT
+3 &lt; Expires: 0
+3 &lt; Pragma: no-cache
+3 &lt; Server: Apache
+3 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+3 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/7a108de6-a3bc-4f65-82c0-8520494f2b09/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadlink = apiBaseUrl  +  response._links.download.href</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;downloadlink:&quot;, downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-88">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-88" class="collapse collapsable-details">
+        <pre>02:29:56.544 [print] downloadlink: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/7a108de6-a3bc-4f65-82c0-8520494f2b09/extract.zip</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method HEAD</span>
+  
+  <span class="lead-duration duration">0.776</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-89">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-89" class="collapse collapsable-details">
+        <pre>02:29:56.549 request:
+4 &gt; HEAD https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/7a108de6-a3bc-4f65-82c0-8520494f2b09/extract.zip
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: downloads.pdok.nl
+4 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:57.320 response time in milliseconds: 771.08
+4 &lt; 200
+4 &lt; Accept-Ranges: bytes
+4 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+4 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Max-Age: 1000
+4 &lt; Content-Disposition: attachment; filename=extract.zip
+4 &lt; Content-Length: 561032
+4 &lt; Content-Security-Policy: block-all-mixed-content
+4 &lt; Content-Type: application/zip
+4 &lt; Date: Tue, 15 Jun 2021 02:29:57 GMT
+4 &lt; Etag: &quot;d9a891898850e4dfa3d9333045cfdf81-1&quot;
+4 &lt; Last-Modified: Tue, 15 Jun 2021 02:29:55 GMT
+4 &lt; Server: MinIO
+4 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+4 &lt; Vary: Origin
+4 &lt; X-Amz-Request-Id: 1688A08DEB2968F9
+4 &lt; X-Cnection: close
+4 &lt; X-Xss-Protection: 1; mode=block</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Length'][0] == '#notnull'</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Type'][0] == 'application/zip'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def zipsize =  responseHeaders['Content-Length'][0]</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;size&quot;, zipsize</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-90">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-90" class="collapse collapsable-details">
+        <pre>02:29:57.326 [print] size 561032</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert zipsize &gt; 300</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mydownloads = Java.type('download.DataStorage')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LocalDateTime = Java.type('java.time.LocalDateTime')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new mydownloads</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.mywriteln('- Test: T05_6_perceelenOpenbareruimtelabel_swift\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml')</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-91">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-91" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-92">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-92" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-93">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-93" class="collapse collapsable-details">
+        <pre>02:29:58.374 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2.037</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-94">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">download full custom op locatie Apeldoorndebrug voor feature(s): pand&quot;,&quot;openbareruimtelabel</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-94" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-95">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-95" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request {format: 'gml',featuretypes: [&quot;pand&quot;,&quot;openbareruimtelabel&quot;],  geofilter: 'POLYGON((194115.26404101565 465939.2639692384,194369.2799794922 465943.296010254,194351.80802050783 465775.29595898447,194093.76006152347 465724.2240205079,194115.26404101565 465939.2639692384))' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">0.512</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-96">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-96" class="collapse collapsable-details">
+        <pre>02:29:58.375 request:
+1 &gt; POST https://downloads.pdok.nl/kadastralekaart/api/v4_0/full/custom
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 271
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+{&quot;format&quot;:&quot;gml&quot;,&quot;featuretypes&quot;:[&quot;pand&quot;,&quot;openbareruimtelabel&quot;],&quot;geofilter&quot;:&quot;POLYGON((194115.26404101565 465939.2639692384,194369.2799794922 465943.296010254,194351.80802050783 465775.29595898447,194093.76006152347 465724.2240205079,194115.26404101565 465939.2639692384))&quot;}
+
+02:29:58.887 response time in milliseconds: 511.34
+1 &lt; 202
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 187
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:58 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/febda526-4006-431f-4cb5-4a07b1a0944e/status&quot;}},&quot;downloadRequestId&quot;:&quot;febda526-4006-431f-4cb5-4a07b1a0944e&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 202</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { downloadRequestId: '#uuid' , _links:'#notnull' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def links = response._links</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadRequestId = response.downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def status = response.status</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def statusurl = apiBaseUrl  + links.status.href</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'links:' , links</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-97">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-97" class="collapse collapsable-details">
+        <pre>02:29:58.889 [print] links: {
+  &quot;status&quot;: {
+    &quot;href&quot;: &quot;/kadaster/kadastralekaart/download/v4_0/full/custom/febda526-4006-431f-4cb5-4a07b1a0944e/status&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print  'statusurl', statusurl</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-98">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-98" class="collapse collapsable-details">
+        <pre>02:29:58.892 [print] statusurl https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/febda526-4006-431f-4cb5-4a07b1a0944e/status</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'extracId:', downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-99">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-99" class="collapse collapsable-details">
+        <pre>02:29:58.893 [print] extracId: febda526-4006-431f-4cb5-4a07b1a0944e</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.505</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-100">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-100" class="collapse collapsable-details">
+        <pre>02:29:58.901 request:
+2 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/febda526-4006-431f-4cb5-4a07b1a0944e/status
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: downloads.pdok.nl
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:59.398 response time in milliseconds: 497.10
+2 &lt; 201
+2 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+2 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+2 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Max-Age: 1000
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 167
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 15 Jun 2021 02:29:59 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Server: Apache
+2 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+2 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/ba85c8bd-9cbc-41e9-9458-2d55adc5f6fd/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;waiting update delta link&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-101">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-101" class="collapse collapsable-details">
+        <pre>02:29:59.399 [print] waiting update delta link</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 201</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.480</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-102">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-102" class="collapse collapsable-details">
+        <pre>02:29:59.400 request:
+3 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/febda526-4006-431f-4cb5-4a07b1a0944e/status
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: downloads.pdok.nl
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:59.879 response time in milliseconds: 479.12
+3 &lt; 201
+3 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+3 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+3 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Max-Age: 1000
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Length: 167
+3 &lt; Content-Type: application/json
+3 &lt; Date: Tue, 15 Jun 2021 02:29:59 GMT
+3 &lt; Expires: 0
+3 &lt; Pragma: no-cache
+3 &lt; Server: Apache
+3 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+3 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/ba85c8bd-9cbc-41e9-9458-2d55adc5f6fd/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadlink = apiBaseUrl  +  response._links.download.href</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;downloadlink:&quot;, downloadlink</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-103">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-103" class="collapse collapsable-details">
+        <pre>02:29:59.886 [print] downloadlink: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/ba85c8bd-9cbc-41e9-9458-2d55adc5f6fd/extract.zip</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method HEAD</span>
+  
+  <span class="lead-duration duration">0.519</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-104">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-104" class="collapse collapsable-details">
+        <pre>02:29:59.887 request:
+4 &gt; HEAD https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/ba85c8bd-9cbc-41e9-9458-2d55adc5f6fd/extract.zip
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: downloads.pdok.nl
+4 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:30:00.405 response time in milliseconds: 518.31
+4 &lt; 200
+4 &lt; Accept-Ranges: bytes
+4 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+4 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Max-Age: 1000
+4 &lt; Content-Disposition: attachment; filename=extract.zip
+4 &lt; Content-Length: 138140
+4 &lt; Content-Security-Policy: block-all-mixed-content
+4 &lt; Content-Type: application/zip
+4 &lt; Date: Tue, 15 Jun 2021 02:30:00 GMT
+4 &lt; Etag: &quot;fac221052db452b07945ee659eb7b023-1&quot;
+4 &lt; Last-Modified: Tue, 15 Jun 2021 02:29:59 GMT
+4 &lt; Server: MinIO
+4 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+4 &lt; Vary: Origin
+4 &lt; X-Amz-Request-Id: 1688A08EAD7AD1AE
+4 &lt; X-Cnection: close
+4 &lt; X-Xss-Protection: 1; mode=block</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Length'][0] == '#notnull'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Type'][0] == 'application/zip'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def zipsize =  responseHeaders['Content-Length'][0]</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;size&quot;, zipsize</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-105">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-105" class="collapse collapsable-details">
+        <pre>02:30:00.406 [print] size 138140</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert zipsize &gt; 300</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mydownloads = Java.type('download.DataStorage')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LocalDateTime = Java.type('java.time.LocalDateTime')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new mydownloads</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.mywriteln('- Test: T05_7_dkkbgt_brug\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml')</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.006</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-106">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-106" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-107">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-107" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom'</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-108">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-108" class="collapse collapsable-details">
+        <pre>02:30:03.927 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">7.679</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-109">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">download full custom op locatie Amersfoort Prodent Fabriek voor feature(s): perceel&quot;,  &quot;kadastralegrens&quot;, &quot;pand&quot;, &quot;openbareruimtelabel</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-109" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-110">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-110" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request {format: 'gml',featuretypes: [&quot;perceel&quot;,  &quot;kadastralegrens&quot;, &quot;pand&quot;, &quot;openbareruimtelabel&quot;],  geofilter: 'POLYGON ((154125.82490221905754879 463344.15998090390348807, 154404.92781473969807848 463761.69793803477659822, 154804.60318546928465366 463460.26679251249879599, 154447.35145744285546243 463040.49601208145031705, 154125.82490221905754879 463344.15998090390348807))' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">0.486</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-111">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-111" class="collapse collapsable-details">
+        <pre>02:30:03.937 request:
+1 &gt; POST https://downloads.pdok.nl/kadastralekaart/api/v4_0/full/custom
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 370
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+{&quot;format&quot;:&quot;gml&quot;,&quot;featuretypes&quot;:[&quot;perceel&quot;,&quot;kadastralegrens&quot;,&quot;pand&quot;,&quot;openbareruimtelabel&quot;],&quot;geofilter&quot;:&quot;POLYGON ((154125.82490221905754879 463344.15998090390348807, 154404.92781473969807848 463761.69793803477659822, 154804.60318546928465366 463460.26679251249879599, 154447.35145744285546243 463040.49601208145031705, 154125.82490221905754879 463344.15998090390348807))&quot;}
+
+02:30:04.421 response time in milliseconds: 483.24
+1 &lt; 202
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 187
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:30:04 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;status&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/d0b267a4-285c-440f-415d-2f22ae5528a8/status&quot;}},&quot;downloadRequestId&quot;:&quot;d0b267a4-285c-440f-415d-2f22ae5528a8&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 202</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { downloadRequestId: '#uuid' , _links:'#notnull' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def links = response._links</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadRequestId = response.downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def status = response.status</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def statusurl = apiBaseUrl  + links.status.href</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'links:' , links</span>
+  
+  <span class="lead-duration duration">0.015</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-112">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-112" class="collapse collapsable-details">
+        <pre>02:30:04.439 [print] links: {
+  &quot;status&quot;: {
+    &quot;href&quot;: &quot;/kadaster/kadastralekaart/download/v4_0/full/custom/d0b267a4-285c-440f-415d-2f22ae5528a8/status&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print  'statusurl', statusurl</span>
+  
+  <span class="lead-duration duration">0.006</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-113">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-113" class="collapse collapsable-details">
+        <pre>02:30:04.446 [print] statusurl https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/d0b267a4-285c-440f-415d-2f22ae5528a8/status</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print 'extracId:', downloadRequestId</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-114">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-114" class="collapse collapsable-details">
+        <pre>02:30:04.447 [print] extracId: d0b267a4-285c-440f-415d-2f22ae5528a8</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.493</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-115">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-115" class="collapse collapsable-details">
+        <pre>02:30:04.448 request:
+2 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/d0b267a4-285c-440f-415d-2f22ae5528a8/status
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: downloads.pdok.nl
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:30:04.941 response time in milliseconds: 492.84
+2 &lt; 200
+2 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+2 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+2 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Max-Age: 1000
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 158
+2 &lt; Content-Type: application/json
+2 &lt; Date: Tue, 15 Jun 2021 02:30:04 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Server: Apache
+2 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+2 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/d0b267a4-285c-440f-415d-2f22ae5528a8/status&quot;}},&quot;progress&quot;:0,&quot;status&quot;:&quot;PENDING&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;waiting update delta link&quot;</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-116">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-116" class="collapse collapsable-details">
+        <pre>02:30:04.946 [print] waiting update delta link</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 201</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url statusurl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">5.964</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-117">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-117" class="collapse collapsable-details">
+        <pre>02:30:04.947 request:
+3 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/d0b267a4-285c-440f-415d-2f22ae5528a8/status
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: downloads.pdok.nl
+3 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:30:05.425 response time in milliseconds: 478.35
+3 &lt; 200
+3 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+3 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+3 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Max-Age: 1000
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Content-Length: 158
+3 &lt; Content-Type: application/json
+3 &lt; Date: Tue, 15 Jun 2021 02:30:05 GMT
+3 &lt; Expires: 0
+3 &lt; Pragma: no-cache
+3 &lt; Server: Apache
+3 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+3 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;self&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/full/custom/d0b267a4-285c-440f-415d-2f22ae5528a8/status&quot;}},&quot;progress&quot;:0,&quot;status&quot;:&quot;PENDING&quot;}
+
+02:30:05.428 retry condition not satisfied: responseStatus == 201
+02:30:05.428 sleeping before retry #1
+02:30:10.429 request:
+4 &gt; GET https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/full/custom/d0b267a4-285c-440f-415d-2f22ae5528a8/status
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: downloads.pdok.nl
+4 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:30:10.910 response time in milliseconds: 480.87
+4 &lt; 201
+4 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+4 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+4 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Max-Age: 1000
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Content-Length: 167
+4 &lt; Content-Type: application/json
+4 &lt; Date: Tue, 15 Jun 2021 02:30:10 GMT
+4 &lt; Expires: 0
+4 &lt; Pragma: no-cache
+4 &lt; Server: Apache
+4 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+4 &lt; X-Cnection: close
+{&quot;_links&quot;:{&quot;download&quot;:{&quot;href&quot;:&quot;/kadaster/kadastralekaart/download/v4_0/extract/07823603-f8d2-4809-a2d5-f15f31768e91/extract.zip&quot;}},&quot;progress&quot;:100,&quot;status&quot;:&quot;COMPLETED&quot;}
+
+02:30:10.910 retry condition satisfied</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def downloadlink = apiBaseUrl  +  response._links.download.href</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { _links:'#notnull' , progress:100, status:'COMPLETED' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;downloadlink:&quot;, downloadlink</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-118">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-118" class="collapse collapsable-details">
+        <pre>02:30:10.913 [print] downloadlink: https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/07823603-f8d2-4809-a2d5-f15f31768e91/extract.zip</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url downloadlink</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method HEAD</span>
+  
+  <span class="lead-duration duration">0.689</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-119">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-119" class="collapse collapsable-details">
+        <pre>02:30:10.914 request:
+5 &gt; HEAD https://downloads.pdok.nl//kadaster/kadastralekaart/download/v4_0/extract/07823603-f8d2-4809-a2d5-f15f31768e91/extract.zip
+5 &gt; Accept-Encoding: gzip,deflate
+5 &gt; Connection: Keep-Alive
+5 &gt; Host: downloads.pdok.nl
+5 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:30:11.603 response time in milliseconds: 688.40
+5 &lt; 200
+5 &lt; Accept-Ranges: bytes
+5 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+5 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+5 &lt; Access-Control-Allow-Origin: *
+5 &lt; Access-Control-Max-Age: 1000
+5 &lt; Content-Disposition: attachment; filename=extract.zip
+5 &lt; Content-Length: 6083971
+5 &lt; Content-Security-Policy: block-all-mixed-content
+5 &lt; Content-Type: application/zip
+5 &lt; Date: Tue, 15 Jun 2021 02:30:11 GMT
+5 &lt; Etag: &quot;583232ce09a7869dbdf51395f6ea5e45-2&quot;
+5 &lt; Last-Modified: Tue, 15 Jun 2021 02:30:10 GMT
+5 &lt; Server: MinIO
+5 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+5 &lt; Vary: Origin
+5 &lt; X-Amz-Request-Id: 1688A09144C52F97
+5 &lt; X-Cnection: close
+5 &lt; X-Xss-Protection: 1; mode=block</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Length'][0] == '#notnull'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseHeaders['Content-Type'][0] == 'application/zip'</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def zipsize =  responseHeaders['Content-Length'][0]</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;size&quot;, zipsize</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-120">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-120" class="collapse collapsable-details">
+        <pre>02:30:11.608 [print] size 6083971</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert zipsize &gt; 300</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mydownloads = Java.type('download.DataStorage')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LocalDateTime = Java.type('java.time.LocalDateTime')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new mydownloads</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval db.mywriteln('- Test: T05_8_prodent_fabriek\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml')</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

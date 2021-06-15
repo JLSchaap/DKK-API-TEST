@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"numberMatched": 1,
+"name": "perceel",
+"features": [
+{ "type": "Feature", "id": "ee5e1426-60ef-45cf-9f37-219e56cd9015", "properties": { "identificatieNamespace": "NL.IMKAD.KadastraalObject", "identificatieLokaalID": "22250042270000", "beginGeldigheid": "2003-10-03T15:07:44.000", "tijdstipRegistratie": "2003-10-03T15:07:44.000", "volgnummer": 0, "statusHistorieCode": "G", "statusHistorieWaarde": "Geldig", "kadastraleGemeenteCode": "881", "kadastraleGemeenteWaarde": "'s-Gravenhage", "sectie": "F", "AKRKadastraleGemeenteCodeCode": "975", "AKRKadastraleGemeenteCodeWaarde": "GVH03", "kadastraleGrootteWaarde": 215.0, "soortGrootteCode": "1", "soortGrootteWaarde": "Vastgesteld", "perceelnummer": 422, "perceelnummerRotatie": 0.0, "perceelnummerVerschuivingDeltaX": 0.0, "perceelnummerVerschuivingDeltaY": 0.0, "perceelnummerPlaatscoordinaatX": 81321.925, "perceelnummerPlaatscoordinaatY": 455211.281 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.3122352, 52.080253593 ], [ 4.312290206, 52.080192657 ], [ 4.312293369, 52.080189737 ], [ 4.312305095, 52.080183237 ], [ 4.312319855, 52.080179768 ], [ 4.312335639, 52.080179813 ], [ 4.312472433, 52.080227541 ], [ 4.312487124, 52.080237266 ], [ 4.312492853, 52.080242316 ], [ 4.312494037, 52.080248898 ], [ 4.312442385, 52.080320822 ], [ 4.312428309, 52.080332226 ], [ 4.31240429, 52.080338533 ], [ 4.312380054, 52.080338662 ], [ 4.312244803, 52.080295927 ], [ 4.312237139, 52.080290069 ], [ 4.312226696, 52.080277803 ], [ 4.312228232, 52.080263677 ], [ 4.3122352, 52.080253593 ] ] ] } }
+]
+}

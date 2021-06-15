@@ -1,0 +1,21 @@
+<testsuite failures="0" name="download/T04_Delta.feature" skipped="0" tests="2" time="1.319103">
+  <testcase classname="download.T04_Delta" name="DKK API geeft delta info" time="0.730517">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/' ............................. passed
+Given path 'delta' ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains { deltas: '#present' } ........................ passed</system-out>
+  </testcase>
+  <testcase classname="download.T04_Delta" name="DKK API geeft delta minimaal een UUID delta" time="0.588586">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/' ............................. passed
+Given path 'delta' ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains { deltas: '#present' } ........................ passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/' ............................. passed
+Given path 'delta' ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.deltas[0].id == "#uuid" ................................ passed</system-out>
+  </testcase>
+</testsuite>

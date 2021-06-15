@@ -1,0 +1,10 @@
+<testsuite failures="0" name="viewservices/V01_wmscapabilities.feature" skipped="0" tests="1" time="0.796334">
+  <testcase classname="viewservices.V01_wmscapabilities" name="DKK WMS geeft capabilities" time="0.796334">
+    <system-out>Given url  'http://geodata.nationaalgeoregister.nl/kadastralekaart/wms/v4_0' . passed
+And param VERSION = '1.3.0' ............................................... passed
+And param request = 'GetCapabilities' ..................................... passed
+And param service = 'WMS' ................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

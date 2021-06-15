@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<wfs:FeatureCollection
+   xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:wfs="http://www.opengis.net/wfs/2.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://kadastralekaartv4.geonovum.nl https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=kadastralekaartv4:openbareruimtenaam&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B%20version%3D3.2 http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+   timeStamp="2021-06-15T02:30:43" numberMatched="unknown" numberReturned="1"
+   next="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=2.0.0&amp;TYPENAMES=kadastralekaartv4%3Aopenbareruimtenaam&amp;COUNT=1&amp;STARTINDEX=1">
+      <wfs:boundedBy>
+      	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+      		<gml:lowerCorner>19301.055000 363748.087000</gml:lowerCorner>
+      		<gml:upperCorner>19301.055000 363748.087000</gml:upperCorner>
+      	</gml:Envelope>
+      </wfs:boundedBy>
+    <wfs:member>
+      <kadastralekaartv4:openbareruimtenaam gml:id="openbareruimtenaam.5a84c984-5346-46a6-ab61-02a94f380970">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+        		<gml:lowerCorner>19301.055000 363748.087000</gml:lowerCorner>
+        		<gml:upperCorner>19301.055000 363748.087000</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <kadastralekaartv4:plaatsingspunt>
+          <gml:Point gml:id="openbareruimtenaam.5a84c984-5346-46a6-ab61-02a94f380970.1" srsName="urn:ogc:def:crs:EPSG::28992">
+            <gml:pos>19301.055000 363748.087000</gml:pos>
+          </gml:Point>
+        </kadastralekaartv4:plaatsingspunt>
+        <kadastralekaartv4:id>5a84c984-5346-46a6-ab61-02a94f380970</kadastralekaartv4:id>
+        <kadastralekaartv4:objectBeginTijd>2019-11-18</kadastralekaartv4:objectBeginTijd>
+        <kadastralekaartv4:LV-publicatiedatum>2019-11-19T08:05:15</kadastralekaartv4:LV-publicatiedatum>
+        <kadastralekaartv4:relatieveHoogteligging>0</kadastralekaartv4:relatieveHoogteligging>
+        <kadastralekaartv4:inOnderzoek>false</kadastralekaartv4:inOnderzoek>
+        <kadastralekaartv4:tijdstipRegistratie>2019-11-19T07:57:45.000</kadastralekaartv4:tijdstipRegistratie>
+        <kadastralekaartv4:identificatieNamespace>NL.IMGeo</kadastralekaartv4:identificatieNamespace>
+        <kadastralekaartv4:identificatieLokaalID>G1714.0847e7a1d185441693888fc4b3240208</kadastralekaartv4:identificatieLokaalID>
+        <kadastralekaartv4:bronhouder>G1714</kadastralekaartv4:bronhouder>
+        <kadastralekaartv4:bgt-status>bestaand</kadastralekaartv4:bgt-status>
+        <kadastralekaartv4:plus-status>geenWaarde</kadastralekaartv4:plus-status>
+        <kadastralekaartv4:identificatieBAGOPR>1714300000715050</kadastralekaartv4:identificatieBAGOPR>
+        <kadastralekaartv4:tekst>Kerkstraat</kadastralekaartv4:tekst>
+        <kadastralekaartv4:hoek>1.9</kadastralekaartv4:hoek>
+        <kadastralekaartv4:openbareRuimteType>Weg</kadastralekaartv4:openbareRuimteType>
+      </kadastralekaartv4:openbareruimtenaam>
+    </wfs:member>
+</wfs:FeatureCollection>
+

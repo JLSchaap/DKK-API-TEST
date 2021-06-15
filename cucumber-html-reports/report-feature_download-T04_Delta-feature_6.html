@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: download/T04_Delta.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>DKK API TEST</td>
+            <td>15 Jun 2021, 02:31</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">download/T04_Delta.feature</td>
+                    <td      class="passed"    >10</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">10</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="1319102671">1.319</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_SMOKE.html">@SMOKE</a>
+      </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">download/T04_Delta.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">DKK API geeft info over beschikbare delta dataset leveringen
+Door middel van &quot;since&quot; kun je opvragen of er nog nieuwe delta's zijn. Zet hiervoor het deltaID in link van de delta. Dit geeft uiteindelijk een lijst met nog te downloaden delta's. Deltaleveringen worden tot en met 31 dagen terug bewaard.</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.011</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/'</span>
+  
+  <span class="lead-duration duration">0.011</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>02:29:04.812 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.719</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">DKK API geeft delta info</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'delta'</span>
+  
+  <span class="lead-duration duration">0.014</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.704</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>02:29:04.843 request:
+1 &gt; GET https://downloads.pdok.nl/kadastralekaart/api/v4_0/delta
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:05.543 response time in milliseconds: 625.59
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 1290
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:05 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;deltas&quot;:[{&quot;id&quot;:&quot;2b104759-f77d-496a-94e4-7064f199b446&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-15T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-16T21:59:59Z&quot;}},{&quot;id&quot;:&quot;c31553da-c1ff-4d9e-80d4-dd60544a1b2d&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-16T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-17T21:59:59Z&quot;}},{&quot;id&quot;:&quot;801a3c3e-a010-4fff-9c4a-812d7c813674&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-17T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-18T21:59:59Z&quot;}},{&quot;id&quot;:&quot;9d181f42-7ef5-4c43-b7d7-3cf4195e1473&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-18T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-19T21:59:59Z&quot;}},{&quot;id&quot;:&quot;9c93aa0c-86a4-49fa-826e-549c719cc0aa&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-19T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-20T21:59:59Z&quot;}},{&quot;id&quot;:&quot;1577858c-8c9f-481a-8e45-084bd85e5f4e&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-20T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-21T21:59:59Z&quot;}},{&quot;id&quot;:&quot;f784d3c1-2e95-4c30-9268-11d0d61ac131&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-21T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-22T21:59:59Z&quot;}},{&quot;id&quot;:&quot;e6640b5a-f20a-450e-9250-986540178c75&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-22T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-23T21:59:59Z&quot;}},{&quot;id&quot;:&quot;1c15ea7f-bf22-43a8-b5e9-b66a1871f27d&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-23T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-24T21:59:59Z&quot;}},{&quot;id&quot;:&quot;25e98e4e-ef9b-42d1-a419-03fef9478802&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-24T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-25T21:59:59Z&quot;}}],&quot;_links&quot;:[{&quot;type&quot;:&quot;application/json&quot;,&quot;rel&quot;:&quot;next&quot;,&quot;href&quot;:&quot;delta?page=2\u0026count=10&quot;}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains { deltas: '#present' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.025</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiBaseUrl +'kadastralekaart/api/v4_0/'</span>
+  
+  <span class="lead-duration duration">0.025</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>02:29:06.508 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.562</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">DKK API geeft delta minimaal een UUID delta</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'delta'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.559</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>02:29:06.537 request:
+1 &gt; GET https://downloads.pdok.nl/kadastralekaart/api/v4_0/delta
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: downloads.pdok.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:07.095 response time in milliseconds: 557.11
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: SOAPAction,X-Requested-With,Content-Type,Origin,Authorization,Accept
+1 &lt; Access-Control-Allow-Method: GET,POST,OPTIONS
+1 &lt; Access-Control-Allow-Methods: POST, GET, OPTIONS, HEAD
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Max-Age: 1000
+1 &lt; Content-Length: 1290
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 15 Jun 2021 02:29:07 GMT
+1 &lt; Server: Apache
+1 &lt; Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload, max-age=3600; includeSubDomains; preload]
+1 &lt; X-Cnection: close
+{&quot;deltas&quot;:[{&quot;id&quot;:&quot;2b104759-f77d-496a-94e4-7064f199b446&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-15T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-16T21:59:59Z&quot;}},{&quot;id&quot;:&quot;c31553da-c1ff-4d9e-80d4-dd60544a1b2d&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-16T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-17T21:59:59Z&quot;}},{&quot;id&quot;:&quot;801a3c3e-a010-4fff-9c4a-812d7c813674&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-17T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-18T21:59:59Z&quot;}},{&quot;id&quot;:&quot;9d181f42-7ef5-4c43-b7d7-3cf4195e1473&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-18T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-19T21:59:59Z&quot;}},{&quot;id&quot;:&quot;9c93aa0c-86a4-49fa-826e-549c719cc0aa&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-19T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-20T21:59:59Z&quot;}},{&quot;id&quot;:&quot;1577858c-8c9f-481a-8e45-084bd85e5f4e&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-20T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-21T21:59:59Z&quot;}},{&quot;id&quot;:&quot;f784d3c1-2e95-4c30-9268-11d0d61ac131&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-21T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-22T21:59:59Z&quot;}},{&quot;id&quot;:&quot;e6640b5a-f20a-450e-9250-986540178c75&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-22T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-23T21:59:59Z&quot;}},{&quot;id&quot;:&quot;1c15ea7f-bf22-43a8-b5e9-b66a1871f27d&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-23T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-24T21:59:59Z&quot;}},{&quot;id&quot;:&quot;25e98e4e-ef9b-42d1-a419-03fef9478802&quot;,&quot;timeWindow&quot;:{&quot;from&quot;:&quot;2021-05-24T21:59:59Z&quot;,&quot;to&quot;:&quot;2021-05-25T21:59:59Z&quot;}}],&quot;_links&quot;:[{&quot;type&quot;:&quot;application/json&quot;,&quot;rel&quot;:&quot;next&quot;,&quot;href&quot;:&quot;delta?page=2\u0026count=10&quot;}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.deltas[0].id == &quot;#uuid&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

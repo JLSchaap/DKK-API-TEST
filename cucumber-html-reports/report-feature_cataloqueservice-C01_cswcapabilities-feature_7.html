@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: cataloqueservice/C01_cswcapabilities.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>DKK API TEST</td>
+            <td>15 Jun 2021, 02:31</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">cataloqueservice/C01_cswcapabilities.feature</td>
+                    <td      class="passed"    >7</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1607970041">1.607</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_SMOKE.html">@SMOKE</a>
+      </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">cataloqueservice/C01_cswcapabilities.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">geeft capabilities</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.607</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">CSW geeft capabilities</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url  'http://nationaalgeoregister.nl/geonetwork/srv/dut/csw'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>02:29:03.123 base url : {
+  &quot;apiBaseUrl&quot;: &quot;https://downloads.pdok.nl/&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param request = 'GetCapabilities'</span>
+  
+  <span class="lead-duration duration">0.013</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param service = 'CSW'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1.372</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>02:29:03.324 request:
+1 &gt; GET http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?request=GetCapabilities&amp;service=CSW
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: nationaalgeoregister.nl
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:03.641 response time in milliseconds: 300.39
+1 &lt; 301
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Length: 302
+1 &lt; Content-Type: text/html; charset=iso-8859-1
+1 &lt; Date: Tue, 15 Jun 2021 02:29:03 GMT
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Location: https://nationaalgeoregister.nl/geonetwork/srv/dut/csw?request=GetCapabilities&amp;service=CSW
+1 &lt; Server: Apache
+&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;301 Moved Permanently&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Moved Permanently&lt;/h1&gt;
+&lt;p&gt;The document has moved &lt;a href=&quot;https://nationaalgeoregister.nl/geonetwork/srv/dut/csw?request=GetCapabilities&amp;amp;service=CSW&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+
+
+02:29:03.647 request:
+2 &gt; GET http://nationaalgeoregister.nl/geonetwork/srv/dut/csw?request=GetCapabilities&amp;service=CSW
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: nationaalgeoregister.nl
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_151)
+
+02:29:04.523 response time in milliseconds: 827.38
+2 &lt; 200
+2 &lt; Cache-Control: no-cache
+2 &lt; Connection: Keep-Alive
+2 &lt; Content-Security-Policy: frame-ancestors 'none'
+2 &lt; Content-Type: application/xml;charset=UTF-8
+2 &lt; Date: Tue, 15 Jun 2021 02:29:04 GMT
+2 &lt; Expires: -1
+2 &lt; Keep-Alive: timeout=5, max=100
+2 &lt; Pragma: no-cache
+2 &lt; Server: Apache
+2 &lt; Set-Cookie: JSESSIONID=D7FA37770F28CB6612087EA1374F2F52; Path=/geonetwork; Secure; HttpOnly
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Accept-Encoding
+2 &lt; X-Frame-Options: DENY
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;csw:Capabilities xmlns:csw=&quot;http://www.opengis.net/cat/csw/2.0.2&quot; xmlns:ows=&quot;http://www.opengis.net/ows&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot; xmlns:inspire_ds=&quot;http://inspire.ec.europa.eu/schemas/inspire_ds/1.0&quot; xmlns:gml=&quot;http://www.opengis.net/gml&quot; xmlns:inspire_com=&quot;http://inspire.ec.europa.eu/schemas/common/1.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0.2&quot; xsi:schemaLocation=&quot;http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd http://inspire.ec.europa.eu/schemas/inspire_ds/1.0 http://inspire.ec.europa.eu/schemas/inspire_ds/1.0/inspire_ds.xsd&quot;&gt;
+  &lt;ows:ServiceIdentification&gt;
+    &lt;ows:Title&gt;CSW Nationaal Georegister (NGR)&lt;/ows:Title&gt;
+    &lt;ows:Abstract&gt;CSW Nationaal Georegister metadata&lt;/ows:Abstract&gt;
+    &lt;ows:Keywords&gt;
+      &lt;ows:Keyword&gt;infoCatalogueWebService&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;catalogus service&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;zoek dienst&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;georegister&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;nationaal georegister&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Nederland&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;infoCatalogueService&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Nutsdiensten en overheidsdiensten&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Administratieve eenheden&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Adressen&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Atmosferische omstandigheden&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Beschermde gebieden&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Biogeografische gebieden&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Bodem&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Bodemgebruik&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Energiebronnen&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Faciliteiten voor productie en industrie&lt;/ows:Keyword&gt;
+      &lt;ows:Keyword&gt;Nationaal&lt;/ows:Keyword&gt;
+    &lt;/ows:Keywords&gt;
+    &lt;ows:ServiceType&gt;CSW&lt;/ows:ServiceType&gt;
+    &lt;ows:ServiceTypeVersion&gt;2.0.2&lt;/ows:ServiceTypeVersion&gt;
+    &lt;ows:Fees /&gt;
+    &lt;ows:AccessConstraints&gt;Geen beperkingenEr zijn geen condities voor toegang en gebruikGeen beperkingen voor publieke toegang&lt;/ows:AccessConstraints&gt;
+  &lt;/ows:ServiceIdentification&gt;
+  &lt;ows:ServiceProvider&gt;
+    &lt;ows:ProviderName&gt;Beheer PDOK&lt;/ows:ProviderName&gt;
+    &lt;ows:ProviderSite xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;&quot; /&gt;
+    &lt;ows:ServiceContact&gt;
+      &lt;ows:IndividualName /&gt;
+      &lt;ows:PositionName /&gt;
+      &lt;ows:ContactInfo&gt;
+        &lt;ows:Phone&gt;
+          &lt;ows:Voice /&gt;
+          &lt;ows:Voice /&gt;
+        &lt;/ows:Phone&gt;
+        &lt;ows:Address&gt;
+          &lt;ows:ElectronicMailAddress&gt;beheerpdok@kadaster.nl&lt;/ows:ElectronicMailAddress&gt;
+        &lt;/ows:Address&gt;
+      &lt;/ows:ContactInfo&gt;
+      &lt;ows:Role&gt;pointOfContact&lt;/ows:Role&gt;
+    &lt;/ows:ServiceContact&gt;
+  &lt;/ows:ServiceProvider&gt;
+  &lt;ows:OperationsMetadata&gt;
+    &lt;ows:Operation name=&quot;GetCapabilities&quot;&gt;
+      &lt;ows:DCP&gt;
+        &lt;ows:HTTP&gt;
+          &lt;ows:Get xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+          &lt;ows:Post xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+        &lt;/ows:HTTP&gt;
+      &lt;/ows:DCP&gt;
+      &lt;ows:Parameter name=&quot;sections&quot;&gt;
+        &lt;ows:Value&gt;ServiceIdentification&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;ServiceProvider&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;OperationsMetadata&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Filter_Capabilities&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Constraint name=&quot;PostEncoding&quot;&gt;
+        &lt;ows:Value&gt;XML&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
+      &lt;/ows:Constraint&gt;
+    &lt;/ows:Operation&gt;
+    &lt;ows:Operation name=&quot;DescribeRecord&quot;&gt;
+      &lt;ows:DCP&gt;
+        &lt;ows:HTTP&gt;
+          &lt;ows:Get xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+          &lt;ows:Post xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+        &lt;/ows:HTTP&gt;
+      &lt;/ows:DCP&gt;
+      &lt;ows:Parameter name=&quot;outputFormat&quot;&gt;
+        &lt;ows:Value&gt;application/xml&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Parameter name=&quot;schemaLanguage&quot;&gt;
+        &lt;ows:Value&gt;http://www.w3.org/TR/xmlschema-1/&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Parameter xmlns:gfc=&quot;http://www.isotc211.org/2005/gfc&quot; xmlns:dcat=&quot;http://www.w3.org/ns/dcat#&quot; xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; xmlns:mdb=&quot;http://standards.iso.org/iso/19115/-3/mdb/2.0&quot; name=&quot;outputSchema&quot;&gt;
+        &lt;ows:Value&gt;http://www.opengis.net/cat/csw/2.0.2&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://www.isotc211.org/2005/gfc&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://www.w3.org/ns/dcat#&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://www.isotc211.org/2005/gmd&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://standards.iso.org/iso/19115/-3/mdb/2.0&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Constraint name=&quot;PostEncoding&quot;&gt;
+        &lt;ows:Value&gt;XML&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
+      &lt;/ows:Constraint&gt;
+    &lt;/ows:Operation&gt;
+    &lt;ows:Operation name=&quot;GetDomain&quot;&gt;
+      &lt;ows:DCP&gt;
+        &lt;ows:HTTP&gt;
+          &lt;ows:Get xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+          &lt;ows:Post xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+        &lt;/ows:HTTP&gt;
+      &lt;/ows:DCP&gt;
+    &lt;/ows:Operation&gt;
+    &lt;ows:Operation name=&quot;GetRecords&quot;&gt;
+      &lt;ows:DCP&gt;
+        &lt;ows:HTTP&gt;
+          &lt;ows:Get xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+          &lt;ows:Post xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+        &lt;/ows:HTTP&gt;
+      &lt;/ows:DCP&gt;
+      &lt;ows:Parameter name=&quot;resultType&quot;&gt;
+        &lt;ows:Value&gt;hits&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;results&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;validate&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Parameter name=&quot;outputFormat&quot;&gt;
+        &lt;ows:Value&gt;application/xml&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Parameter xmlns:gfc=&quot;http://www.isotc211.org/2005/gfc&quot; xmlns:dcat=&quot;http://www.w3.org/ns/dcat#&quot; xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; xmlns:mdb=&quot;http://standards.iso.org/iso/19115/-3/mdb/2.0&quot; name=&quot;outputSchema&quot;&gt;
+        &lt;ows:Value&gt;http://www.opengis.net/cat/csw/2.0.2&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://www.isotc211.org/2005/gfc&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://www.w3.org/ns/dcat#&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://www.isotc211.org/2005/gmd&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://standards.iso.org/iso/19115/-3/mdb/2.0&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Parameter xmlns:gfc=&quot;http://www.isotc211.org/2005/gfc&quot; xmlns:dcat=&quot;http://www.w3.org/ns/dcat#&quot; xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; xmlns:mdb=&quot;http://standards.iso.org/iso/19115/-3/mdb/2.0&quot; name=&quot;typeNames&quot;&gt;
+        &lt;ows:Value&gt;csw:Record&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;gfc:FC_FeatureCatalogue&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;dcat&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;gmd:MD_Metadata&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;mdb:MD_Metadata&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Parameter name=&quot;CONSTRAINTLANGUAGE&quot;&gt;
+        &lt;ows:Value&gt;FILTER&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;CQL_TEXT&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Constraint name=&quot;PostEncoding&quot;&gt;
+        &lt;ows:Value&gt;XML&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
+      &lt;/ows:Constraint&gt;
+      &lt;ows:Constraint name=&quot;SupportedISOQueryables&quot;&gt;
+        &lt;ows:Value&gt;CreationDate&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;GeographicDescriptionCode&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;OperatesOn&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Modified&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;DistanceUOM&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Operation&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;ResourceIdentifier&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Format&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Identifier&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Language&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;ServiceType&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;OrganisationName&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;KeywordType&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;AnyText&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;PublicationDate&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;AlternateTitle&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Abstract&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;HasSecurityConstraints&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Title&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;CouplingType&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;TopicCategory&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;ParentIdentifier&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Subject&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;ResourceLanguage&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;TempExtent_end&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;ServiceTypeVersion&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Type&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;RevisionDate&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;OperatesOnName&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Denominator&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;DistanceValue&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;TempExtent_begin&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;OperatesOnIdentifier&lt;/ows:Value&gt;
+      &lt;/ows:Constraint&gt;
+      &lt;ows:Constraint name=&quot;AdditionalQueryables&quot;&gt;
+        &lt;ows:Value&gt;SpecificationDate&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;AccessConstraints&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;ResponsiblePartyRole&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Degree&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Lineage&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;OnlineResourceMimeType&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;ConditionApplyingToAccessAndUse&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Date&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;MetadataPointOfContact&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;OnlineResourceType&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Relation&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;SpecificationDateType&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;Classification&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;OtherConstraints&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;SpecificationTitle&lt;/ows:Value&gt;
+      &lt;/ows:Constraint&gt;
+    &lt;/ows:Operation&gt;
+    &lt;ows:Operation name=&quot;GetRecordById&quot;&gt;
+      &lt;ows:DCP&gt;
+        &lt;ows:HTTP&gt;
+          &lt;ows:Get xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+          &lt;ows:Post xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw&quot; /&gt;
+        &lt;/ows:HTTP&gt;
+      &lt;/ows:DCP&gt;
+      &lt;ows:Parameter xmlns:gfc=&quot;http://www.isotc211.org/2005/gfc&quot; xmlns:dcat=&quot;http://www.w3.org/ns/dcat#&quot; xmlns:gmd=&quot;http://www.isotc211.org/2005/gmd&quot; xmlns:mdb=&quot;http://standards.iso.org/iso/19115/-3/mdb/2.0&quot; name=&quot;outputSchema&quot;&gt;
+        &lt;ows:Value&gt;http://www.opengis.net/cat/csw/2.0.2&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://www.isotc211.org/2005/gfc&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://www.w3.org/ns/dcat#&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://www.isotc211.org/2005/gmd&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;http://standards.iso.org/iso/19115/-3/mdb/2.0&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Parameter name=&quot;outputFormat&quot;&gt;
+        &lt;ows:Value&gt;application/xml&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Parameter name=&quot;resultType&quot;&gt;
+        &lt;ows:Value&gt;hits&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;results&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;validate&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Parameter name=&quot;ElementSetName&quot;&gt;
+        &lt;ows:Value&gt;brief&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;summary&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;full&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+      &lt;ows:Constraint name=&quot;PostEncoding&quot;&gt;
+        &lt;ows:Value&gt;XML&lt;/ows:Value&gt;
+        &lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
+      &lt;/ows:Constraint&gt;
+    &lt;/ows:Operation&gt;
+    &lt;ows:Operation name=&quot;Transaction&quot;&gt;
+      &lt;ows:DCP&gt;
+        &lt;ows:HTTP&gt;
+          &lt;ows:Get xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw-publication&quot; /&gt;
+          &lt;ows:Post xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw-publication&quot; /&gt;
+        &lt;/ows:HTTP&gt;
+      &lt;/ows:DCP&gt;
+    &lt;/ows:Operation&gt;
+    &lt;ows:Operation name=&quot;Harvest&quot;&gt;
+      &lt;ows:DCP&gt;
+        &lt;ows:HTTP&gt;
+          &lt;ows:Get xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw-publication&quot; /&gt;
+          &lt;ows:Post xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xlink:href=&quot;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw-publication&quot; /&gt;
+        &lt;/ows:HTTP&gt;
+      &lt;/ows:DCP&gt;
+      &lt;ows:Parameter name=&quot;ResourceType&quot;&gt;
+        &lt;ows:Value&gt;http://www.isotc211.org/schemas/2005/gmd/&lt;/ows:Value&gt;
+      &lt;/ows:Parameter&gt;
+    &lt;/ows:Operation&gt;
+    &lt;ows:Parameter name=&quot;service&quot;&gt;
+      &lt;ows:Value&gt;http://www.opengis.net/cat/csw/2.0.2&lt;/ows:Value&gt;
+    &lt;/ows:Parameter&gt;
+    &lt;ows:Parameter name=&quot;version&quot;&gt;
+      &lt;ows:Value&gt;2.0.2&lt;/ows:Value&gt;
+    &lt;/ows:Parameter&gt;
+    &lt;ows:Constraint name=&quot;IsoProfiles&quot;&gt;
+      &lt;ows:Value&gt;http://www.isotc211.org/2005/gmd&lt;/ows:Value&gt;
+    &lt;/ows:Constraint&gt;
+    &lt;ows:Constraint name=&quot;PostEncoding&quot;&gt;
+      &lt;ows:Value&gt;SOAP&lt;/ows:Value&gt;
+    &lt;/ows:Constraint&gt;
+    &lt;inspire_ds:ExtendedCapabilities&gt;
+      &lt;inspire_com:ResourceLocator&gt;
+        &lt;inspire_com:URL&gt;https://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW&amp;amp;VERSION=2.0.2&amp;amp;REQUEST=GetCapabilities&lt;/inspire_com:URL&gt;
+        &lt;inspire_com:MediaType&gt;application/xml&lt;/inspire_com:MediaType&gt;
+      &lt;/inspire_com:ResourceLocator&gt;
+      &lt;inspire_com:ResourceLocator&gt;
+        &lt;inspire_com:URL&gt;https://www.nationaalgeoregister.nl/geonetwork&lt;/inspire_com:URL&gt;
+        &lt;inspire_com:MediaType&gt;text/html&lt;/inspire_com:MediaType&gt;
+      &lt;/inspire_com:ResourceLocator&gt;
+      &lt;inspire_com:ResourceType&gt;service&lt;/inspire_com:ResourceType&gt;
+      &lt;inspire_com:TemporalReference&gt;
+        &lt;inspire_com:TemporalExtent&gt;
+          &lt;inspire_com:IntervalOfDates&gt;
+            &lt;inspire_com:StartingDate&gt;2008-12-01T14:24:00&lt;/inspire_com:StartingDate&gt;
+            &lt;inspire_com:EndDate&gt;2054-12-03T14:24:00&lt;/inspire_com:EndDate&gt;
+          &lt;/inspire_com:IntervalOfDates&gt;
+        &lt;/inspire_com:TemporalExtent&gt;
+      &lt;/inspire_com:TemporalReference&gt;
+      &lt;inspire_com:Conformity&gt;
+        &lt;inspire_com:Specification xsi:type=&quot;inspire_com:citationInspireInteroperabilityRegulation_dut&quot;&gt;
+          &lt;inspire_com:Title&gt;VERORDENING (EU) Nr. 1089/2010 VAN DE COMMISSIE van 23 november 2010 ter uitvoering van Richtlijn 2007/2/EG van het Europees Parlement en de Raad betreffende de interoperabiliteit van verzamelingen ruimtelijke gegevens en van diensten met betrekking tot ruimtelijke gegevens&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2010-12-08&lt;/inspire_com:DateOfPublication&gt;
+          &lt;inspire_com:URI&gt;OJ:L:2010:323:0011:0102:NL:PDF&lt;/inspire_com:URI&gt;
+          &lt;inspire_com:ResourceLocator&gt;
+            &lt;inspire_com:URL&gt;http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:323:0011:0102:NL:PDF&lt;/inspire_com:URL&gt;
+            &lt;inspire_com:MediaType&gt;application/pdf&lt;/inspire_com:MediaType&gt;
+          &lt;/inspire_com:ResourceLocator&gt;
+        &lt;/inspire_com:Specification&gt;
+        &lt;inspire_com:Degree&gt;conformant&lt;/inspire_com:Degree&gt;
+      &lt;/inspire_com:Conformity&gt;
+      &lt;inspire_com:MetadataPointOfContact&gt;
+        &lt;inspire_com:OrganisationName&gt;Beheer PDOK&lt;/inspire_com:OrganisationName&gt;
+        &lt;inspire_com:EmailAddress&gt;beheerpdok@kadaster.nl&lt;/inspire_com:EmailAddress&gt;
+      &lt;/inspire_com:MetadataPointOfContact&gt;
+      &lt;inspire_com:MetadataDate&gt;2021-02-03&lt;/inspire_com:MetadataDate&gt;
+      &lt;inspire_com:SpatialDataServiceType&gt;discovery&lt;/inspire_com:SpatialDataServiceType&gt;
+      &lt;inspire_com:MandatoryKeyword xsi:type=&quot;inspire_com:classificationOfSpatialDataService&quot;&gt;
+        &lt;inspire_com:KeywordValue&gt;infoCatalogueService&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:MandatoryKeyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Nutsdiensten en overheidsdiensten&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Administratieve eenheden&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Adressen&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Atmosferische omstandigheden&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Beschermde gebieden&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Biogeografische gebieden&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Bodem&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Bodemgebruik&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Energiebronnen&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:Keyword xsi:type=&quot;inspire_com:inspireTheme_dut&quot;&gt;
+        &lt;inspire_com:OriginatingControlledVocabulary&gt;
+          &lt;inspire_com:Title&gt;GEMET - INSPIRE themes&lt;/inspire_com:Title&gt;
+          &lt;inspire_com:DateOfPublication&gt;2008-06-01&lt;/inspire_com:DateOfPublication&gt;
+        &lt;/inspire_com:OriginatingControlledVocabulary&gt;
+        &lt;inspire_com:KeywordValue&gt;Faciliteiten voor productie en industrie&lt;/inspire_com:KeywordValue&gt;
+      &lt;/inspire_com:Keyword&gt;
+      &lt;inspire_com:SupportedLanguages&gt;
+        &lt;inspire_com:DefaultLanguage&gt;
+          &lt;inspire_com:Language&gt;dut&lt;/inspire_com:Language&gt;
+        &lt;/inspire_com:DefaultLanguage&gt;
+        &lt;inspire_com:SupportedLanguage&gt;
+          &lt;inspire_com:Language&gt;dut&lt;/inspire_com:Language&gt;
+        &lt;/inspire_com:SupportedLanguage&gt;
+      &lt;/inspire_com:SupportedLanguages&gt;
+      &lt;inspire_com:ResponseLanguage&gt;
+        &lt;inspire_com:Language&gt;dut&lt;/inspire_com:Language&gt;
+      &lt;/inspire_com:ResponseLanguage&gt;
+    &lt;/inspire_ds:ExtendedCapabilities&gt;
+  &lt;/ows:OperationsMetadata&gt;
+  &lt;ogc:Filter_Capabilities&gt;
+    &lt;ogc:Spatial_Capabilities&gt;
+      &lt;ogc:GeometryOperands&gt;
+        &lt;ogc:GeometryOperand&gt;gml:Envelope&lt;/ogc:GeometryOperand&gt;
+        &lt;ogc:GeometryOperand&gt;gml:Point&lt;/ogc:GeometryOperand&gt;
+        &lt;ogc:GeometryOperand&gt;gml:LineString&lt;/ogc:GeometryOperand&gt;
+        &lt;ogc:GeometryOperand&gt;gml:Polygon&lt;/ogc:GeometryOperand&gt;
+      &lt;/ogc:GeometryOperands&gt;
+      &lt;ogc:SpatialOperators&gt;
+        &lt;ogc:SpatialOperator name=&quot;BBOX&quot; /&gt;
+        &lt;ogc:SpatialOperator name=&quot;Equals&quot; /&gt;
+        &lt;ogc:SpatialOperator name=&quot;Overlaps&quot; /&gt;
+        &lt;ogc:SpatialOperator name=&quot;Disjoint&quot; /&gt;
+        &lt;ogc:SpatialOperator name=&quot;Intersects&quot; /&gt;
+        &lt;ogc:SpatialOperator name=&quot;Touches&quot; /&gt;
+        &lt;ogc:SpatialOperator name=&quot;Crosses&quot; /&gt;
+        &lt;ogc:SpatialOperator name=&quot;Within&quot; /&gt;
+        &lt;ogc:SpatialOperator name=&quot;Contains&quot; /&gt;
+      &lt;/ogc:SpatialOperators&gt;
+    &lt;/ogc:Spatial_Capabilities&gt;
+    &lt;ogc:Scalar_Capabilities&gt;
+      &lt;ogc:LogicalOperators /&gt;
+      &lt;ogc:ComparisonOperators&gt;
+        &lt;ogc:ComparisonOperator&gt;EqualTo&lt;/ogc:ComparisonOperator&gt;
+        &lt;ogc:ComparisonOperator&gt;Like&lt;/ogc:ComparisonOperator&gt;
+        &lt;ogc:ComparisonOperator&gt;LessThan&lt;/ogc:ComparisonOperator&gt;
+        &lt;ogc:ComparisonOperator&gt;GreaterThan&lt;/ogc:ComparisonOperator&gt;
+        &lt;ogc:ComparisonOperator&gt;LessThanEqualTo&lt;/ogc:ComparisonOperator&gt;
+        &lt;ogc:ComparisonOperator&gt;GreaterThanEqualTo&lt;/ogc:ComparisonOperator&gt;
+        &lt;ogc:ComparisonOperator&gt;NotEqualTo&lt;/ogc:ComparisonOperator&gt;
+        &lt;ogc:ComparisonOperator&gt;Between&lt;/ogc:ComparisonOperator&gt;
+        &lt;ogc:ComparisonOperator&gt;NullCheck&lt;/ogc:ComparisonOperator&gt;
+      &lt;/ogc:ComparisonOperators&gt;
+    &lt;/ogc:Scalar_Capabilities&gt;
+    &lt;ogc:Id_Capabilities&gt;
+      &lt;ogc:EID /&gt;
+      &lt;ogc:FID /&gt;
+    &lt;/ogc:Id_Capabilities&gt;
+  &lt;/ogc:Filter_Capabilities&gt;
+&lt;/csw:Capabilities&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match karate.xmlPath(response, '/Capabilities/ServiceIdentification/ServiceTypeVersion') == '2.0.2'</span>
+  
+  <span class="lead-duration duration">0.145</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match karate.xmlPath(response, '/Capabilities/ServiceIdentification/Title') == &quot;CSW Nationaal Georegister (NGR)&quot;</span>
+  
+  <span class="lead-duration duration">0.075</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

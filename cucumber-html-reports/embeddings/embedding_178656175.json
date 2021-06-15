@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<wfs:FeatureCollection
+   xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:wfs="http://www.opengis.net/wfs/2.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://kadastralekaartv4.geonovum.nl https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=kadastralekaartv4:kadastralegrens&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B%20version%3D3.2 http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+   timeStamp="2021-06-15T02:30:30" numberMatched="unknown" numberReturned="1"
+   next="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=2.0.0&amp;TYPENAMES=kadastralekaartv4%3Akadastralegrens&amp;COUNT=1&amp;STARTINDEX=1">
+      <wfs:boundedBy>
+      	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+      		<gml:lowerCorner>18920.061000 363816.635000</gml:lowerCorner>
+      		<gml:upperCorner>19017.896000 363825.308000</gml:upperCorner>
+      	</gml:Envelope>
+      </wfs:boundedBy>
+    <wfs:member>
+      <kadastralekaartv4:kadastralegrens gml:id="kadastralegrens.9e20ea95-e013-4950-9b14-b264dc9f3d9c">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+        		<gml:lowerCorner>18920.061000 363816.635000</gml:lowerCorner>
+        		<gml:upperCorner>19017.896000 363825.308000</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <kadastralekaartv4:grenslijn>
+          <gml:LineString gml:id="kadastralegrens.9e20ea95-e013-4950-9b14-b264dc9f3d9c.1" srsName="urn:ogc:def:crs:EPSG::28992">
+            <gml:posList srsDimension="2">18920.061000 363816.635000 18924.148000 363816.870000 19017.896000 363825.308000 </gml:posList>
+          </gml:LineString>
+        </kadastralekaartv4:grenslijn>
+        <kadastralekaartv4:id>9e20ea95-e013-4950-9b14-b264dc9f3d9c</kadastralekaartv4:id>
+        <kadastralekaartv4:beginGeldigheid>2008-08-13T11:56:43.000</kadastralekaartv4:beginGeldigheid>
+        <kadastralekaartv4:tijdstipRegistratie>2008-08-13T11:56:43.000</kadastralekaartv4:tijdstipRegistratie>
+        <kadastralekaartv4:volgnummer>0</kadastralekaartv4:volgnummer>
+        <kadastralekaartv4:statusHistorieCode>G</kadastralekaartv4:statusHistorieCode>
+        <kadastralekaartv4:statusHistorieWaarde>Geldig</kadastralekaartv4:statusHistorieWaarde>
+        <kadastralekaartv4:identificatieNamespace>NL.IMKAD.KadastraleGrens</kadastralekaartv4:identificatieNamespace>
+        <kadastralekaartv4:identificatieLokaalID>370050061</kadastralekaartv4:identificatieLokaalID>
+        <kadastralekaartv4:typeGrensCode>3</kadastralekaartv4:typeGrensCode>
+        <kadastralekaartv4:typeGrensWaarde>Definitief</kadastralekaartv4:typeGrensWaarde>
+        <kadastralekaartv4:perceelLinksIdentificatieNamespace>NL.IMKAD.KadastraalObject</kadastralekaartv4:perceelLinksIdentificatieNamespace>
+        <kadastralekaartv4:perceelLinksIdentificatieLokaalID>70039970000</kadastralekaartv4:perceelLinksIdentificatieLokaalID>
+        <kadastralekaartv4:perceelRechtsIdentificatieNamespace>NL.IMKAD.KadastraalObject</kadastralekaartv4:perceelRechtsIdentificatieNamespace>
+        <kadastralekaartv4:perceelRechtsIdentificatieLokaalID>70031170000</kadastralekaartv4:perceelRechtsIdentificatieLokaalID>
+      </kadastralekaartv4:kadastralegrens>
+    </wfs:member>
+</wfs:FeatureCollection>
+

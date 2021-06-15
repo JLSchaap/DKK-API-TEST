@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:WFS_Capabilities xmlns:gml="http://www.opengis.net/gml" xmlns:wfs="http://www.opengis.net/wfs" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl" xmlns="http://www.opengis.net/wfs" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+  <ows:ServiceIdentification>
+    <ows:Title>KadastraleKaartv4</ows:Title>
+    <ows:Abstract>Overzicht van de ligging van de kadastrale percelen in Nederland. Fungeert als schakel tussen terrein en registratie, vervult voor externe gebruiker vaak een referentiefunctie, een ondergrond ten opzichte waarvan de gebruiker eigen informatie kan vastleggen en presenteren.</ows:Abstract>
+    <ows:Keywords>
+      <ows:Keyword>Kadaster</ows:Keyword>
+      <ows:Keyword>kadastrale percelen</ows:Keyword>
+    </ows:Keywords>
+    <ows:ServiceType codeSpace="OGC">OGC WFS</ows:ServiceType>
+    <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+    <ows:Fees>NONE</ows:Fees>
+    <ows:AccessConstraints>http://creativecommons.org/publicdomain/zero/1.0/deed.nl</ows:AccessConstraints>
+  </ows:ServiceIdentification>
+  <ows:ServiceProvider>
+    <ows:ProviderName>PDOK</ows:ProviderName>
+    <ows:ProviderSite xlink:type="simple" xlink:href="https://geodata.nationaalgeoregister.nl"/>
+    <ows:ServiceContact>
+      <ows:IndividualName>KlantContactCenter PDOK</ows:IndividualName>
+      <ows:PositionName>pointOfContact</ows:PositionName>
+      <ows:ContactInfo>
+        <ows:Phone>
+          <ows:Voice></ows:Voice>
+          <ows:Facsimile></ows:Facsimile>
+        </ows:Phone>
+        <ows:Address>
+          <ows:DeliveryPoint></ows:DeliveryPoint>
+          <ows:City>Apeldoorn</ows:City>
+          <ows:AdministrativeArea></ows:AdministrativeArea>
+          <ows:PostalCode></ows:PostalCode>
+          <ows:Country>Nederland</ows:Country>
+          <ows:ElectronicMailAddress>BeheerPDOK@kadaster.nl</ows:ElectronicMailAddress>
+        </ows:Address>
+        <ows:OnlineResource xlink:type="simple" xlink:href="https://geodata.nationaalgeoregister.nl"/>
+        <ows:HoursOfService></ows:HoursOfService>
+        <ows:ContactInstructions></ows:ContactInstructions>
+      </ows:ContactInfo>
+      <ows:Role></ows:Role>
+    </ows:ServiceContact>
+  </ows:ServiceProvider>
+  <ows:OperationsMetadata>
+    <ows:Operation name="GetCapabilities">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:type="simple" xlink:href="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;"/>
+          <ows:Post xlink:type="simple" xlink:href="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="service">
+        <ows:Value>WFS</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="AcceptVersions">
+        <ows:Value>1.0.0</ows:Value>
+        <ows:Value>1.1.0</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="AcceptFormats">
+        <ows:Value>text/xml</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="DescribeFeatureType">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:type="simple" xlink:href="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;"/>
+          <ows:Post xlink:type="simple" xlink:href="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="outputFormat">
+        <ows:Value>XMLSCHEMA</ows:Value>
+        <ows:Value>text/xml; subtype=gml/2.1.2</ows:Value>
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="GetFeature">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:type="simple" xlink:href="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;"/>
+          <ows:Post xlink:type="simple" xlink:href="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="resultType">
+        <ows:Value>results</ows:Value>
+        <ows:Value>hits</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="outputFormat">
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+        <ows:Value>application/json; subtype=geojson</ows:Value>
+        <ows:Value>application/json</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Constraint name="DefaultMaxFeatures">
+      <ows:Value>1000</ows:Value>
+    </ows:Constraint>
+  </ows:OperationsMetadata>
+  <FeatureTypeList>
+    <Operations>
+      <Operation>Query</Operation>
+    </Operations>
+    <FeatureType>
+      <Name>kadastralekaartv4:kadastralegrens</Name>
+      <Title>kadastralegrens</Title>
+      <Abstract>Een Kadastrale Grens is de weergave van een grens op de kadastrale kaart die door de dienst van het Kadaster tussen percelen vastgesteld wordt, op basis van inlichtingen van belanghebbenden en met gebruikmaking van de aan de kadastrale kaart ten grondslag liggende bescheiden die in elk geval de landmeetkundige gegevens bevatten van hetgeen op die kaart wordt weergegeven.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Kadastrale percelen</ows:Keyword>
+        <ows:Keyword>infoMapAccessService</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::28992</DefaultSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25831</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25832</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3034</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::5709</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3035</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3857</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4258</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4326</OtherSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>application/json; subtype=geojson</Format>
+        <Format>application/json</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox dimensions="2">
+        <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
+        <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL format="text/plain" type="TC211">https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904</MetadataURL>
+    </FeatureType>
+    <FeatureType>
+      <Name>kadastralekaartv4:perceel</Name>
+      <Title>perceel</Title>
+      <Abstract>Een Perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft. Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Kadastrale percelen</ows:Keyword>
+        <ows:Keyword>infoMapAccessService</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::28992</DefaultSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25831</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25832</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3034</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::5709</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3035</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3857</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4258</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4326</OtherSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>application/json; subtype=geojson</Format>
+        <Format>application/json</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox dimensions="2">
+        <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
+        <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL format="text/plain" type="TC211">https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904</MetadataURL>
+    </FeatureType>
+    <FeatureType>
+      <Name>kadastralekaartv4:bebouwing</Name>
+      <Title>bebouwing</Title>
+      <Abstract>De laag Bebouwing is een selectie op panden van de BGT met een bgt-status “bestaand” die een huisnummer hebben.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Kadastrale percelen</ows:Keyword>
+        <ows:Keyword>infoMapAccessService</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::28992</DefaultSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25831</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25832</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3034</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::5709</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3035</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3857</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4258</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4326</OtherSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>application/json; subtype=geojson</Format>
+        <Format>application/json</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox dimensions="2">
+        <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
+        <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL format="text/plain" type="TC211">https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904</MetadataURL>
+    </FeatureType>
+    <FeatureType>
+      <Name>kadastralekaartv4:nummeraanduidingreeks</Name>
+      <Title>nummeraanduidingreeks</Title>
+      <Abstract>De laag nummeraanduidingreeks bestaat uit de huisnummerreeksen behorende bij de laag bebouwing.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Kadastrale percelen</ows:Keyword>
+        <ows:Keyword>infoMapAccessService</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::28992</DefaultSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25831</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25832</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3034</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::5709</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3035</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3857</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4258</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4326</OtherSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>application/json; subtype=geojson</Format>
+        <Format>application/json</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox dimensions="2">
+        <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
+        <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL format="text/plain" type="TC211">https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904</MetadataURL>
+    </FeatureType>
+    <FeatureType>
+      <Name>kadastralekaartv4:openbareruimtenaam</Name>
+      <Title>openbareruimtenaam</Title>
+      <Abstract>De laag Openbareruimtenaam is een selectie op de openbare ruimte labels van de BGT met een bgt-status “bestaand” die een classificatie (openbareruimtetype) Weg en Water hebben.</Abstract>
+      <ows:Keywords>
+        <ows:Keyword>Kadastrale percelen</ows:Keyword>
+        <ows:Keyword>infoMapAccessService</ows:Keyword>
+      </ows:Keywords>
+      <DefaultSRS>urn:ogc:def:crs:EPSG::28992</DefaultSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25831</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::25832</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3034</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::5709</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3035</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::3857</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4258</OtherSRS>
+      <OtherSRS>urn:ogc:def:crs:EPSG::4326</OtherSRS>
+      <OutputFormats>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>application/json; subtype=geojson</Format>
+        <Format>application/json</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox dimensions="2">
+        <ows:LowerCorner>2.52712538742158 50.2128625669452</ows:LowerCorner>
+        <ows:UpperCorner>7.37402550506231 55.7211602557705</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL format="text/plain" type="TC211">https://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=a29917b9-3426-4041-a11b-69bcb2256904</MetadataURL>
+    </FeatureType>
+  </FeatureTypeList>
+  <ogc:Filter_Capabilities>
+    <ogc:Spatial_Capabilities>
+      <ogc:GeometryOperands>
+        <ogc:GeometryOperand>gml:Point</ogc:GeometryOperand>
+        <ogc:GeometryOperand>gml:LineString</ogc:GeometryOperand>
+        <ogc:GeometryOperand>gml:Polygon</ogc:GeometryOperand>
+        <ogc:GeometryOperand>gml:Envelope</ogc:GeometryOperand>
+      </ogc:GeometryOperands>
+      <ogc:SpatialOperators>
+        <ogc:SpatialOperator name="Equals"/>
+        <ogc:SpatialOperator name="Disjoint"/>
+        <ogc:SpatialOperator name="Touches"/>
+        <ogc:SpatialOperator name="Within"/>
+        <ogc:SpatialOperator name="Overlaps"/>
+        <ogc:SpatialOperator name="Crosses"/>
+        <ogc:SpatialOperator name="Intersects"/>
+        <ogc:SpatialOperator name="Contains"/>
+        <ogc:SpatialOperator name="DWithin"/>
+        <ogc:SpatialOperator name="Beyond"/>
+        <ogc:SpatialOperator name="BBOX"/>
+      </ogc:SpatialOperators>
+    </ogc:Spatial_Capabilities>
+    <ogc:Scalar_Capabilities>
+      <ogc:LogicalOperators/>
+      <ogc:ComparisonOperators>
+        <ogc:ComparisonOperator>LessThan</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>GreaterThan</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>LessThanEqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>GreaterThanEqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>EqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>NotEqualTo</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>Like</ogc:ComparisonOperator>
+        <ogc:ComparisonOperator>Between</ogc:ComparisonOperator>
+      </ogc:ComparisonOperators>
+    </ogc:Scalar_Capabilities>
+    <ogc:Id_Capabilities>
+      <ogc:EID/>
+      <ogc:FID/>
+    </ogc:Id_Capabilities>
+  </ogc:Filter_Capabilities>
+</wfs:WFS_Capabilities>

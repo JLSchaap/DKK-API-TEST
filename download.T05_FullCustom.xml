@@ -1,0 +1,1206 @@
+<testsuite failures="0" name="download/T05_FullCustom.feature" skipped="0" tests="8" time="34.44429">
+  <testcase classname="download.T05_FullCustom" name="download full custom op locatie hofvijver voor feature(s): perceel" time="3.212822">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_1_perceel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed</system-out>
+  </testcase>
+  <testcase classname="download.T05_FullCustom" name="download full custom op locatie hofvijver voor feature(s): kadastralegrens" time="4.053206">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_1_perceel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["kadastralegrens"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_2_kadastralegrens\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed</system-out>
+  </testcase>
+  <testcase classname="download.T05_FullCustom" name="download full custom op locatie hofvijver voor feature(s): pand" time="2.056966">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_1_perceel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["kadastralegrens"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_2_kadastralegrens\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["pand"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_3_pand\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed</system-out>
+  </testcase>
+  <testcase classname="download.T05_FullCustom" name="download full custom op locatie hofvijver voor feature(s): openbareruimtelabel" time="3.965087">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_1_perceel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["kadastralegrens"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_2_kadastralegrens\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["pand"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_3_pand\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["openbareruimtelabel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_4_openbareruimtelabel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed</system-out>
+  </testcase>
+  <testcase classname="download.T05_FullCustom" name="download full custom op locatie hofvijver voor feature(s): perceel&quot;,  &quot;kadastralegrens&quot;, &quot;pand&quot;, &quot;openbareruimtelabel" time="9.114101">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_1_perceel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["kadastralegrens"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_2_kadastralegrens\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["pand"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_3_pand\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["openbareruimtelabel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_4_openbareruimtelabel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel",  "kadastralegrens", "pand", "openbareruimtelabel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_5_4features_hof\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed</system-out>
+  </testcase>
+  <testcase classname="download.T05_FullCustom" name="download full custom op locatie swifterband voor feature(s): perceel&quot;,&quot;openbareruimtelabel" time="2.31853">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_1_perceel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["kadastralegrens"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_2_kadastralegrens\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["pand"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_3_pand\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["openbareruimtelabel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_4_openbareruimtelabel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel",  "kadastralegrens", "pand", "openbareruimtelabel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_5_4features_hof\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel","openbareruimtelabel"],  geofilter: 'POLYGON((171808.896 509246.97597949224,172768.51212304688 509276.54393847665,172760.44804101562 508392.1920000001,171773.95212304688 508381.43995898444,171808.896 509246.97597949224))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_6_perceelenOpenbareruimtelabel_swift\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed</system-out>
+  </testcase>
+  <testcase classname="download.T05_FullCustom" name="download full custom op locatie Apeldoorndebrug voor feature(s): pand&quot;,&quot;openbareruimtelabel" time="2.037343">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_1_perceel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["kadastralegrens"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_2_kadastralegrens\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["pand"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_3_pand\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["openbareruimtelabel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_4_openbareruimtelabel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel",  "kadastralegrens", "pand", "openbareruimtelabel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_5_4features_hof\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel","openbareruimtelabel"],  geofilter: 'POLYGON((171808.896 509246.97597949224,172768.51212304688 509276.54393847665,172760.44804101562 508392.1920000001,171773.95212304688 508381.43995898444,171808.896 509246.97597949224))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_6_perceelenOpenbareruimtelabel_swift\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["pand","openbareruimtelabel"],  geofilter: 'POLYGON((194115.26404101565 465939.2639692384,194369.2799794922 465943.296010254,194351.80802050783 465775.29595898447,194093.76006152347 465724.2240205079,194115.26404101565 465939.2639692384))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_7_dkkbgt_brug\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed</system-out>
+  </testcase>
+  <testcase classname="download.T05_FullCustom" name="download full custom op locatie Amersfoort Prodent Fabriek voor feature(s): perceel&quot;,  &quot;kadastralegrens&quot;, &quot;pand&quot;, &quot;openbareruimtelabel" time="7.686235">
+    <system-out>* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_1_perceel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["kadastralegrens"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_2_kadastralegrens\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["pand"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_3_pand\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["openbareruimtelabel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_4_openbareruimtelabel\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel",  "kadastralegrens", "pand", "openbareruimtelabel"],  geofilter: 'POLYGON((81044.88 455429.52,81634.56000000001 455444.64,81735.36000000002 455199.36,81612.72 454955.76,81070.08 454952.4,80880.24 455192.64,81044.88 455429.52))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_5_4features_hof\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel","openbareruimtelabel"],  geofilter: 'POLYGON((171808.896 509246.97597949224,172768.51212304688 509276.54393847665,172760.44804101562 508392.1920000001,171773.95212304688 508381.43995898444,171808.896 509246.97597949224))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_6_perceelenOpenbareruimtelabel_swift\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["pand","openbareruimtelabel"],  geofilter: 'POLYGON((194115.26404101565 465939.2639692384,194369.2799794922 465943.296010254,194351.80802050783 465775.29595898447,194093.76006152347 465724.2240205079,194115.26404101565 465939.2639692384))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_7_dkkbgt_brug\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed
+* url apiBaseUrl +'kadastralekaart/api/v4_0/full/custom' .................. passed
+Given request {format: 'gml',featuretypes: ["perceel",  "kadastralegrens", "pand", "openbareruimtelabel"],  geofilter: 'POLYGON ((154125.82490221905754879 463344.15998090390348807, 154404.92781473969807848 463761.69793803477659822, 154804.60318546928465366 463460.26679251249879599, 154447.35145744285546243 463040.49601208145031705, 154125.82490221905754879 463344.15998090390348807))' } . passed
+When method post .......................................................... passed
+Then status 202 ........................................................... passed
+And match response == { downloadRequestId: '#uuid' , _links:'#notnull' } .. passed
+And def links = response._links ........................................... passed
+And def downloadRequestId = response.downloadRequestId .................... passed
+And def status = response.status .......................................... passed
+And def statusurl = apiBaseUrl  + links.status.href ....................... passed
+* print 'links:' , links .................................................. passed
+* print  'statusurl', statusurl ........................................... passed
+* print 'extracId:', downloadRequestId .................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+* print "waiting update delta link" ....................................... passed
+And retry until responseStatus == 201 ..................................... passed
+Given url statusurl ....................................................... passed
+When method GET ........................................................... passed
+And def downloadlink = apiBaseUrl  +  response._links.download.href ....... passed
+And match response == { _links:'#notnull' , progress:100, status:'COMPLETED' } . passed
+* print "downloadlink:", downloadlink ..................................... passed
+Given url downloadlink .................................................... passed
+When method HEAD .......................................................... passed
+Then status 200 ........................................................... passed
+And match responseHeaders['Content-Length'][0] == '#notnull' .............. passed
+And match responseHeaders['Content-Type'][0] == 'application/zip' ......... passed
+And def zipsize =  responseHeaders['Content-Length'][0] ................... passed
+* print "size", zipsize ................................................... passed
+* assert zipsize &gt; 300 .................................................... passed
+* def mydownloads = Java.type('download.DataStorage') ..................... passed
+* def LocalDateTime = Java.type('java.time.LocalDateTime') ................ passed
+* def db = new mydownloads ................................................ passed
+* eval db.mywriteln('- Test: T05_8_prodent_fabriek\n'+'  Url: '+downloadlink+'\n  Size: '+zipsize+'\n  Time: '+ LocalDateTime.now() +'\n' , 'target/surefire-reports/fullcustomurl.yaml') . passed</system-out>
+  </testcase>
+</testsuite>

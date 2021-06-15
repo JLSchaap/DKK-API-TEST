@@ -1,0 +1,345 @@
+- Test: V02_WMS test 1 600 600 type pand contour 
+  responseTime: 332
+  Size: 2332
+  Time: 2021-06-15T02:29:03.891
+
+- Test: V02_WMS legenda test 1 type pand contour 
+  responseTime: 246
+  Size: 2332
+  Time: 2021-06-15T02:29:04.223
+
+- Test: V02_WMS test 1b 600 600 type pand contour 
+  responseTime: 456
+  Size: 180197
+  Time: 2021-06-15T02:29:04.260
+
+- Test: V02_WMS test 1 style default 600 600 type pand contour 
+  responseTime: 269
+  Size: 2332
+  Time: 2021-06-15T02:29:04.552
+
+- Test: V02_WMS legenda test 1b type pand contour 
+  responseTime: 252
+  Size: 180197
+  Time: 2021-06-15T02:29:04.554
+
+- Test: V02_WMS test 1b style default 600 600 type pand contour 
+  responseTime: 590
+  Size: 180197
+  Time: 2021-06-15T02:29:05.615
+
+- Test: V02_WMS test 2b 600 600 type pand contour 
+  responseTime: 329
+  Size: 180197
+  Time: 2021-06-15T02:29:05.617
+
+- Test: V02_WMS test 3 600 600 type huisnummer (reeks) tekst 8 
+  responseTime: 258
+  Size: 2332
+  Time: 2021-06-15T02:29:05.893
+
+- Test: V02_WMS legenda test 2b type pand contour 
+  responseTime: 249
+  Size: 180197
+  Time: 2021-06-15T02:29:05.950
+
+- Test: V02_WMS legenda test 3 type huisnummer (reeks) tekst 8 
+  responseTime: 245
+  Size: 2332
+  Time: 2021-06-15T02:29:06.161
+
+- Test: V02_WMS test 3 style default 600 600 type huisnummer (reeks) tekst 8 
+  responseTime: 252
+  Size: 2332
+  Time: 2021-06-15T02:29:06.445
+
+- Test: V02_WMS test 2b style default 600 600 type pand contour 
+  responseTime: 470
+  Size: 180197
+  Time: 2021-06-15T02:29:06.813
+
+- Test: V02_WMS test 4 4000 4000 type huisnummer (reeks) tekst 14 
+  responseTime: 1840
+  Size: 349295
+  Time: 2021-06-15T02:29:08.047
+
+- Test: V02_WMS legenda test 4 type huisnummer (reeks) tekst 14 
+  responseTime: 248
+  Size: 349295
+  Time: 2021-06-15T02:29:08.345
+
+- Test: V02_WMS test 4 style kadastralekaartv4:bebouwing_print 4000 4000 type huisnummer (reeks) tekst 14 
+  responseTime: 1681
+  Size: 776654
+  Time: 2021-06-15T02:29:10.733
+
+- Test: V02_WMS test 2 8320 5850 type pand contour 
+  responseTime: 6502
+  Size: 4895494
+  Time: 2021-06-15T02:29:14.345
+
+- Test: V02_WMS legenda test 2 type pand contour 
+  responseTime: 246
+  Size: 4895494
+  Time: 2021-06-15T02:29:14.614
+
+- Test: V02_WMS test 2 style kadastralekaartv4:bebouwing_print 8320 5850 type pand contour 
+  responseTime: 4339
+  Size: 156612
+  Time: 2021-06-15T02:29:19.308
+
+- Test: V02_WMS test 5 600 600 type zwart tekst 10  (openbareRuimteType=Weg recht 
+  responseTime: 258
+  Size: 2332
+  Time: 2021-06-15T02:29:22.190
+
+- Test: V02_WMS legenda test 5 type zwart tekst 10  (openbareRuimteType=Weg recht 
+  responseTime: 249
+  Size: 2332
+  Time: 2021-06-15T02:29:22.478
+
+- Test: V02_WMS test 5 style default 600 600 type zwart tekst 10  (openbareRuimteType=Weg recht 
+  responseTime: 254
+  Size: 2332
+  Time: 2021-06-15T02:29:22.748
+
+- Test: V02_WMS test 7 600 600 type zwart tekst 10  (openbareRuimteType=Water italic) 
+  responseTime: 310
+  Size: 2332
+  Time: 2021-06-15T02:29:23.194
+
+- Test: V02_WMS legenda test 7 type zwart tekst 10  (openbareRuimteType=Water italic) 
+  responseTime: 272
+  Size: 2332
+  Time: 2021-06-15T02:29:23.498
+
+- Test: V02_WMS test 7 style default 600 600 type zwart tekst 10  (openbareRuimteType=Water italic) 
+  responseTime: 258
+  Size: 2332
+  Time: 2021-06-15T02:29:23.771
+
+- Test: V02_WMS test 6 4000 4000 type zwart tekst 20  (openbareRuimteType=Weg recht 
+  responseTime: 1580
+  Size: 349295
+  Time: 2021-06-15T02:29:24.891
+
+- Test: V02_WMS legenda test 6 type zwart tekst 20  (openbareRuimteType=Weg recht 
+  responseTime: 243
+  Size: 349295
+  Time: 2021-06-15T02:29:25.155
+
+- Test: V02_WMS test 8 4000 4000 type zwart tekst 20  (openbareRuimteType=Water italic) 
+  responseTime: 1995
+  Size: 349295
+  Time: 2021-06-15T02:29:26.273
+
+- Test: V02_WMS legenda test 8 type zwart tekst 20  (openbareRuimteType=Water italic) 
+  responseTime: 240
+  Size: 349295
+  Time: 2021-06-15T02:29:26.528
+
+- Test: V02_WMS test 6 style kadastralekaartv4:bebouwing_print 4000 4000 type zwart tekst 20  (openbareRuimteType=Weg recht 
+  responseTime: 2215
+  Size: 776654
+  Time: 2021-06-15T02:29:28.163
+
+- Test: V02_WMS test 8 style kadastralekaartv4:bebouwing_print 4000 4000 type zwart tekst 20  (openbareRuimteType=Water italic) 
+  responseTime: 2440
+  Size: 776654
+  Time: 2021-06-15T02:29:29.657
+
+- Test: V02_WMS test 9 600 600 type perceel contour stroke 1 
+  responseTime: 1361
+  Size: 294283
+  Time: 2021-06-15T02:29:30.016
+
+- Test: V02_WMS legenda test 9 type perceel contour stroke 1 
+  responseTime: 240
+  Size: 294283
+  Time: 2021-06-15T02:29:30.273
+
+- Test: V02_WMS test 9 style default 600 600 type perceel contour stroke 1 
+  responseTime: 1110
+  Size: 294283
+  Time: 2021-06-15T02:29:31.835
+
+- Test: V02_WMS test 10 4000 4000 type perceel contour stroke1 
+  responseTime: 5476
+  Size: 2519295
+  Time: 2021-06-15T02:29:41.392
+
+- Test: V02_WMS legenda test 10 type perceel contour stroke1 
+  responseTime: 242
+  Size: 2519295
+  Time: 2021-06-15T02:29:41.669
+
+- Test: V02_WMS test 10 style kadastralekaartv4:perceel_print 4000 4000 type perceel contour stroke1 
+  responseTime: 3587
+  Size: 3104299
+  Time: 2021-06-15T02:29:47.332
+
+- Test: V02_WMS test 11 600 600 type lijn stroke .5 
+  responseTime: 965
+  Size: 294283
+  Time: 2021-06-15T02:29:52.132
+
+- Test: V02_WMS legenda test 11 type lijn stroke .5 
+  responseTime: 245
+  Size: 294283
+  Time: 2021-06-15T02:29:52.388
+
+- Test: V02_WMS test 11 style default 600 600 type lijn stroke .5 
+  responseTime: 997
+  Size: 294283
+  Time: 2021-06-15T02:29:53.850
+
+- Test: V02_WMS test 12 4000 4000 type lijn stroke .5 
+  responseTime: 4019
+  Size: 2519295
+  Time: 2021-06-15T02:30:09.002
+
+- Test: V02_WMS legenda test 12 type lijn stroke .5 
+  responseTime: 299
+  Size: 2519295
+  Time: 2021-06-15T02:30:09.315
+
+- Test: V02_WMS test 13 600 600 type zwart arial italic 16 
+  responseTime: 999
+  Size: 294283
+  Time: 2021-06-15T02:30:13.837
+
+- Test: V02_WMS legenda test 13 type zwart arial italic 16 
+  responseTime: 282
+  Size: 294283
+  Time: 2021-06-15T02:30:14.132
+
+- Test: V02_WMS test 13 style default 600 600 type zwart arial italic 16 
+  responseTime: 1160
+  Size: 294283
+  Time: 2021-06-15T02:30:15.743
+
+- Test: V02_WMS test 12 style kadastralekaartv4:perceel_print 4000 4000 type lijn stroke .5 
+  responseTime: 5190
+  Size: 3104299
+  Time: 2021-06-15T02:30:16.658
+
+- Test: V02_WMS test 14 600 600 type zwart arial italic 8 
+  responseTime: 980
+  Size: 294283
+  Time: 2021-06-15T02:30:18.110
+
+- Test: V02_WMS legenda test 14 type zwart arial italic 8 
+  responseTime: 242
+  Size: 294283
+  Time: 2021-06-15T02:30:18.360
+
+- Test: V02_WMS test 14 style default 600 600 type zwart arial italic 8 
+  responseTime: 1669
+  Size: 294283
+  Time: 2021-06-15T02:30:20.498
+
+- Test: V02_WMS test 16 600 600 type lijn stroke 2 
+  responseTime: 473
+  Size: 207247
+  Time: 2021-06-15T02:30:27.940
+
+- Test: V02_WMS legenda test 16 type lijn stroke 2 
+  responseTime: 244
+  Size: 207247
+  Time: 2021-06-15T02:30:28.194
+
+- Test: V02_WMS test 16 style default 600 600 type lijn stroke 2 
+  responseTime: 458
+  Size: 207247
+  Time: 2021-06-15T02:30:28.996
+
+- Test: V02_WMS test 15 4000 4000 type zwart arial italic 20 
+  responseTime: 5952
+  Size: 2519295
+  Time: 2021-06-15T02:30:31.582
+
+- Test: V02_WMS legenda test 15 type zwart arial italic 20 
+  responseTime: 244
+  Size: 2519295
+  Time: 2021-06-15T02:30:31.841
+
+- Test: V02_WMS test 15 style kadastralekaartv4:perceel_print 4000 4000 type zwart arial italic 20 
+  responseTime: 3828
+  Size: 3104299
+  Time: 2021-06-15T02:30:37.810
+
+- Test: V02_WMS test 17 600 600 type lijn stroke 2 
+  responseTime: 435
+  Size: 207247
+  Time: 2021-06-15T02:30:41.678
+
+- Test: V02_WMS legenda test 17 type lijn stroke 2 
+  responseTime: 245
+  Size: 207247
+  Time: 2021-06-15T02:30:41.934
+
+- Test: V02_WMS test 17 style default 600 600 type lijn stroke 2 
+  responseTime: 457
+  Size: 207247
+  Time: 2021-06-15T02:30:42.740
+
+- Test: V02_WMS test 18 600 600 type lijn stroke 2 
+  responseTime: 477
+  Size: 207247
+  Time: 2021-06-15T02:30:43.293
+
+- Test: V02_WMS legenda test 18 type lijn stroke 2 
+  responseTime: 251
+  Size: 207247
+  Time: 2021-06-15T02:30:43.557
+
+- Test: V02_WMS test 18 style default 600 600 type lijn stroke 2 
+  responseTime: 412
+  Size: 207247
+  Time: 2021-06-15T02:30:44.322
+
+- Test: V02_WMS test 19 4000 4000 type lijn stroke 2 
+  responseTime: 3891
+  Size: 2464075
+  Time: 2021-06-15T02:30:48.387
+
+- Test: V02_WMS legenda test 19 type lijn stroke 2 
+  responseTime: 246
+  Size: 2464075
+  Time: 2021-06-15T02:30:48.646
+
+- Test: V02_WMS test 20 4000 4000 type lijn stroke 2 
+  responseTime: 4214
+  Size: 2464075
+  Time: 2021-06-15T02:30:49.707
+
+- Test: V02_WMS legenda test 20 type lijn stroke 2 
+  responseTime: 242
+  Size: 2464075
+  Time: 2021-06-15T02:30:49.955
+
+- Test: V02_WMS test 21 4000 4000 type lijn stroke 2 
+  responseTime: 9260
+  Size: 2464075
+  Time: 2021-06-15T02:30:59.529
+
+- Test: V02_WMS legenda test 21 type lijn stroke 2 
+  responseTime: 242
+  Size: 2464075
+  Time: 2021-06-15T02:30:59.785
+
+- Test: V02_WMS test 19 style kadastralekaartv4:kadastralegrens_print 4000 4000 type lijn stroke 2 
+  responseTime: 9908
+  Size: 2464075
+  Time: 2021-06-15T02:31:00.464
+
+- Test: V02_WMS test 20 style kadastralekaartv4:kadastralegrens_print 4000 4000 type lijn stroke 2 
+  responseTime: 9044
+  Size: 2464075
+  Time: 2021-06-15T02:31:00.850
+
+- Test: V02_WMS test 21 style kadastralekaartv4:kadastralegrens_print 4000 4000 type lijn stroke 2 
+  responseTime: 2780
+  Size: 2464075
+  Time: 2021-06-15T02:31:04.368
+

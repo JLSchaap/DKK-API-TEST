@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<wfs:FeatureCollection
+   xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:wfs="http://www.opengis.net/wfs/2.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://kadastralekaartv4.geonovum.nl https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=kadastralekaartv4:bebouwing&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B%20version%3D3.2 http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+   timeStamp="2021-06-15T02:30:38" numberMatched="unknown" numberReturned="1"
+   next="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=2.0.0&amp;TYPENAMES=kadastralekaartv4%3Abebouwing&amp;COUNT=1&amp;STARTINDEX=1">
+      <wfs:boundedBy>
+      	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+      		<gml:lowerCorner>19778.190000 363942.151000</gml:lowerCorner>
+      		<gml:upperCorner>19789.103000 363954.650000</gml:upperCorner>
+      	</gml:Envelope>
+      </wfs:boundedBy>
+    <wfs:member>
+      <kadastralekaartv4:bebouwing gml:id="bebouwing.fb7feaab-96ba-4b77-03a8-86c77e57d70b">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+        		<gml:lowerCorner>19778.190000 363942.151000</gml:lowerCorner>
+        		<gml:upperCorner>19789.103000 363954.650000</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <kadastralekaartv4:geometrie2dGrondvlak>
+          <gml:Polygon gml:id="bebouwing.fb7feaab-96ba-4b77-03a8-86c77e57d70b.1" srsName="urn:ogc:def:crs:EPSG::28992">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList srsDimension="2">19778.675000 363946.869000 19778.959000 363946.809000 19778.190000 363943.190000 19783.080000 363942.151000 19783.849000 363945.770000 19787.449000 363945.005000 19789.103000 363952.785000 19780.328000 363954.650000 19778.675000 363946.869000 </gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </kadastralekaartv4:geometrie2dGrondvlak>
+        <kadastralekaartv4:id>fb7feaab-96ba-4b77-03a8-86c77e57d70b</kadastralekaartv4:id>
+        <kadastralekaartv4:objectBeginTijd>2015-08-20</kadastralekaartv4:objectBeginTijd>
+        <kadastralekaartv4:LV-publicatiedatum>2019-09-12T13:42:01</kadastralekaartv4:LV-publicatiedatum>
+        <kadastralekaartv4:relatieveHoogteligging>0</kadastralekaartv4:relatieveHoogteligging>
+        <kadastralekaartv4:inOnderzoek>false</kadastralekaartv4:inOnderzoek>
+        <kadastralekaartv4:tijdstipRegistratie>2019-09-12T10:51:32.000</kadastralekaartv4:tijdstipRegistratie>
+        <kadastralekaartv4:identificatieNamespace>NL.IMGeo</kadastralekaartv4:identificatieNamespace>
+        <kadastralekaartv4:identificatieLokaalID>G1714.8abeacd5439b75760000000a0124857e</kadastralekaartv4:identificatieLokaalID>
+        <kadastralekaartv4:bronhouder>G1714</kadastralekaartv4:bronhouder>
+        <kadastralekaartv4:bgt-status>bestaand</kadastralekaartv4:bgt-status>
+        <kadastralekaartv4:plus-status>geenWaarde</kadastralekaartv4:plus-status>
+        <kadastralekaartv4:identificatieBAGPND>1714100000731760</kadastralekaartv4:identificatieBAGPND>
+      </kadastralekaartv4:bebouwing>
+    </wfs:member>
+</wfs:FeatureCollection>
+

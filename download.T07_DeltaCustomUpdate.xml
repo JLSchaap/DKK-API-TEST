@@ -1,0 +1,98 @@
+<testsuite failures="0" name="download/T07_DeltaCustomUpdate.feature" skipped="0" tests="3" time="242.282083">
+  <testcase classname="download.T07_DeltaCustomUpdate" name="downoad deltas op locatie buitenhof perceel" time="73.471936">
+    <system-out>* print "bepaal een delta ids " ........................................... passed
+Given url apiBaseUrl + 'kadastralekaart/api/v4_0/delta' ................... passed
+And param count = 1000 .................................................... passed
+And param after-delta-id = "b2219778-e94c-40b0-92bd-95e3491af2bb" ......... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And def alldelta = response.deltas ........................................ passed
+* print "alldelta:", alldelta ............................................. passed
+* def pararray = [] ....................................................... passed
+* def featureslist = ["perceel"] .......................................... passed
+* def fun = ............................................................... passed
+* eval karate.forEach(alldelta, fun) ...................................... passed
+* print "array:", pararray ................................................ passed
+* print "done" ............................................................ passed
+* def dodelta = call read('DeltaCustomargs.feature') pararray ............. passed</system-out>
+  </testcase>
+  <testcase classname="download.T07_DeltaCustomUpdate" name="downoad deltas op locatie buitenhof kadastralegrens" time="80.086515">
+    <system-out>* print "bepaal een delta ids " ........................................... passed
+Given url apiBaseUrl + 'kadastralekaart/api/v4_0/delta' ................... passed
+And param count = 1000 .................................................... passed
+And param after-delta-id = "b2219778-e94c-40b0-92bd-95e3491af2bb" ......... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And def alldelta = response.deltas ........................................ passed
+* print "alldelta:", alldelta ............................................. passed
+* def pararray = [] ....................................................... passed
+* def featureslist = ["perceel"] .......................................... passed
+* def fun = ............................................................... passed
+* eval karate.forEach(alldelta, fun) ...................................... passed
+* print "array:", pararray ................................................ passed
+* print "done" ............................................................ passed
+* def dodelta = call read('DeltaCustomargs.feature') pararray ............. passed
+* print "bepaal een delta ids " ........................................... passed
+Given url apiBaseUrl + 'kadastralekaart/api/v4_0/delta' ................... passed
+And param count = 1000 .................................................... passed
+And param after-delta-id = "b2219778-e94c-40b0-92bd-95e3491af2bb" ......... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And def alldelta = response.deltas ........................................ passed
+* print "alldelta:", alldelta ............................................. passed
+* def pararray = [] ....................................................... passed
+* def featureslist = ["kadastralegrens"] .................................. passed
+* def fun = ............................................................... passed
+* eval karate.forEach(alldelta, fun) ...................................... passed
+* print "array:", pararray ................................................ passed
+* print "done" ............................................................ passed
+* def dodelta = call read('DeltaCustomargs.feature') pararray ............. passed</system-out>
+  </testcase>
+  <testcase classname="download.T07_DeltaCustomUpdate" name="downoad deltas op locatie buitenhof perceel&quot;,&quot;kadastralegrens" time="88.723632">
+    <system-out>* print "bepaal een delta ids " ........................................... passed
+Given url apiBaseUrl + 'kadastralekaart/api/v4_0/delta' ................... passed
+And param count = 1000 .................................................... passed
+And param after-delta-id = "b2219778-e94c-40b0-92bd-95e3491af2bb" ......... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And def alldelta = response.deltas ........................................ passed
+* print "alldelta:", alldelta ............................................. passed
+* def pararray = [] ....................................................... passed
+* def featureslist = ["perceel"] .......................................... passed
+* def fun = ............................................................... passed
+* eval karate.forEach(alldelta, fun) ...................................... passed
+* print "array:", pararray ................................................ passed
+* print "done" ............................................................ passed
+* def dodelta = call read('DeltaCustomargs.feature') pararray ............. passed
+* print "bepaal een delta ids " ........................................... passed
+Given url apiBaseUrl + 'kadastralekaart/api/v4_0/delta' ................... passed
+And param count = 1000 .................................................... passed
+And param after-delta-id = "b2219778-e94c-40b0-92bd-95e3491af2bb" ......... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And def alldelta = response.deltas ........................................ passed
+* print "alldelta:", alldelta ............................................. passed
+* def pararray = [] ....................................................... passed
+* def featureslist = ["kadastralegrens"] .................................. passed
+* def fun = ............................................................... passed
+* eval karate.forEach(alldelta, fun) ...................................... passed
+* print "array:", pararray ................................................ passed
+* print "done" ............................................................ passed
+* def dodelta = call read('DeltaCustomargs.feature') pararray ............. passed
+* print "bepaal een delta ids " ........................................... passed
+Given url apiBaseUrl + 'kadastralekaart/api/v4_0/delta' ................... passed
+And param count = 1000 .................................................... passed
+And param after-delta-id = "b2219778-e94c-40b0-92bd-95e3491af2bb" ......... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And def alldelta = response.deltas ........................................ passed
+* print "alldelta:", alldelta ............................................. passed
+* def pararray = [] ....................................................... passed
+* def featureslist = ["perceel","kadastralegrens"] ........................ passed
+* def fun = ............................................................... passed
+* eval karate.forEach(alldelta, fun) ...................................... passed
+* print "array:", pararray ................................................ passed
+* print "done" ............................................................ passed
+* def dodelta = call read('DeltaCustomargs.feature') pararray ............. passed</system-out>
+  </testcase>
+</testsuite>

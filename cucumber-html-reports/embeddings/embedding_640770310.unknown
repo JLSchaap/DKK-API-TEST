@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<wfs:FeatureCollection
+   xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:wfs="http://www.opengis.net/wfs/2.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://kadastralekaartv4.geonovum.nl https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=perceel&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B%20version%3D3.2 http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+   timeStamp="2021-06-15T02:30:25" numberMatched="2" numberReturned="2">
+      <wfs:boundedBy>
+      	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+      		<gml:lowerCorner>81195.839000 455107.186000</gml:lowerCorner>
+      		<gml:upperCorner>81460.711000 455316.548000</gml:upperCorner>
+      	</gml:Envelope>
+      </wfs:boundedBy>
+    <wfs:member>
+      <kadastralekaartv4:perceel gml:id="perceel.ee5e1426-60ef-45cf-9f37-219e56cd9015">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+        		<gml:lowerCorner>81313.307000 455201.693000</gml:lowerCorner>
+        		<gml:upperCorner>81331.584000 455219.320000</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <kadastralekaartv4:begrenzingPerceel>
+          <gml:Polygon gml:id="perceel.ee5e1426-60ef-45cf-9f37-219e56cd9015.1" srsName="urn:ogc:def:crs:EPSG::28992">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList srsDimension="2">81313.850000 455210.003000 81317.520000 455203.168000 81317.732000 455202.840000 81318.525000 455202.105000 81319.531000 455201.704000 81320.613000 455201.693000 81330.068000 455206.864000 81331.091000 455207.931000 81331.492000 455208.487000 81331.584000 455209.218000 81328.162000 455217.272000 81327.216000 455218.555000 81325.580000 455219.281000 81323.919000 455219.320000 81314.578000 455214.703000 81314.043000 455214.059000 81313.307000 455212.705000 81313.389000 455211.132000 81313.850000 455210.003000 </gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </kadastralekaartv4:begrenzingPerceel>
+        <kadastralekaartv4:id>ee5e1426-60ef-45cf-9f37-219e56cd9015</kadastralekaartv4:id>
+        <kadastralekaartv4:identificatieNamespace>NL.IMKAD.KadastraalObject</kadastralekaartv4:identificatieNamespace>
+        <kadastralekaartv4:identificatieLokaalID>22250042270000</kadastralekaartv4:identificatieLokaalID>
+        <kadastralekaartv4:beginGeldigheid>2003-10-03T15:07:44.000</kadastralekaartv4:beginGeldigheid>
+        <kadastralekaartv4:tijdstipRegistratie>2003-10-03T15:07:44.000</kadastralekaartv4:tijdstipRegistratie>
+        <kadastralekaartv4:volgnummer>0</kadastralekaartv4:volgnummer>
+        <kadastralekaartv4:statusHistorieCode>G</kadastralekaartv4:statusHistorieCode>
+        <kadastralekaartv4:statusHistorieWaarde>Geldig</kadastralekaartv4:statusHistorieWaarde>
+        <kadastralekaartv4:kadastraleGemeenteCode>881</kadastralekaartv4:kadastraleGemeenteCode>
+        <kadastralekaartv4:kadastraleGemeenteWaarde>&#39;s-Gravenhage</kadastralekaartv4:kadastraleGemeenteWaarde>
+        <kadastralekaartv4:sectie>F</kadastralekaartv4:sectie>
+        <kadastralekaartv4:AKRKadastraleGemeenteCodeCode>975</kadastralekaartv4:AKRKadastraleGemeenteCodeCode>
+        <kadastralekaartv4:AKRKadastraleGemeenteCodeWaarde>GVH03</kadastralekaartv4:AKRKadastraleGemeenteCodeWaarde>
+        <kadastralekaartv4:kadastraleGrootteWaarde>215</kadastralekaartv4:kadastraleGrootteWaarde>
+        <kadastralekaartv4:soortGrootteCode>1</kadastralekaartv4:soortGrootteCode>
+        <kadastralekaartv4:soortGrootteWaarde>Vastgesteld</kadastralekaartv4:soortGrootteWaarde>
+        <kadastralekaartv4:perceelnummer>422</kadastralekaartv4:perceelnummer>
+        <kadastralekaartv4:perceelnummerRotatie>0</kadastralekaartv4:perceelnummerRotatie>
+        <kadastralekaartv4:perceelnummerVerschuivingDeltaX>0</kadastralekaartv4:perceelnummerVerschuivingDeltaX>
+        <kadastralekaartv4:perceelnummerVerschuivingDeltaY>0</kadastralekaartv4:perceelnummerVerschuivingDeltaY>
+        <kadastralekaartv4:perceelnummerPlaatscoordinaatX>81321.925</kadastralekaartv4:perceelnummerPlaatscoordinaatX>
+        <kadastralekaartv4:perceelnummerPlaatscoordinaatY>455211.281</kadastralekaartv4:perceelnummerPlaatscoordinaatY>
+      </kadastralekaartv4:perceel>
+    </wfs:member>
+    <wfs:member>
+      <kadastralekaartv4:perceel gml:id="perceel.9a0a6816-5d4a-459a-87ae-1f78ab829de8">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+        		<gml:lowerCorner>81195.839000 455107.186000</gml:lowerCorner>
+        		<gml:upperCorner>81460.711000 455316.548000</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <kadastralekaartv4:begrenzingPerceel>
+          <gml:Polygon gml:id="perceel.9a0a6816-5d4a-459a-87ae-1f78ab829de8.1" srsName="urn:ogc:def:crs:EPSG::28992">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList srsDimension="2">81197.351000 455177.570000 81195.839000 455176.911000 81226.330000 455110.365000 81227.806000 455111.135000 81235.418000 455108.635000 81236.199000 455107.186000 81249.473000 455113.806000 81251.152000 455110.492000 81251.392000 455110.696000 81277.605000 455122.317000 81277.555000 455122.653000 81278.895000 455123.218000 81276.156000 455129.624000 81274.825000 455129.049000 81274.398000 455130.037000 81276.075000 455130.798000 81272.751000 455136.426000 81279.009000 455140.109000 81278.666000 455140.719000 81287.812000 455145.841000 81286.288000 455148.469000 81308.568000 455160.655000 81307.890000 455161.841000 81317.717000 455167.521000 81319.750000 455163.960000 81320.450000 455164.279000 81320.600000 455164.053000 81320.619000 455164.024000 81341.968000 455175.892000 81340.527000 455178.605000 81354.251000 455186.318000 81354.675000 455185.619000 81371.110000 455194.605000 81372.042000 455192.486000 81372.296000 455192.147000 81388.709000 455200.697000 81421.050000 455217.980000 81429.095000 455221.793000 81429.229000 455221.648000 81432.126000 455222.565000 81434.834000 455221.170000 81436.447000 455218.605000 81440.137000 455211.703000 81444.070000 455204.347000 81449.664000 455207.237000 81438.178000 455228.870000 81460.711000 455240.926000 81424.931000 455306.903000 81420.691000 455304.680000 81418.827000 455305.104000 81411.711000 455316.548000 81409.406000 455315.133000 81302.521000 455250.048000 81204.210000 455189.965000 81203.603000 455189.592000 81198.777000 455186.705000 81199.653000 455185.266000 81197.351000 455177.570000 </gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+            <gml:interior>
+              <gml:LinearRing>
+                <gml:posList srsDimension="2">81313.389000 455211.132000 81313.307000 455212.705000 81314.043000 455214.059000 81314.578000 455214.703000 81323.919000 455219.320000 81325.580000 455219.281000 81327.216000 455218.555000 81328.162000 455217.272000 81331.584000 455209.218000 81331.492000 455208.487000 81331.091000 455207.931000 81330.068000 455206.864000 81320.613000 455201.693000 81319.531000 455201.704000 81318.525000 455202.105000 81317.732000 455202.840000 81317.520000 455203.168000 81313.850000 455210.003000 81313.389000 455211.132000 </gml:posList>
+              </gml:LinearRing>
+            </gml:interior>
+          </gml:Polygon>
+        </kadastralekaartv4:begrenzingPerceel>
+        <kadastralekaartv4:id>9a0a6816-5d4a-459a-87ae-1f78ab829de8</kadastralekaartv4:id>
+        <kadastralekaartv4:identificatieNamespace>NL.IMKAD.KadastraalObject</kadastralekaartv4:identificatieNamespace>
+        <kadastralekaartv4:identificatieLokaalID>22250212370000</kadastralekaartv4:identificatieLokaalID>
+        <kadastralekaartv4:beginGeldigheid>2007-09-27T10:03:38.000</kadastralekaartv4:beginGeldigheid>
+        <kadastralekaartv4:tijdstipRegistratie>2007-09-27T10:03:38.000</kadastralekaartv4:tijdstipRegistratie>
+        <kadastralekaartv4:volgnummer>0</kadastralekaartv4:volgnummer>
+        <kadastralekaartv4:statusHistorieCode>G</kadastralekaartv4:statusHistorieCode>
+        <kadastralekaartv4:statusHistorieWaarde>Geldig</kadastralekaartv4:statusHistorieWaarde>
+        <kadastralekaartv4:kadastraleGemeenteCode>881</kadastralekaartv4:kadastraleGemeenteCode>
+        <kadastralekaartv4:kadastraleGemeenteWaarde>&#39;s-Gravenhage</kadastralekaartv4:kadastraleGemeenteWaarde>
+        <kadastralekaartv4:sectie>F</kadastralekaartv4:sectie>
+        <kadastralekaartv4:AKRKadastraleGemeenteCodeCode>975</kadastralekaartv4:AKRKadastraleGemeenteCodeCode>
+        <kadastralekaartv4:AKRKadastraleGemeenteCodeWaarde>GVH03</kadastralekaartv4:AKRKadastraleGemeenteCodeWaarde>
+        <kadastralekaartv4:kadastraleGrootteWaarde>22600</kadastralekaartv4:kadastraleGrootteWaarde>
+        <kadastralekaartv4:soortGrootteCode>1</kadastralekaartv4:soortGrootteCode>
+        <kadastralekaartv4:soortGrootteWaarde>Vastgesteld</kadastralekaartv4:soortGrootteWaarde>
+        <kadastralekaartv4:perceelnummer>2123</kadastralekaartv4:perceelnummer>
+        <kadastralekaartv4:perceelnummerRotatie>0</kadastralekaartv4:perceelnummerRotatie>
+        <kadastralekaartv4:perceelnummerVerschuivingDeltaX>0</kadastralekaartv4:perceelnummerVerschuivingDeltaX>
+        <kadastralekaartv4:perceelnummerVerschuivingDeltaY>0</kadastralekaartv4:perceelnummerVerschuivingDeltaY>
+        <kadastralekaartv4:perceelnummerPlaatscoordinaatX>81304.451</kadastralekaartv4:perceelnummerPlaatscoordinaatX>
+        <kadastralekaartv4:perceelnummerPlaatscoordinaatY>455226.994</kadastralekaartv4:perceelnummerPlaatscoordinaatY>
+      </kadastralekaartv4:perceel>
+    </wfs:member>
+</wfs:FeatureCollection>
+

@@ -1,0 +1,2331 @@
+<testsuite failures="0" name="downloadservices/T02_WFS_FES_FILTER.feature" skipped="0" tests="17" time="44.577885">
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam tekst =  Binnenhof gives results" time="0.583095">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam tekst =  Dorpstraat gives hits" time="1.974635">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam tekst =  Kerkstraat gives hits" time="3.061521">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam LV-publicatiedatum =  2018-05-17T14:32:33 gives hits" time="1.946411">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:perceel tijdstipregistratie =  2007-09-27T10:03:38.000 gives results" time="6.92417">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam identificatieBAGOPR =  0678300000000183 gives results" time="2.694976">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam hoek =  406.3 gives hits" time="2.694577">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam tekst between X Y  gives results" time="1.758273">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam tekst between A Z  gives hits" time="2.036504">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam tekst between U V  gives hits" time="2.194073">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam LV-publicatiedatum between 2018-05-17T00:00:00 2018-05-18T00:00:00  gives hits" time="4.640902">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:perceel tijdstipregistratie between 2007-09-27T10:03:00.000 2007-09-27T10:04:00.000  gives hits" time="1.91343">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam identificatieBAGOPR between 0678300000000180 0678300000000185  gives results" time="0.452946">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:openbareruimtenaam hoek between 406.2 406.4  gives hits" time="3.272351">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:perceel tijdstipregistratie between 2019-09-05T00:00:00.000 2019-12-25T00:00:00.000  gives hits" time="4.102188">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:perceel kadastraleGrootteWaarde between 700 900  gives hits" time="3.948746">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="downloadservices.T02_WFS_FES_FILTER" name="WFS filter propertie kadastralekaartv4:perceel kadastraleGrootteWaarde between 700 900  gives results" time="0.379087">
+    <system-out>* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def xmlfilter = ......................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = xmlfilter .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:openbareruimtenaam' .............. passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'hits' ............................................. passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url 'http://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0' ... passed
+* configure readTimeout = 120000 .......................................... passed
+* def betweenfilter = ..................................................... passed
+Given path '' ............................................................. passed
+And param SERVICE = 'WFS' ................................................. passed
+And param REQUEST = 'GetFeature' .......................................... passed
+And param resulttype = 'results' .......................................... passed
+And param VERSION = '2.0.0' ............................................... passed
+And param TYPENAMES = 'kadastralekaartv4:perceel' ......................... passed
+And param STARTINDEX = '0' ................................................ passed
+And param COUNT = '10' .................................................... passed
+And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992' ......................... passed
+And param filter = betweenfilter .......................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

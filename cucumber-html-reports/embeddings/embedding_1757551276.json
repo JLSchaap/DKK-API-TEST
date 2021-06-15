@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding="UTF-8" ?>
+<wfs:FeatureCollection
+   xmlns:kadastralekaartv4="http://kadastralekaartv4.geonovum.nl"
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns:wfs="http://www.opengis.net/wfs/2.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://kadastralekaartv4.geonovum.nl https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;TYPENAME=kadastralekaartv4:nummeraanduidingreeks&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B%20version%3D3.2 http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd"
+   timeStamp="2021-06-15T02:30:40" numberMatched="unknown" numberReturned="1"
+   next="https://geodata.nationaalgeoregister.nl/kadastralekaart/wfs/v4_0?SERVICE=WFS&amp;SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=2.0.0&amp;TYPENAMES=kadastralekaartv4%3Anummeraanduidingreeks&amp;COUNT=1&amp;STARTINDEX=1">
+      <wfs:boundedBy>
+      	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+      		<gml:lowerCorner>19785.831000 363949.415000</gml:lowerCorner>
+      		<gml:upperCorner>19785.831000 363949.415000</gml:upperCorner>
+      	</gml:Envelope>
+      </wfs:boundedBy>
+    <wfs:member>
+      <kadastralekaartv4:nummeraanduidingreeks gml:id="nummeraanduidingreeks.4acdd472-4dd4-4742-a36a-6822820bfce4">
+        <gml:boundedBy>
+        	<gml:Envelope srsName="urn:ogc:def:crs:EPSG::28992">
+        		<gml:lowerCorner>19785.831000 363949.415000</gml:lowerCorner>
+        		<gml:upperCorner>19785.831000 363949.415000</gml:upperCorner>
+        	</gml:Envelope>
+        </gml:boundedBy>
+        <kadastralekaartv4:plaatsingspunt>
+          <gml:Point gml:id="nummeraanduidingreeks.4acdd472-4dd4-4742-a36a-6822820bfce4.1" srsName="urn:ogc:def:crs:EPSG::28992">
+            <gml:pos>19785.831000 363949.415000</gml:pos>
+          </gml:Point>
+        </kadastralekaartv4:plaatsingspunt>
+        <kadastralekaartv4:id>4acdd472-4dd4-4742-a36a-6822820bfce4</kadastralekaartv4:id>
+        <kadastralekaartv4:bebouwingID>bebouwing.fb7feaab-96ba-4b77-03a8-86c77e57d70b</kadastralekaartv4:bebouwingID>
+        <kadastralekaartv4:hoek>12</kadastralekaartv4:hoek>
+        <kadastralekaartv4:tekst>33</kadastralekaartv4:tekst>
+        <kadastralekaartv4:identificatieBAGVBOLaagsteHuisnummer>1714010000772000</kadastralekaartv4:identificatieBAGVBOLaagsteHuisnummer>
+        <kadastralekaartv4:identificatieBAGVBOHoogsteHuisnummer></kadastralekaartv4:identificatieBAGVBOHoogsteHuisnummer>
+      </kadastralekaartv4:nummeraanduidingreeks>
+    </wfs:member>
+</wfs:FeatureCollection>
+
