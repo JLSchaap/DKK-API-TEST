@@ -1,0 +1,5 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "karateRunner.karateRunner.default": "ApiTest",
+    "karateRunner.tests.activityBarDisplayType": "Shallow"
+}

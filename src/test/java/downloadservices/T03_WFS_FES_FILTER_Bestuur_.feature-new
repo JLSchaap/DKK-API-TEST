@@ -1,0 +1,57 @@
+@SMOKE
+Feature:  WFS FES Filter bestuurlijke gebieden
+
+    Background:
+       # * url 'https://geodata.nationaalgeoregister.nl/bestuurlijkegrenzen/wfs'
+       #  * url 'https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?'
+        * configure readTimeout = 120000
+
+    # Scenario Outline: DKK WFS heeft <capabilities> capabilities
+
+    #   * def cap = read('./expectedOutcome/wfscapabilitiesv4new.xml')
+    #   * match "TRUE" ==  karate.xmlPath(cap,'/WFS_Capabilities/<capabilities>/Conformance/Constraint[1]/DefaultValue')
+
+    #  Examples:
+    #    | capabilities        |
+    #    | Filter_Capabilities |
+
+    Scenario Outline:  WFS filter propertie <feature> <prop> =  <value> gives <resulttype>
+        * def xmlfilter =
+            """
+            <Filter xmlns="http://www.opengis.net/ogc">
+            <PropertyIsLike matchCase="false" escapeChar="\" singleChar="_" wildCard="%">
+            <ValueReference><prop></ValueReference>
+            <Literal><value></Literal>
+            </PropertyIsLike>
+            </Filter>
+            """
+
+        Given  url 'https://service.pdok.nl/kadaster/bestuurlijkegebieden/wfs/v1_0?'
+        And param SERVICE = 'WFS'
+        And param REQUEST = 'GetFeature'
+        # And param resulttype = '<resulttype>'
+        And param VERSION = '2.0.0' 
+        And param TYPENAMES = '<feature>'
+        And param STARTINDEX = '0'
+        And param COUNT = '10'
+        And param SRSNAME = 'urn:ogc:def:crs:EPSG::28992'
+        And param filter = xmlfilter
+
+        When method GET
+        Then status 200
+
+      * xml xmlVar = response  
+
+      *  karate.embed(response, 'text/xml')
+        
+    * def mydownloads = Java.type('download.DataStorage')
+    * def LocalDateTime = Java.type('java.time.LocalDateTime')
+    * def db = new mydownloads
+    * eval db.mywriteln(response , 'target/surefire-reports/result.gml')
+
+
+
+
+        Examples:
+            | feature                       | prop         | value    | resulttype |
+            | bestuurlijkegebieden:gemeentegebied | naam | %Ermelo% | results    |
