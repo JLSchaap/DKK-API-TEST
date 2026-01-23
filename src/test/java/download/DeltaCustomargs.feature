@@ -17,7 +17,7 @@ Feature: using __arg
     And match response == { downloadRequestId: '#uuid' , _links:'#notnull'}
     And def downloadRequestId = response.downloadRequestId
     And def links = response._links
-    * print "delta status links:" links
+    * print "delta status links:",  links
     And def statusurl = apiBaseUrl + links.status.href
 
     * print 'statusurl', statusurl
